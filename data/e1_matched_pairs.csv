@@ -1,0 +1,1178 @@
+pair_id,task_id_1,repo_1,family_1,primary_type_1,files_1,loc_1,b_codes_1,task_id_2,repo_2,family_2,primary_type_2,files_2,loc_2,b_codes_2,jaccard_distance
+1,0001,NodeBB/NodeBB,SWE-bench Pro,major_bug,11,151,B1;B11;B12;B3;B4;B5;B8,0414,protonmail/webclients,SWE-bench Pro,major_bug,11,114,B10;B5;B7,0.8889
+2,0002,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,64,B1;B6,0082,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,73,B1;B11;B3,0.75
+3,0002,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,64,B1;B6,0112,navidrome/navidrome,SWE-bench Pro,code_quality_enh,3,89,B1;B4;B5,0.75
+4,0002,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,64,B1;B6,0224,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,75,B11;B6,0.6667
+5,0002,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,64,B1;B6,0500,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,79,B11,1.0
+6,0002,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,64,B1;B6,0704,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,72,B6,0.5
+7,0003,NodeBB/NodeBB,SWE-bench Pro,api_feat,5,63,B1;B11;B3;B6;B8,0650,navidrome/navidrome,SWE-bench Pro,api_feat,5,54,B1;B11;B6,0.4
+8,0004,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,3,44,B1;B11;B8,0213,ansible/ansible,SWE-bench Pro,minor_bug,3,61,B1;B6,0.75
+9,0004,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,3,44,B1;B11;B8,0229,flipt-io/flipt,SWE-bench Pro,minor_bug,3,47,B11,0.6667
+10,0004,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,3,44,B1;B11;B8,0234,ansible/ansible,SWE-bench Pro,minor_bug,3,35,B1;B11;B12,0.5
+11,0007,internetarchive/openlibrary,SWE-bench Pro,core_feat,3,92,B1;B11,0089,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,106,B1;B11;B12,0.3333
+12,0007,internetarchive/openlibrary,SWE-bench Pro,core_feat,3,92,B1;B11,0307,element-hq/element-web,SWE-bench Pro,core_feat,3,93,B1;B12;B3,0.75
+13,0007,internetarchive/openlibrary,SWE-bench Pro,core_feat,3,92,B1;B11,0405,flipt-io/flipt,SWE-bench Pro,core_feat,3,108,B1,0.5
+14,0007,internetarchive/openlibrary,SWE-bench Pro,core_feat,3,92,B1;B11,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0.8
+15,0007,internetarchive/openlibrary,SWE-bench Pro,core_feat,3,92,B1;B11,0680,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,87,B11,0.5
+16,0009,gravitational/teleport,SWE-bench Pro,major_bug,4,434,B1;B10;B11;B4;B5;B6;B7;B8,0417,gravitational/teleport,SWE-bench Pro,major_bug,4,427,B1;B3;B4,0.7778
+17,0010,navidrome/navidrome,SWE-bench Pro,code_quality_enh,9,109,B11;B6,0611,gravitational/teleport,SWE-bench Pro,code_quality_enh,9,112,B10;B6;B7,0.75
+18,0011,internetarchive/openlibrary,SWE-bench Pro,major_bug,2,38,B1;B11;B3,0081,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0.3333
+19,0011,internetarchive/openlibrary,SWE-bench Pro,major_bug,2,38,B1;B11;B3,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,1.0
+20,0011,internetarchive/openlibrary,SWE-bench Pro,major_bug,2,38,B1;B11;B3,0440,ansible/ansible,SWE-bench Pro,major_bug,2,30,B2,1.0
+21,0011,internetarchive/openlibrary,SWE-bench Pro,major_bug,2,38,B1;B11;B3,0578,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0.3333
+22,0011,internetarchive/openlibrary,SWE-bench Pro,major_bug,2,38,B1;B11;B3,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,0.5
+23,0011,internetarchive/openlibrary,SWE-bench Pro,major_bug,2,38,B1;B11;B3,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,0.75
+24,0012,ansible/ansible,SWE-bench Pro,core_feat,4,295,B11;B12;B5;B6,0256,ansible/ansible,SWE-bench Pro,core_feat,4,310,B11;B8,0.8
+25,0012,ansible/ansible,SWE-bench Pro,core_feat,4,295,B11;B12;B5;B6,0276,flipt-io/flipt,SWE-bench Pro,core_feat,4,223,B3;B6,0.8
+26,0012,ansible/ansible,SWE-bench Pro,core_feat,4,295,B11;B12;B5;B6,0484,navidrome/navidrome,SWE-bench Pro,core_feat,4,214,B1;B8,1.0
+27,0012,ansible/ansible,SWE-bench Pro,core_feat,4,295,B11;B12;B5;B6,0596,ansible/ansible,SWE-bench Pro,core_feat,4,254,B4;B6;B7;B8,0.8571
+28,0014,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,24,B1;B2,0278,ansible/ansible,SWE-bench Pro,core_feat,2,22,B11,1.0
+29,0014,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,24,B1;B2,0433,flipt-io/flipt,SWE-bench Pro,core_feat,2,28,B1;B6,0.6667
+30,0014,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,24,B1;B2,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.75
+31,0016,future-architect/vuls,SWE-bench Pro,major_bug,1,28,B1;B3;B6,0049,gravitational/teleport,SWE-bench Pro,major_bug,1,38,B1;B11;B12;B3;B8,0.6667
+32,0016,future-architect/vuls,SWE-bench Pro,major_bug,1,28,B1;B3;B6,0103,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,36,B1;B11;B3,0.5
+33,0016,future-architect/vuls,SWE-bench Pro,major_bug,1,28,B1;B3;B6,0202,element-hq/element-web,SWE-bench Pro,major_bug,1,33,B12;B5;B7,1.0
+34,0016,future-architect/vuls,SWE-bench Pro,major_bug,1,28,B1;B3;B6,0358,protonmail/webclients,SWE-bench Pro,major_bug,1,33,B4;B6;B9,0.8
+35,0016,future-architect/vuls,SWE-bench Pro,major_bug,1,28,B1;B3;B6,0539,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,35,B1;B10,0.75
+36,0017,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,5,143,B1;B11;B3,0585,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,5,126,B11;B6,0.75
+37,0021,gravitational/teleport,SWE-bench Pro,ui_ux_bug,4,40,B11;B3;B4;B5;B6;B8,0446,element-hq/element-web,SWE-bench Pro,ui_ux_bug,4,46,B12;B6;B7,0.875
+38,0021,gravitational/teleport,SWE-bench Pro,ui_ux_bug,4,40,B11;B3;B4;B5;B6;B8,0633,element-hq/element-web,SWE-bench Pro,ui_ux_bug,4,39,B1;B12,1.0
+39,0021,gravitational/teleport,SWE-bench Pro,ui_ux_bug,4,40,B11;B3;B4;B5;B6;B8,0675,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_bug,4,48,B11;B6,0.6667
+40,0023,navidrome/navidrome,SWE-bench Pro,core_feat,10,174,B1;B11;B3;B4;B5;B8,0162,navidrome/navidrome,SWE-bench Pro,core_feat,10,180,B1;B11;B2,0.7143
+41,0023,navidrome/navidrome,SWE-bench Pro,core_feat,10,174,B1;B11;B3;B4;B5;B8,0201,navidrome/navidrome,SWE-bench Pro,core_feat,10,149,B2;B3;B6,0.875
+42,0023,navidrome/navidrome,SWE-bench Pro,core_feat,10,174,B1;B11;B3;B4;B5;B8,0218,future-architect/vuls,SWE-bench Pro,core_feat,10,209,B12;B2;B4,0.875
+43,0023,navidrome/navidrome,SWE-bench Pro,core_feat,10,174,B1;B11;B3;B4;B5;B8,0671,flipt-io/flipt,SWE-bench Pro,core_feat,10,206,B8,0.8333
+44,0024,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,4,419,B1;B10;B11;B3,0538,gravitational/teleport,SWE-bench Pro,code_quality_enh,4,369,B11;B6,0.8
+45,0025,element-hq/element-web,SWE-bench Pro,data_bug,6,109,B1;B10;B11;B12;B3;B4;B5;B6,0716,internetarchive/openlibrary,SWE-bench Pro,data_bug,6,123,B11;B6,0.75
+46,0026,protonmail/webclients,SWE-bench Pro,code_quality_enh,5,85,B1;B11;B3;B6,0039,gravitational/teleport,SWE-bench Pro,code_quality_enh,5,61,B11;B5;B6;B8,0.6667
+47,0027,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,29,B1;B11;B3;B6,0194,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,29,B12;B4;B8,1.0
+48,0027,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,29,B1;B11;B3;B6,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,0.8571
+49,0027,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,29,B1;B11;B3;B6,0261,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,28,B1;B12,0.8
+50,0027,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,29,B1;B11;B3;B6,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,0.8
+51,0027,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,29,B1;B11;B3;B6,0523,protonmail/webclients,SWE-bench Pro,core_feat,3,41,B11,0.75
+52,0029,flipt-io/flipt,SWE-bench Pro,major_bug,5,53,B1;B11,0126,gravitational/teleport,SWE-bench Pro,major_bug,5,68,B3;B4;B5;B6,1.0
+53,0029,flipt-io/flipt,SWE-bench Pro,major_bug,5,53,B1;B11,0150,navidrome/navidrome,SWE-bench Pro,major_bug,5,48,B5;B7,1.0
+54,0031,gravitational/teleport,SWE-bench Pro,core_feat,3,169,B1;B10;B11,0230,ansible/ansible,SWE-bench Pro,core_feat,3,182,B1;B12,0.75
+55,0031,gravitational/teleport,SWE-bench Pro,core_feat,3,169,B1;B10;B11,0426,element-hq/element-web,SWE-bench Pro,core_feat,3,212,B12;B5,1.0
+56,0032,NodeBB/NodeBB,SWE-bench Pro,code_quality_enh,1,82,B1;B11;B12,0181,protonmail/webclients,SWE-bench Pro,code_quality_enh,1,86,B12,0.6667
+57,0032,NodeBB/NodeBB,SWE-bench Pro,code_quality_enh,1,82,B1;B11;B12,0477,future-architect/vuls,SWE-bench Pro,code_quality_enh,1,113,B6,1.0
+58,0032,NodeBB/NodeBB,SWE-bench Pro,code_quality_enh,1,82,B1;B11;B12,0602,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,59,B11;B6,0.75
+59,0032,NodeBB/NodeBB,SWE-bench Pro,code_quality_enh,1,82,B1;B11;B12,0668,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,60,B11;B6,0.75
+60,0033,navidrome/navidrome,SWE-bench Pro,core_feat,6,221,B1;B2;B3,0302,element-hq/element-web,SWE-bench Pro,core_feat,6,259,B12;B2;B5,0.8
+61,0033,navidrome/navidrome,SWE-bench Pro,core_feat,6,221,B1;B2;B3,0658,future-architect/vuls,SWE-bench Pro,core_feat,6,267,B2;B3,0.3333
+62,0034,future-architect/vuls,SWE-bench Pro,edge_case_bug,1,50,B1;B10;B11;B3;B6,0144,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,58,B1;B11;B12,0.6667
+63,0034,future-architect/vuls,SWE-bench Pro,edge_case_bug,1,50,B1;B10;B11;B3;B6,0279,gravitational/teleport,SWE-bench Pro,edge_case_bug,1,41,B1;B3,0.6
+64,0034,future-architect/vuls,SWE-bench Pro,edge_case_bug,1,50,B1;B10;B11;B3;B6,0421,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,50,B1,0.8
+65,0034,future-architect/vuls,SWE-bench Pro,edge_case_bug,1,50,B1;B10;B11;B3;B6,0665,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,40,B11,0.8
+66,0036,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,4,115,B1;B11;B12;B6,0130,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,4,95,B11;B12;B3;B6,0.4
+67,0037,ansible/ansible,SWE-bench Pro,core_feat,5,269,B1;B11;B3,0215,future-architect/vuls,SWE-bench Pro,core_feat,5,242,B11;B3;B4,0.5
+68,0037,ansible/ansible,SWE-bench Pro,core_feat,5,269,B1;B11;B3,0534,future-architect/vuls,SWE-bench Pro,core_feat,5,209,B4,1.0
+69,0039,gravitational/teleport,SWE-bench Pro,code_quality_enh,5,61,B11;B5;B6;B8,0642,element-hq/element-web,SWE-bench Pro,code_quality_enh,5,49,B10;B12;B6,0.8333
+70,0040,future-architect/vuls,SWE-bench Pro,core_feat,7,145,B1;B11;B3;B9,0192,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11;B12;B6,0.8333
+71,0040,future-architect/vuls,SWE-bench Pro,core_feat,7,145,B1;B11;B3;B9,0416,flipt-io/flipt,SWE-bench Pro,core_feat,7,160,B1;B2,0.8
+72,0040,future-architect/vuls,SWE-bench Pro,core_feat,7,145,B1;B11;B3;B9,0431,future-architect/vuls,SWE-bench Pro,core_feat,7,197,B11;B12;B3,0.6
+73,0040,future-architect/vuls,SWE-bench Pro,core_feat,7,145,B1;B11;B3;B9,0487,NodeBB/NodeBB,SWE-bench Pro,core_feat,7,106,B2;B9,0.8
+74,0040,future-architect/vuls,SWE-bench Pro,core_feat,7,145,B1;B11;B3;B9,0666,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11,0.75
+75,0041,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,2,37,B1;B12;B2;B6,0299,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,30,B12;B4,0.8
+76,0041,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,2,37,B1;B12;B2;B6,0554,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,37,B12;B6,0.5
+77,0041,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,2,37,B1;B12;B2;B6,0638,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,33,B4,1.0
+78,0041,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,2,37,B1;B12;B2;B6,0662,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,46,B4,1.0
+79,0043,ansible/ansible,SWE-bench Pro,core_feat,10,647,B1;B10;B11;B12;B3,0060,flipt-io/flipt,SWE-bench Pro,core_feat,10,854,B1;B11;B6,0.6667
+80,0043,ansible/ansible,SWE-bench Pro,core_feat,10,647,B1;B10;B11;B12;B3,0634,internetarchive/openlibrary,SWE-bench Pro,core_feat,10,629,B12;B3;B6;B8,0.7143
+81,0044,navidrome/navidrome,SWE-bench Pro,core_feat,4,166,B1;B11;B3,0276,flipt-io/flipt,SWE-bench Pro,core_feat,4,223,B3;B6,0.75
+82,0044,navidrome/navidrome,SWE-bench Pro,core_feat,4,166,B1;B11;B3,0484,navidrome/navidrome,SWE-bench Pro,core_feat,4,214,B1;B8,0.75
+83,0045,internetarchive/openlibrary,SWE-bench Pro,data_bug,1,133,B1;B11;B3;B6,0216,gravitational/teleport,SWE-bench Pro,data_bug,1,137,B11;B6,0.5
+84,0048,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,41,B1;B11,0329,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,44,B1;B2,0.6667
+85,0048,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,41,B1;B11,0455,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,43,B1;B6,0.6667
+86,0048,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,41,B1;B11,0546,protonmail/webclients,SWE-bench Pro,code_quality_enh,2,30,B6,1.0
+87,0048,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,41,B1;B11,0630,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,52,B12;B6,1.0
+88,0048,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,41,B1;B11,0679,NodeBB/NodeBB,SWE-bench Pro,code_quality_enh,2,30,B1;B8,0.6667
+89,0048,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,41,B1;B11,0722,navidrome/navidrome,SWE-bench Pro,code_quality_enh,2,47,B4;B9,1.0
+90,0049,gravitational/teleport,SWE-bench Pro,major_bug,1,38,B1;B11;B12;B3;B8,0103,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,36,B1;B11;B3,0.4
+91,0049,gravitational/teleport,SWE-bench Pro,major_bug,1,38,B1;B11;B12;B3;B8,0202,element-hq/element-web,SWE-bench Pro,major_bug,1,33,B12;B5;B7,0.8571
+92,0049,gravitational/teleport,SWE-bench Pro,major_bug,1,38,B1;B11;B12;B3;B8,0219,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,53,B3;B6,0.8333
+93,0049,gravitational/teleport,SWE-bench Pro,major_bug,1,38,B1;B11;B12;B3;B8,0358,protonmail/webclients,SWE-bench Pro,major_bug,1,33,B4;B6;B9,1.0
+94,0049,gravitational/teleport,SWE-bench Pro,major_bug,1,38,B1;B11;B12;B3;B8,0539,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,35,B1;B10,0.8333
+95,0052,element-hq/element-web,SWE-bench Pro,critical_bug,1,43,B1;B10;B12;B3;B4;B5,0374,qutebrowser/qutebrowser,SWE-bench Pro,critical_bug,1,44,B10;B12,0.6667
+96,0053,ansible/ansible,SWE-bench Pro,core_feat,2,35,B1;B11;B6;B8,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0.4
+97,0053,ansible/ansible,SWE-bench Pro,core_feat,2,35,B1;B11;B6;B8,0085,element-hq/element-web,SWE-bench Pro,core_feat,2,36,B1;B12;B3;B4,0.8571
+98,0053,ansible/ansible,SWE-bench Pro,core_feat,2,35,B1;B11;B6;B8,0275,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,41,B11;B3,0.8
+99,0053,ansible/ansible,SWE-bench Pro,core_feat,2,35,B1;B11;B6;B8,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,1.0
+100,0053,ansible/ansible,SWE-bench Pro,core_feat,2,35,B1;B11;B6;B8,0433,flipt-io/flipt,SWE-bench Pro,core_feat,2,28,B1;B6,0.5
+101,0053,ansible/ansible,SWE-bench Pro,core_feat,2,35,B1;B11;B6;B8,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.25
+102,0055,ansible/ansible,SWE-bench Pro,data_bug,2,54,B1;B11;B12;B6,0105,ansible/ansible,SWE-bench Pro,data_bug,2,52,B1;B11;B6,0.25
+103,0055,ansible/ansible,SWE-bench Pro,data_bug,2,54,B1;B11;B12;B6,0360,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,58,B3,1.0
+104,0055,ansible/ansible,SWE-bench Pro,data_bug,2,54,B1;B11;B12;B6,0363,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,51,B1,0.75
+105,0055,ansible/ansible,SWE-bench Pro,data_bug,2,54,B1;B11;B12;B6,0428,future-architect/vuls,SWE-bench Pro,data_bug,2,48,B3;B6,0.8
+106,0055,ansible/ansible,SWE-bench Pro,data_bug,2,54,B1;B11;B12;B6,0705,future-architect/vuls,SWE-bench Pro,data_bug,2,70,B2;B6,0.8
+107,0056,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,69,B1;B11,0062,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,82,B1;B11;B6,0.3333
+108,0056,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,69,B1;B11,0138,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,95,B12;B2;B4;B5,1.0
+109,0056,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,69,B1;B11,0397,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,76,B1;B3,0.6667
+110,0056,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,69,B1;B11,0630,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,52,B12;B6,1.0
+111,0058,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,54,B1;B3;B6,0515,navidrome/navidrome,SWE-bench Pro,refactoring_enh,6,67,B6;B8,0.75
+112,0060,flipt-io/flipt,SWE-bench Pro,core_feat,10,854,B1;B11;B6,0634,internetarchive/openlibrary,SWE-bench Pro,core_feat,10,629,B12;B3;B6;B8,0.8333
+113,0061,navidrome/navidrome,SWE-bench Pro,minor_bug,3,80,B1;B3,0213,ansible/ansible,SWE-bench Pro,minor_bug,3,61,B1;B6,0.6667
+114,0061,navidrome/navidrome,SWE-bench Pro,minor_bug,3,80,B1;B3,0464,ansible/ansible,SWE-bench Pro,minor_bug,3,70,B3,0.5
+115,0061,navidrome/navidrome,SWE-bench Pro,minor_bug,3,80,B1;B3,0610,NodeBB/NodeBB,SWE-bench Pro,minor_bug,3,109,B11;B12;B6,1.0
+116,0062,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,82,B1;B11;B6,0138,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,95,B12;B2;B4;B5,1.0
+117,0062,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,82,B1;B11;B6,0397,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,76,B1;B3,0.75
+118,0062,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,82,B1;B11;B6,0475,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,104,B3,1.0
+119,0062,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,82,B1;B11;B6,0536,ansible/ansible,SWE-bench Pro,code_quality_enh,2,116,B1;B11;B6,0.0
+120,0062,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,82,B1;B11;B6,0570,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,101,B12;B5;B6,0.8
+121,0067,element-hq/element-web,SWE-bench Pro,security_feat,5,112,B1;B12;B3;B8,0305,ansible/ansible,SWE-bench Pro,security_feat,5,137,B11;B3;B6,0.8333
+122,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0085,element-hq/element-web,SWE-bench Pro,core_feat,2,36,B1;B12;B3;B4,0.6667
+123,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0136,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,54,B1;B3;B6,0.6
+124,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0275,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,41,B11;B3,0.8
+125,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,0.8
+126,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0433,flipt-io/flipt,SWE-bench Pro,core_feat,2,28,B1;B6,0.5
+127,0070,element-hq/element-web,SWE-bench Pro,core_feat,2,40,B1;B11;B12;B6,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.6
+128,0071,future-architect/vuls,SWE-bench Pro,data_bug,1,33,B1;B11;B3,0143,internetarchive/openlibrary,SWE-bench Pro,data_bug,1,29,B3;B5,0.75
+129,0071,future-architect/vuls,SWE-bench Pro,data_bug,1,33,B1;B11;B3,0233,internetarchive/openlibrary,SWE-bench Pro,data_bug,1,27,B1;B11;B6,0.5
+130,0072,ansible/ansible,SWE-bench Pro,edge_case_bug,3,88,B1;B11;B12;B6,0153,navidrome/navidrome,SWE-bench Pro,edge_case_bug,3,77,B10;B12;B6,0.6
+131,0072,ansible/ansible,SWE-bench Pro,edge_case_bug,3,88,B1;B11;B12;B6,0655,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,3,63,B11;B6,0.5
+132,0074,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,3,52,B1;B11;B6,0134,ansible/ansible,SWE-bench Pro,edge_case_bug,3,51,B1;B11;B12,0.5
+133,0074,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,3,52,B1;B11;B6,0655,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,3,63,B11;B6,0.3333
+134,0075,future-architect/vuls,SWE-bench Pro,core_feat,5,52,B1;B6;B8,0434,flipt-io/flipt,SWE-bench Pro,core_feat,5,63,B11;B6,0.75
+135,0075,future-architect/vuls,SWE-bench Pro,core_feat,5,52,B1;B6;B8,0549,element-hq/element-web,SWE-bench Pro,core_feat,5,68,B12,1.0
+136,0077,gravitational/teleport,SWE-bench Pro,performance_bug,4,44,B1;B10;B9,0548,ansible/ansible,SWE-bench Pro,performance_bug,4,36,B10;B4;B6;B9,0.6
+137,0078,future-architect/vuls,SWE-bench Pro,code_quality_enh,3,34,B11;B3,0236,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,30,B11,0.5
+138,0078,future-architect/vuls,SWE-bench Pro,code_quality_enh,3,34,B11;B3,0321,tutao/tutanota,SWE-bench Pro,code_quality_enh,3,28,B6,1.0
+139,0078,future-architect/vuls,SWE-bench Pro,code_quality_enh,3,34,B11;B3,0408,ansible/ansible,SWE-bench Pro,code_quality_enh,3,28,B6;B8,1.0
+140,0078,future-architect/vuls,SWE-bench Pro,code_quality_enh,3,34,B11;B3,0519,flipt-io/flipt,SWE-bench Pro,code_quality_enh,3,36,B12;B6,1.0
+141,0078,future-architect/vuls,SWE-bench Pro,code_quality_enh,3,34,B11;B3,0724,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,42,B1;B6,1.0
+142,0079,internetarchive/openlibrary,SWE-bench Pro,integration_feat,1,146,B1;B11;B3;B5,0385,future-architect/vuls,SWE-bench Pro,integration_feat,1,119,B3;B4,0.8
+143,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0.8
+144,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0.6
+145,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0460,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,24,B6,1.0
+146,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,0.8
+147,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,0.3333
+148,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,1.0
+149,0080,future-architect/vuls,SWE-bench Pro,core_feat,1,30,B1;B11;B12,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,0.75
+150,0081,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0440,ansible/ansible,SWE-bench Pro,major_bug,2,30,B2,1.0
+151,0081,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0551,protonmail/webclients,SWE-bench Pro,major_bug,2,26,B5;B6,1.0
+152,0081,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0578,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0.0
+153,0081,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,0.6667
+154,0082,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,73,B1;B11;B3,0112,navidrome/navidrome,SWE-bench Pro,code_quality_enh,3,89,B1;B4;B5,0.8
+155,0082,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,73,B1;B11;B3,0224,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,75,B11;B6,0.75
+156,0082,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,73,B1;B11;B3,0311,protonmail/webclients,SWE-bench Pro,code_quality_enh,3,103,B1;B11;B2;B6,0.6
+157,0082,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,73,B1;B11;B3,0500,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,79,B11,0.6667
+158,0082,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,73,B1;B11;B3,0704,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,72,B6,1.0
+159,0083,element-hq/element-web,SWE-bench Pro,minor_bug,1,132,B10;B12;B5;B7,0227,ansible/ansible,SWE-bench Pro,minor_bug,1,122,B1;B6,1.0
+160,0083,element-hq/element-web,SWE-bench Pro,minor_bug,1,132,B10;B12;B5;B7,0563,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,123,B3,1.0
+161,0084,tutao/tutanota,SWE-bench Pro,minor_bug,5,44,B1;B11;B6;B8,0283,protonmail/webclients,SWE-bench Pro,minor_bug,5,62,B3;B4;B6,0.8333
+162,0084,tutao/tutanota,SWE-bench Pro,minor_bug,5,44,B1;B11;B6;B8,0513,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,5,48,B11;B6,0.5
+163,0085,element-hq/element-web,SWE-bench Pro,core_feat,2,36,B1;B12;B3;B4,0275,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,41,B11;B3,0.8
+164,0085,element-hq/element-web,SWE-bench Pro,core_feat,2,36,B1;B12;B3;B4,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,0.5
+165,0085,element-hq/element-web,SWE-bench Pro,core_feat,2,36,B1;B12;B3;B4,0433,flipt-io/flipt,SWE-bench Pro,core_feat,2,28,B1;B6,0.8
+166,0085,element-hq/element-web,SWE-bench Pro,core_feat,2,36,B1;B12;B3;B4,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.8333
+167,0087,tutao/tutanota,SWE-bench Pro,core_feat,7,237,B1;B12;B3;B5,0431,future-architect/vuls,SWE-bench Pro,core_feat,7,197,B11;B12;B3,0.6
+168,0087,tutao/tutanota,SWE-bench Pro,core_feat,7,237,B1;B12;B3;B5,0461,ansible/ansible,SWE-bench Pro,core_feat,7,241,B7,1.0
+169,0088,navidrome/navidrome,SWE-bench Pro,core_feat,11,137,B11;B3;B4,0550,protonmail/webclients,SWE-bench Pro,core_feat,11,162,B10;B5;B6;B8,1.0
+170,0088,navidrome/navidrome,SWE-bench Pro,core_feat,11,137,B11;B3;B4,0651,protonmail/webclients,SWE-bench Pro,core_feat,11,133,B1;B6,1.0
+171,0089,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,106,B1;B11;B12,0307,element-hq/element-web,SWE-bench Pro,core_feat,3,93,B1;B12;B3,0.5
+172,0089,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,106,B1;B11;B12,0405,flipt-io/flipt,SWE-bench Pro,core_feat,3,108,B1,0.6667
+173,0089,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,106,B1;B11;B12,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0.8333
+174,0089,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,106,B1;B11;B12,0680,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,87,B11,0.6667
+175,0091,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,1.0
+176,0091,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0244,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B1;B12;B2,0.75
+177,0091,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,1.0
+178,0091,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0418,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B11;B3,0.6667
+179,0091,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,1.0
+180,0091,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0693,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0.0
+181,0092,flipt-io/flipt,SWE-bench Pro,core_feat,8,262,B1;B11;B3;B6;B9,0323,flipt-io/flipt,SWE-bench Pro,core_feat,8,366,B1;B11;B12,0.6667
+182,0092,flipt-io/flipt,SWE-bench Pro,core_feat,8,262,B1;B11;B3;B6;B9,0409,flipt-io/flipt,SWE-bench Pro,core_feat,8,339,B11;B3;B9,0.4
+183,0093,element-hq/element-web,SWE-bench Pro,regression_bug,5,32,B1;B12,0240,ansible/ansible,SWE-bench Pro,regression_bug,5,31,B11;B5;B6,1.0
+184,0096,ansible/ansible,SWE-bench Pro,major_bug,3,26,B1;B12;B6,0420,NodeBB/NodeBB,SWE-bench Pro,major_bug,3,32,B3;B5,1.0
+185,0096,ansible/ansible,SWE-bench Pro,major_bug,3,26,B1;B12;B6,0730,element-hq/element-web,SWE-bench Pro,major_bug,3,29,B4;B5,1.0
+186,0098,NodeBB/NodeBB,SWE-bench Pro,major_bug,3,53,B1;B3;B6;B8,0450,protonmail/webclients,SWE-bench Pro,major_bug,3,38,B1;B6,0.5
+187,0098,NodeBB/NodeBB,SWE-bench Pro,major_bug,3,53,B1;B3;B6;B8,0728,flipt-io/flipt,SWE-bench Pro,major_bug,3,58,B6,0.75
+188,0099,ansible/ansible,SWE-bench Pro,major_bug,2,108,B1;B12;B6;B7,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0.8
+189,0099,ansible/ansible,SWE-bench Pro,major_bug,2,108,B1;B12;B6;B7,0445,ansible/ansible,SWE-bench Pro,major_bug,2,88,B1;B11,0.8
+190,0099,ansible/ansible,SWE-bench Pro,major_bug,2,108,B1;B12;B6;B7,0462,flipt-io/flipt,SWE-bench Pro,major_bug,2,132,B6;B8,0.8
+191,0099,ansible/ansible,SWE-bench Pro,major_bug,2,108,B1;B12;B6;B7,0521,gravitational/teleport,SWE-bench Pro,major_bug,2,101,B6;B8,0.8
+192,0100,future-architect/vuls,SWE-bench Pro,core_feat,8,378,B1;B12;B4,0323,flipt-io/flipt,SWE-bench Pro,core_feat,8,366,B1;B11;B12,0.5
+193,0100,future-architect/vuls,SWE-bench Pro,core_feat,8,378,B1;B12;B4,0409,flipt-io/flipt,SWE-bench Pro,core_feat,8,339,B11;B3;B9,1.0
+194,0100,future-architect/vuls,SWE-bench Pro,core_feat,8,378,B1;B12;B4,0419,future-architect/vuls,SWE-bench Pro,core_feat,8,407,B2;B3;B6,1.0
+195,0100,future-architect/vuls,SWE-bench Pro,core_feat,8,378,B1;B12;B4,0669,gravitational/teleport,SWE-bench Pro,core_feat,8,393,B10;B7;B9,1.0
+196,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,1.0
+197,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0.8
+198,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,0.8
+199,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,1.0
+200,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,1.0
+201,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,1.0
+202,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,1.0
+203,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0699,navidrome/navidrome,SWE-bench Pro,core_feat,4,32,B11,1.0
+204,0101,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,45,B12;B4;B5;B9,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,1.0
+205,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0.5
+206,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,1.0
+207,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,1.0
+208,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0526,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,75,B6,1.0
+209,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0619,gravitational/teleport,SWE-bench Pro,core_feat,1,70,B11;B6,0.8
+210,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,0.8
+211,0102,element-hq/element-web,SWE-bench Pro,core_feat,1,60,B1;B11;B5;B8,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,1.0
+212,0103,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,36,B1;B11;B3,0202,element-hq/element-web,SWE-bench Pro,major_bug,1,33,B12;B5;B7,1.0
+213,0103,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,36,B1;B11;B3,0358,protonmail/webclients,SWE-bench Pro,major_bug,1,33,B4;B6;B9,1.0
+214,0103,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,36,B1;B11;B3,0539,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,35,B1;B10,0.75
+215,0104,gravitational/teleport,SWE-bench Pro,critical_bug,4,63,B1;B12;B5;B6,0391,flipt-io/flipt,SWE-bench Pro,critical_bug,4,69,B10;B4;B6,0.8333
+216,0105,ansible/ansible,SWE-bench Pro,data_bug,2,52,B1;B11;B6,0360,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,58,B3,1.0
+217,0105,ansible/ansible,SWE-bench Pro,data_bug,2,52,B1;B11;B6,0363,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,51,B1,0.6667
+218,0105,ansible/ansible,SWE-bench Pro,data_bug,2,52,B1;B11;B6,0428,future-architect/vuls,SWE-bench Pro,data_bug,2,48,B3;B6,0.75
+219,0105,ansible/ansible,SWE-bench Pro,data_bug,2,52,B1;B11;B6,0705,future-architect/vuls,SWE-bench Pro,data_bug,2,70,B2;B6,0.75
+220,0107,gravitational/teleport,SWE-bench Pro,compatibility_bug,1,24,B1;B11,0373,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,1,32,B11;B6,0.6667
+221,0109,NodeBB/NodeBB,SWE-bench Pro,refactoring_enh,1,51,B1;B12;B4;B5;B8,0160,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,1,49,B1;B11,0.8333
+222,0109,NodeBB/NodeBB,SWE-bench Pro,refactoring_enh,1,51,B1;B12;B4;B5;B8,0706,gravitational/teleport,SWE-bench Pro,refactoring_enh,1,42,B6;B8,0.8333
+223,0112,navidrome/navidrome,SWE-bench Pro,code_quality_enh,3,89,B1;B4;B5,0224,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,75,B11;B6,1.0
+224,0112,navidrome/navidrome,SWE-bench Pro,code_quality_enh,3,89,B1;B4;B5,0311,protonmail/webclients,SWE-bench Pro,code_quality_enh,3,103,B1;B11;B2;B6,0.8333
+225,0112,navidrome/navidrome,SWE-bench Pro,code_quality_enh,3,89,B1;B4;B5,0500,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,79,B11,1.0
+226,0112,navidrome/navidrome,SWE-bench Pro,code_quality_enh,3,89,B1;B4;B5,0704,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,72,B6,1.0
+227,0117,gravitational/teleport,SWE-bench Pro,major_bug,1,56,B11;B2;B5,0219,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,53,B3;B6,1.0
+228,0117,gravitational/teleport,SWE-bench Pro,major_bug,1,56,B11;B2;B5,0325,gravitational/teleport,SWE-bench Pro,major_bug,1,59,B1;B3;B9,1.0
+229,0118,gravitational/teleport,SWE-bench Pro,core_feat,6,139,B11;B12;B8,0357,flipt-io/flipt,SWE-bench Pro,core_feat,6,150,B11;B3,0.75
+230,0118,gravitational/teleport,SWE-bench Pro,core_feat,6,139,B11;B12;B8,0384,ansible/ansible,SWE-bench Pro,core_feat,6,102,B3;B6,1.0
+231,0118,gravitational/teleport,SWE-bench Pro,core_feat,6,139,B11;B12;B8,0552,flipt-io/flipt,SWE-bench Pro,core_feat,6,108,B1;B12,0.75
+232,0119,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,3,88,B1;B11,0137,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,3,63,B11;B8;B9,0.75
+233,0120,ansible/ansible,SWE-bench Pro,compatibility_bug,3,32,B1;B11;B6,0601,protonmail/webclients,SWE-bench Pro,compatibility_bug,3,32,B6,0.6667
+234,0121,ansible/ansible,SWE-bench Pro,core_feat,1,200,B1;B11;B5,0263,ansible/ansible,SWE-bench Pro,core_feat,1,148,B5;B6,0.75
+235,0121,ansible/ansible,SWE-bench Pro,core_feat,1,200,B1;B11;B5,0297,gravitational/teleport,SWE-bench Pro,core_feat,1,185,B1;B12;B6,0.8
+236,0121,ansible/ansible,SWE-bench Pro,core_feat,1,200,B1;B11;B5,0377,future-architect/vuls,SWE-bench Pro,core_feat,1,277,B3,1.0
+237,0121,ansible/ansible,SWE-bench Pro,core_feat,1,200,B1;B11;B5,0471,gravitational/teleport,SWE-bench Pro,core_feat,1,280,B7;B9,1.0
+238,0121,ansible/ansible,SWE-bench Pro,core_feat,1,200,B1;B11;B5,0617,ansible/ansible,SWE-bench Pro,core_feat,1,270,B1;B11;B2,0.5
+239,0121,ansible/ansible,SWE-bench Pro,core_feat,1,200,B1;B11;B5,0674,ansible/ansible,SWE-bench Pro,core_feat,1,215,B10;B5;B6,0.8
+240,0124,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,2,43,B11;B6;B9,0204,element-hq/element-web,SWE-bench Pro,refactoring_enh,2,40,B12;B6,0.75
+241,0124,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,2,43,B11;B6;B9,0370,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,2,45,B1;B6;B9,0.5
+242,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0315,flipt-io/flipt,SWE-bench Pro,major_bug,2,61,B11;B3,0.6667
+243,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0330,ansible/ansible,SWE-bench Pro,major_bug,2,59,B1;B5;B6,0.75
+244,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,0.5
+245,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0443,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,61,B2;B3;B6,0.75
+246,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0445,ansible/ansible,SWE-bench Pro,major_bug,2,88,B1;B11,0.6667
+247,0125,ansible/ansible,SWE-bench Pro,major_bug,2,81,B11;B6,0521,gravitational/teleport,SWE-bench Pro,major_bug,2,101,B6;B8,0.6667
+248,0126,gravitational/teleport,SWE-bench Pro,major_bug,5,68,B3;B4;B5;B6,0150,navidrome/navidrome,SWE-bench Pro,major_bug,5,48,B5;B7,0.8
+249,0126,gravitational/teleport,SWE-bench Pro,major_bug,5,68,B3;B4;B5;B6,0375,NodeBB/NodeBB,SWE-bench Pro,major_bug,5,84,B10;B3;B6;B8,0.6667
+250,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,1.0
+251,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0.3333
+252,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,0.5
+253,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,0.6667
+254,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,0.6667
+255,0127,flipt-io/flipt,SWE-bench Pro,core_feat,4,62,B11;B6,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.5
+256,0129,protonmail/webclients,SWE-bench Pro,ui_ux_feat,4,56,B12;B6;B8,0586,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,4,55,B1;B12,0.75
+257,0129,protonmail/webclients,SWE-bench Pro,ui_ux_feat,4,56,B12;B6;B8,0587,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,4,76,B1;B5,1.0
+258,0130,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,4,95,B11;B12;B3;B6,0587,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,4,76,B1;B5,1.0
+259,0132,future-architect/vuls,SWE-bench Pro,major_bug,4,104,B12;B2,0222,ansible/ansible,SWE-bench Pro,major_bug,4,108,B11;B6;B8;B9,1.0
+260,0132,future-architect/vuls,SWE-bench Pro,major_bug,4,104,B12;B2,0367,future-architect/vuls,SWE-bench Pro,major_bug,4,76,B12;B3,0.6667
+261,0134,ansible/ansible,SWE-bench Pro,edge_case_bug,3,51,B1;B11;B12,0655,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,3,63,B11;B6,0.75
+262,0136,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,54,B1;B3;B6,0275,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,41,B11;B3,0.75
+263,0136,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,54,B1;B3;B6,0343,ansible/ansible,SWE-bench Pro,core_feat,2,61,B5;B6,0.75
+264,0136,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,54,B1;B3;B6,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,0.75
+265,0136,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,54,B1;B3;B6,0626,future-architect/vuls,SWE-bench Pro,core_feat,2,73,B4,1.0
+266,0136,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,54,B1;B3;B6,0694,element-hq/element-web,SWE-bench Pro,core_feat,2,61,B3;B4;B6,0.5
+267,0137,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,3,63,B11;B8;B9,0721,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,3,52,B11,0.6667
+268,0138,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,95,B12;B2;B4;B5,0397,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,76,B1;B3,1.0
+269,0138,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,95,B12;B2;B4;B5,0475,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,104,B3,1.0
+270,0138,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,95,B12;B2;B4;B5,0536,ansible/ansible,SWE-bench Pro,code_quality_enh,2,116,B1;B11;B6,1.0
+271,0138,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,95,B12;B2;B4;B5,0570,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,101,B12;B5;B6,0.6
+272,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0244,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B1;B12;B2,0.8
+273,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,1.0
+274,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0418,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B11;B3,0.75
+275,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,1.0
+276,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0602,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,59,B11;B6,1.0
+277,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0668,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,60,B11;B6,1.0
+278,0139,element-hq/element-web,SWE-bench Pro,code_quality_enh,1,45,B12;B3;B4,0693,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,1.0
+279,0140,future-architect/vuls,SWE-bench Pro,core_feat,9,243,B6,0624,element-hq/element-web,SWE-bench Pro,core_feat,9,340,B12;B5,1.0
+280,0143,internetarchive/openlibrary,SWE-bench Pro,data_bug,1,29,B3;B5,0233,internetarchive/openlibrary,SWE-bench Pro,data_bug,1,27,B1;B11;B6,1.0
+281,0144,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,58,B1;B11;B12,0189,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,74,B11;B12;B6,0.5
+282,0144,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,58,B1;B11;B12,0279,gravitational/teleport,SWE-bench Pro,edge_case_bug,1,41,B1;B3,0.75
+283,0144,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,58,B1;B11;B12,0421,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,50,B1,0.6667
+284,0149,flipt-io/flipt,SWE-bench Pro,major_bug,9,269,B5;B7;B9,0176,tutao/tutanota,SWE-bench Pro,major_bug,9,204,B3;B6;B8,1.0
+285,0149,flipt-io/flipt,SWE-bench Pro,major_bug,9,269,B5;B7;B9,0406,flipt-io/flipt,SWE-bench Pro,major_bug,9,360,B4;B6;B7;B8,0.8333
+286,0149,flipt-io/flipt,SWE-bench Pro,major_bug,9,269,B5;B7;B9,0647,flipt-io/flipt,SWE-bench Pro,major_bug,9,350,B3;B6,1.0
+287,0151,future-architect/vuls,SWE-bench Pro,major_bug,6,181,B11;B6,0259,flipt-io/flipt,SWE-bench Pro,major_bug,6,239,B11,0.5
+288,0151,future-architect/vuls,SWE-bench Pro,major_bug,6,181,B11;B6,0590,future-architect/vuls,SWE-bench Pro,major_bug,6,129,B11;B4,0.6667
+289,0152,future-architect/vuls,SWE-bench Pro,major_bug,3,145,B1;B3;B6,0157,flipt-io/flipt,SWE-bench Pro,major_bug,3,119,B5,1.0
+290,0152,future-architect/vuls,SWE-bench Pro,major_bug,3,145,B1;B3;B6,0231,internetarchive/openlibrary,SWE-bench Pro,major_bug,3,170,B1;B6,0.3333
+291,0152,future-architect/vuls,SWE-bench Pro,major_bug,3,145,B1;B3;B6,0258,tutao/tutanota,SWE-bench Pro,major_bug,3,140,B11;B6,0.75
+292,0153,navidrome/navidrome,SWE-bench Pro,edge_case_bug,3,77,B10;B12;B6,0655,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,3,63,B11;B6,0.75
+293,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,1.0
+294,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,1.0
+295,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,1.0
+296,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,1.0
+297,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,1.0
+298,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,1.0
+299,0154,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,51,B1;B12,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,1.0
+300,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,1.0
+301,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0.5
+302,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,1.0
+303,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,1.0
+304,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,1.0
+305,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0619,gravitational/teleport,SWE-bench Pro,core_feat,1,70,B11;B6,0.6667
+306,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,0.6667
+307,0155,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,49,B1;B11,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,1.0
+308,0157,flipt-io/flipt,SWE-bench Pro,major_bug,3,119,B5,0231,internetarchive/openlibrary,SWE-bench Pro,major_bug,3,170,B1;B6,1.0
+309,0157,flipt-io/flipt,SWE-bench Pro,major_bug,3,119,B5,0235,ansible/ansible,SWE-bench Pro,major_bug,3,90,B1;B10;B12,1.0
+310,0157,flipt-io/flipt,SWE-bench Pro,major_bug,3,119,B5,0258,tutao/tutanota,SWE-bench Pro,major_bug,3,140,B11;B6,1.0
+311,0160,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,1,49,B1;B11,0706,gravitational/teleport,SWE-bench Pro,refactoring_enh,1,42,B6;B8,1.0
+312,0162,navidrome/navidrome,SWE-bench Pro,core_feat,10,180,B1;B11;B2,0201,navidrome/navidrome,SWE-bench Pro,core_feat,10,149,B2;B3;B6,0.8
+313,0162,navidrome/navidrome,SWE-bench Pro,core_feat,10,180,B1;B11;B2,0218,future-architect/vuls,SWE-bench Pro,core_feat,10,209,B12;B2;B4,0.8
+314,0162,navidrome/navidrome,SWE-bench Pro,core_feat,10,180,B1;B11;B2,0671,flipt-io/flipt,SWE-bench Pro,core_feat,10,206,B8,1.0
+315,0163,NodeBB/NodeBB,SWE-bench Pro,performance_enh,4,79,B1;B11;B2;B9,0664,flipt-io/flipt,SWE-bench Pro,performance_enh,4,63,B11;B3;B9,0.6
+316,0164,ansible/ansible,SWE-bench Pro,core_feat,3,46,B1;B11;B6,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,1.0
+317,0164,ansible/ansible,SWE-bench Pro,core_feat,3,46,B1;B11;B6,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,0.75
+318,0164,ansible/ansible,SWE-bench Pro,core_feat,3,46,B1;B11;B6,0437,gravitational/teleport,SWE-bench Pro,core_feat,3,46,B1;B6,0.3333
+319,0164,ansible/ansible,SWE-bench Pro,core_feat,3,46,B1;B11;B6,0523,protonmail/webclients,SWE-bench Pro,core_feat,3,41,B11,0.6667
+320,0164,ansible/ansible,SWE-bench Pro,core_feat,3,46,B1;B11;B6,0540,navidrome/navidrome,SWE-bench Pro,core_feat,3,59,B1;B10,0.75
+321,0164,ansible/ansible,SWE-bench Pro,core_feat,3,46,B1;B11;B6,0682,gravitational/teleport,SWE-bench Pro,core_feat,3,62,B11;B6,0.3333
+322,0165,ansible/ansible,SWE-bench Pro,major_bug,4,71,B1;B11;B6;B8,0347,flipt-io/flipt,SWE-bench Pro,major_bug,4,53,B1;B11;B6,0.25
+323,0165,ansible/ansible,SWE-bench Pro,major_bug,4,71,B1;B11;B6;B8,0367,future-architect/vuls,SWE-bench Pro,major_bug,4,76,B12;B3,1.0
+324,0165,ansible/ansible,SWE-bench Pro,major_bug,4,71,B1;B11;B6;B8,0595,flipt-io/flipt,SWE-bench Pro,major_bug,4,70,B1;B6,0.5
+325,0165,ansible/ansible,SWE-bench Pro,major_bug,4,71,B1;B11;B6;B8,0600,gravitational/teleport,SWE-bench Pro,major_bug,4,63,B11;B9,0.8
+326,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,1.0
+327,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,1.0
+328,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,1.0
+329,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,1.0
+330,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,1.0
+331,0166,element-hq/element-web,SWE-bench Pro,core_feat,1,35,B12;B3;B5,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,1.0
+332,0169,gravitational/teleport,SWE-bench Pro,core_feat,11,572,B11;B5;B8,0591,future-architect/vuls,SWE-bench Pro,core_feat,11,449,B1;B11;B3;B8,0.6
+333,0169,gravitational/teleport,SWE-bench Pro,core_feat,11,572,B11;B5;B8,0661,internetarchive/openlibrary,SWE-bench Pro,core_feat,11,703,B11;B9,0.75
+334,0171,future-architect/vuls,SWE-bench Pro,refactoring_enh,6,207,B1,0306,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,244,B3,1.0
+335,0171,future-architect/vuls,SWE-bench Pro,refactoring_enh,6,207,B1,0415,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,239,B3;B6,1.0
+336,0171,future-architect/vuls,SWE-bench Pro,refactoring_enh,6,207,B1,0606,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,6,244,B12;B6,1.0
+337,0172,protonmail/webclients,SWE-bench Pro,integration_bug,4,32,B1;B11;B6,0412,NodeBB/NodeBB,SWE-bench Pro,integration_bug,4,36,B12;B3;B4,1.0
+338,0175,future-architect/vuls,SWE-bench Pro,compatibility_bug,4,145,B1;B11;B4,0456,future-architect/vuls,SWE-bench Pro,compatibility_bug,4,146,B2;B3,1.0
+339,0175,future-architect/vuls,SWE-bench Pro,compatibility_bug,4,145,B1;B11;B4,0588,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0.75
+340,0175,future-architect/vuls,SWE-bench Pro,compatibility_bug,4,145,B1;B11;B4,0599,protonmail/webclients,SWE-bench Pro,compatibility_bug,4,138,B10;B8,1.0
+341,0175,future-architect/vuls,SWE-bench Pro,compatibility_bug,4,145,B1;B11;B4,0640,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0.75
+342,0180,future-architect/vuls,SWE-bench Pro,data_bug,4,56,B11;B6,0717,protonmail/webclients,SWE-bench Pro,data_bug,4,77,B3;B5,1.0
+343,0181,protonmail/webclients,SWE-bench Pro,code_quality_enh,1,86,B12,0477,future-architect/vuls,SWE-bench Pro,code_quality_enh,1,113,B6,1.0
+344,0181,protonmail/webclients,SWE-bench Pro,code_quality_enh,1,86,B12,0493,tutao/tutanota,SWE-bench Pro,code_quality_enh,1,121,B3;B7,1.0
+345,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,0.25
+346,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,0.5
+347,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,0.8
+348,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,0.5
+349,0185,ansible/ansible,SWE-bench Pro,core_feat,1,38,B1;B11;B6;B9,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,0.8
+350,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0.75
+351,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,0228,flipt-io/flipt,SWE-bench Pro,core_feat,4,30,B8,1.0
+352,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,0.6667
+353,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,0699,navidrome/navidrome,SWE-bench Pro,core_feat,4,32,B11,1.0
+354,0186,protonmail/webclients,SWE-bench Pro,core_feat,4,39,B4;B6,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.5
+355,0190,flipt-io/flipt,SWE-bench Pro,core_feat,5,1482,B11;B12,0424,flipt-io/flipt,SWE-bench Pro,core_feat,5,1325,B10;B6,1.0
+356,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,0315,flipt-io/flipt,SWE-bench Pro,major_bug,2,61,B11;B3,1.0
+357,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,0330,ansible/ansible,SWE-bench Pro,major_bug,2,59,B1;B5;B6,1.0
+358,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,1.0
+359,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,0443,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,61,B2;B3;B6,1.0
+360,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,0.8
+361,0191,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,49,B12;B8;B9,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,1.0
+362,0192,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11;B12;B6,0416,flipt-io/flipt,SWE-bench Pro,core_feat,7,160,B1;B2,1.0
+363,0192,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11;B12;B6,0487,NodeBB/NodeBB,SWE-bench Pro,core_feat,7,106,B2;B9,1.0
+364,0192,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11;B12;B6,0666,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11,0.6667
+365,0194,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,29,B12;B4;B8,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,1.0
+366,0194,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,29,B12;B4;B8,0261,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,28,B1;B12,0.75
+367,0194,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,29,B12;B4;B8,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,1.0
+368,0194,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,29,B12;B4;B8,0523,protonmail/webclients,SWE-bench Pro,core_feat,3,41,B11,1.0
+369,0199,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,95,B1;B6,0255,future-architect/vuls,SWE-bench Pro,refactoring_enh,4,76,B2;B3;B6,0.75
+370,0199,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,95,B1;B6,0348,ansible/ansible,SWE-bench Pro,refactoring_enh,4,78,B6,0.5
+371,0199,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,95,B1;B6,0527,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,90,B3;B6,0.6667
+372,0200,ansible/ansible,SWE-bench Pro,minor_bug,6,89,B3;B4;B9,0690,tutao/tutanota,SWE-bench Pro,minor_bug,6,88,B6,1.0
+373,0201,navidrome/navidrome,SWE-bench Pro,core_feat,10,149,B2;B3;B6,0218,future-architect/vuls,SWE-bench Pro,core_feat,10,209,B12;B2;B4,0.8
+374,0201,navidrome/navidrome,SWE-bench Pro,core_feat,10,149,B2;B3;B6,0671,flipt-io/flipt,SWE-bench Pro,core_feat,10,206,B8,1.0
+375,0202,element-hq/element-web,SWE-bench Pro,major_bug,1,33,B12;B5;B7,0358,protonmail/webclients,SWE-bench Pro,major_bug,1,33,B4;B6;B9,1.0
+376,0202,element-hq/element-web,SWE-bench Pro,major_bug,1,33,B12;B5;B7,0539,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,35,B1;B10,1.0
+377,0203,NodeBB/NodeBB,SWE-bench Pro,core_feat,8,42,B1;B11;B3,0273,flipt-io/flipt,SWE-bench Pro,core_feat,8,50,B11,0.6667
+378,0204,element-hq/element-web,SWE-bench Pro,refactoring_enh,2,40,B12;B6,0370,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,2,45,B1;B6;B9,0.75
+379,0204,element-hq/element-web,SWE-bench Pro,refactoring_enh,2,40,B12;B6,0635,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,2,28,B1;B6,0.6667
+380,0205,ansible/ansible,SWE-bench Pro,compatibility_bug,1,44,B1;B11;B3,0373,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,1,32,B11;B6,0.75
+381,0205,ansible/ansible,SWE-bench Pro,compatibility_bug,1,44,B1;B11;B3,0545,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,1,38,B1;B2;B6,0.8
+382,0205,ansible/ansible,SWE-bench Pro,compatibility_bug,1,44,B1;B11;B3,0622,future-architect/vuls,SWE-bench Pro,compatibility_bug,1,55,B1;B11,0.3333
+383,0207,internetarchive/openlibrary,SWE-bench Pro,edge_case_bug,2,46,B11;B6,0514,future-architect/vuls,SWE-bench Pro,edge_case_bug,2,53,B3,1.0
+384,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,0.6667
+385,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,0.3333
+386,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,0.3333
+387,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,0.75
+388,0208,future-architect/vuls,SWE-bench Pro,core_feat,4,52,B11;B3;B6,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.6667
+389,0211,gravitational/teleport,SWE-bench Pro,core_feat,2,80,B11;B12,0334,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,104,B1;B11;B2,0.75
+390,0211,gravitational/teleport,SWE-bench Pro,core_feat,2,80,B11;B12,0343,ansible/ansible,SWE-bench Pro,core_feat,2,61,B5;B6,1.0
+391,0211,gravitational/teleport,SWE-bench Pro,core_feat,2,80,B11;B12,0531,navidrome/navidrome,SWE-bench Pro,core_feat,2,94,B1,1.0
+392,0211,gravitational/teleport,SWE-bench Pro,core_feat,2,80,B11;B12,0626,future-architect/vuls,SWE-bench Pro,core_feat,2,73,B4,1.0
+393,0211,gravitational/teleport,SWE-bench Pro,core_feat,2,80,B11;B12,0694,element-hq/element-web,SWE-bench Pro,core_feat,2,61,B3;B4;B6,1.0
+394,0213,ansible/ansible,SWE-bench Pro,minor_bug,3,61,B1;B6,0229,flipt-io/flipt,SWE-bench Pro,minor_bug,3,47,B11,1.0
+395,0213,ansible/ansible,SWE-bench Pro,minor_bug,3,61,B1;B6,0464,ansible/ansible,SWE-bench Pro,minor_bug,3,70,B3,1.0
+396,0215,future-architect/vuls,SWE-bench Pro,core_feat,5,242,B11;B3;B4,0534,future-architect/vuls,SWE-bench Pro,core_feat,5,209,B4,0.6667
+397,0218,future-architect/vuls,SWE-bench Pro,core_feat,10,209,B12;B2;B4,0671,flipt-io/flipt,SWE-bench Pro,core_feat,10,206,B8,1.0
+398,0219,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,53,B3;B6,0325,gravitational/teleport,SWE-bench Pro,major_bug,1,59,B1;B3;B9,0.75
+399,0220,protonmail/webclients,SWE-bench Pro,minor_bug,1,33,B11;B6,0393,future-architect/vuls,SWE-bench Pro,minor_bug,1,38,B3;B6,0.6667
+400,0220,protonmail/webclients,SWE-bench Pro,minor_bug,1,33,B11;B6,0394,element-hq/element-web,SWE-bench Pro,minor_bug,1,40,B1,1.0
+401,0220,protonmail/webclients,SWE-bench Pro,minor_bug,1,33,B11;B6,0556,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,38,B11,0.5
+402,0220,protonmail/webclients,SWE-bench Pro,minor_bug,1,33,B11;B6,0676,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,29,B6,0.5
+403,0221,gravitational/teleport,SWE-bench Pro,refactoring_enh,4,154,B12;B6,0362,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,148,B1;B2;B3,1.0
+404,0222,ansible/ansible,SWE-bench Pro,major_bug,4,108,B11;B6;B8;B9,0367,future-architect/vuls,SWE-bench Pro,major_bug,4,76,B12;B3,1.0
+405,0224,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,75,B11;B6,0311,protonmail/webclients,SWE-bench Pro,code_quality_enh,3,103,B1;B11;B2;B6,0.5
+406,0224,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,75,B11;B6,0500,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,79,B11,0.5
+407,0224,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,75,B11;B6,0704,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,72,B6,0.5
+408,0225,internetarchive/openlibrary,SWE-bench Pro,integration_feat,9,121,B11;B3;B6,0472,ansible/ansible,SWE-bench Pro,integration_feat,9,110,B1,1.0
+409,0226,tutao/tutanota,SWE-bench Pro,security_bug,2,24,B6;B8,0239,NodeBB/NodeBB,SWE-bench Pro,security_bug,2,25,B6;B8,0.0
+410,0227,ansible/ansible,SWE-bench Pro,minor_bug,1,122,B1;B6,0563,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,123,B3,1.0
+411,0228,flipt-io/flipt,SWE-bench Pro,core_feat,4,30,B8,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,1.0
+412,0228,flipt-io/flipt,SWE-bench Pro,core_feat,4,30,B8,0699,navidrome/navidrome,SWE-bench Pro,core_feat,4,32,B11,1.0
+413,0229,flipt-io/flipt,SWE-bench Pro,minor_bug,3,47,B11,0234,ansible/ansible,SWE-bench Pro,minor_bug,3,35,B1;B11;B12,0.6667
+414,0230,ansible/ansible,SWE-bench Pro,core_feat,3,182,B1;B12,0426,element-hq/element-web,SWE-bench Pro,core_feat,3,212,B12;B5,0.6667
+415,0231,internetarchive/openlibrary,SWE-bench Pro,major_bug,3,170,B1;B6,0258,tutao/tutanota,SWE-bench Pro,major_bug,3,140,B11;B6,0.6667
+416,0231,internetarchive/openlibrary,SWE-bench Pro,major_bug,3,170,B1;B6,0398,flipt-io/flipt,SWE-bench Pro,major_bug,3,221,B1;B12,0.6667
+417,0235,ansible/ansible,SWE-bench Pro,major_bug,3,90,B1;B10;B12,0295,gravitational/teleport,SWE-bench Pro,major_bug,3,79,B1;B10;B12;B5,0.25
+418,0235,ansible/ansible,SWE-bench Pro,major_bug,3,90,B1;B10;B12,0580,gravitational/teleport,SWE-bench Pro,major_bug,3,79,B1;B6,0.75
+419,0236,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,30,B11,0321,tutao/tutanota,SWE-bench Pro,code_quality_enh,3,28,B6,1.0
+420,0236,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,30,B11,0408,ansible/ansible,SWE-bench Pro,code_quality_enh,3,28,B6;B8,1.0
+421,0236,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,30,B11,0519,flipt-io/flipt,SWE-bench Pro,code_quality_enh,3,36,B12;B6,1.0
+422,0236,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,30,B11,0724,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,42,B1;B6,1.0
+423,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,0261,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,28,B1;B12,1.0
+424,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,1.0
+425,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,0437,gravitational/teleport,SWE-bench Pro,core_feat,3,46,B1;B6,1.0
+426,0243,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,37,B2;B3;B7;B9,0523,protonmail/webclients,SWE-bench Pro,core_feat,3,41,B11,1.0
+427,0244,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B1;B12;B2,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,1.0
+428,0244,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B1;B12;B2,0418,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B11;B3,1.0
+429,0244,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B1;B12;B2,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,0.75
+430,0244,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B1;B12;B2,0693,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0.75
+431,0246,navidrome/navidrome,SWE-bench Pro,core_feat,6,87,B11;B3;B6,0268,ansible/ansible,SWE-bench Pro,core_feat,6,83,B1;B11;B3,0.5
+432,0246,navidrome/navidrome,SWE-bench Pro,core_feat,6,87,B11;B3;B6,0384,ansible/ansible,SWE-bench Pro,core_feat,6,102,B3;B6,0.3333
+433,0246,navidrome/navidrome,SWE-bench Pro,core_feat,6,87,B11;B3;B6,0552,flipt-io/flipt,SWE-bench Pro,core_feat,6,108,B1;B12,1.0
+434,0246,navidrome/navidrome,SWE-bench Pro,core_feat,6,87,B11;B3;B6,0652,navidrome/navidrome,SWE-bench Pro,core_feat,6,67,B10;B9,1.0
+435,0248,future-architect/vuls,SWE-bench Pro,core_feat,9,473,B11;B4;B6,0512,ansible/ansible,SWE-bench Pro,core_feat,9,492,B10;B5;B6,0.8
+436,0248,future-architect/vuls,SWE-bench Pro,core_feat,9,473,B11;B4;B6,0624,element-hq/element-web,SWE-bench Pro,core_feat,9,340,B12;B5,1.0
+437,0250,gravitational/teleport,SWE-bench Pro,major_bug,7,466,B11;B12;B5;B6;B8,0720,gravitational/teleport,SWE-bench Pro,major_bug,7,414,B1;B2;B5,0.8571
+438,0251,element-hq/element-web,SWE-bench Pro,ui_ux_feat,10,277,B1;B12;B5,0288,protonmail/webclients,SWE-bench Pro,ui_ux_feat,10,207,B3,1.0
+439,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,1.0
+440,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,0526,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,75,B6,1.0
+441,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,0619,gravitational/teleport,SWE-bench Pro,core_feat,1,70,B11;B6,1.0
+442,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,1.0
+443,0253,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,64,B12;B4,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,1.0
+444,0255,future-architect/vuls,SWE-bench Pro,refactoring_enh,4,76,B2;B3;B6,0348,ansible/ansible,SWE-bench Pro,refactoring_enh,4,78,B6,0.6667
+445,0255,future-architect/vuls,SWE-bench Pro,refactoring_enh,4,76,B2;B3;B6,0527,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,90,B3;B6,0.3333
+446,0256,ansible/ansible,SWE-bench Pro,core_feat,4,310,B11;B8,0276,flipt-io/flipt,SWE-bench Pro,core_feat,4,223,B3;B6,1.0
+447,0256,ansible/ansible,SWE-bench Pro,core_feat,4,310,B11;B8,0596,ansible/ansible,SWE-bench Pro,core_feat,4,254,B4;B6;B7;B8,0.8
+448,0261,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,28,B1;B12,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,0.6667
+449,0262,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,7,54,B11,0530,element-hq/element-web,SWE-bench Pro,ui_ux_feat,7,66,B12,1.0
+450,0263,ansible/ansible,SWE-bench Pro,core_feat,1,148,B5;B6,0297,gravitational/teleport,SWE-bench Pro,core_feat,1,185,B1;B12;B6,0.75
+451,0267,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,212,B1;B3,0291,gravitational/teleport,SWE-bench Pro,code_quality_enh,2,167,B3;B8,0.6667
+452,0268,ansible/ansible,SWE-bench Pro,core_feat,6,83,B1;B11;B3,0384,ansible/ansible,SWE-bench Pro,core_feat,6,102,B3;B6,0.75
+453,0268,ansible/ansible,SWE-bench Pro,core_feat,6,83,B1;B11;B3,0552,flipt-io/flipt,SWE-bench Pro,core_feat,6,108,B1;B12,0.75
+454,0268,ansible/ansible,SWE-bench Pro,core_feat,6,83,B1;B11;B3,0652,navidrome/navidrome,SWE-bench Pro,core_feat,6,67,B10;B9,1.0
+455,0275,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,41,B11;B3,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,0.6667
+456,0275,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,41,B11;B3,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.75
+457,0276,flipt-io/flipt,SWE-bench Pro,core_feat,4,223,B3;B6,0484,navidrome/navidrome,SWE-bench Pro,core_feat,4,214,B1;B8,1.0
+458,0276,flipt-io/flipt,SWE-bench Pro,core_feat,4,223,B3;B6,0596,ansible/ansible,SWE-bench Pro,core_feat,4,254,B4;B6;B7;B8,0.8
+459,0278,ansible/ansible,SWE-bench Pro,core_feat,2,22,B11,0433,flipt-io/flipt,SWE-bench Pro,core_feat,2,28,B1;B6,1.0
+460,0278,ansible/ansible,SWE-bench Pro,core_feat,2,22,B11,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.6667
+461,0279,gravitational/teleport,SWE-bench Pro,edge_case_bug,1,41,B1;B3,0421,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,50,B1,0.5
+462,0279,gravitational/teleport,SWE-bench Pro,edge_case_bug,1,41,B1;B3,0576,internetarchive/openlibrary,SWE-bench Pro,edge_case_bug,1,32,B1;B6,0.6667
+463,0279,gravitational/teleport,SWE-bench Pro,edge_case_bug,1,41,B1;B3,0665,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,40,B11,1.0
+464,0279,gravitational/teleport,SWE-bench Pro,edge_case_bug,1,41,B1;B3,0691,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,31,B1;B10,0.6667
+465,0283,protonmail/webclients,SWE-bench Pro,minor_bug,5,62,B3;B4;B6,0513,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,5,48,B11;B6,0.75
+466,0284,navidrome/navidrome,SWE-bench Pro,core_feat,5,112,B3;B9,0625,future-architect/vuls,SWE-bench Pro,core_feat,5,144,B1;B11,1.0
+467,0285,internetarchive/openlibrary,SWE-bench Pro,api_feat,2,49,B1;B6,0318,NodeBB/NodeBB,SWE-bench Pro,api_feat,2,35,B1;B11,0.6667
+468,0289,ansible/ansible,SWE-bench Pro,core_feat,1,553,B11;B3;B5,0331,gravitational/teleport,SWE-bench Pro,core_feat,1,423,B4;B5;B7;B9,0.8333
+469,0289,ansible/ansible,SWE-bench Pro,core_feat,1,553,B11;B3;B5,0340,ansible/ansible,SWE-bench Pro,core_feat,1,582,B11;B3;B6,0.5
+470,0289,ansible/ansible,SWE-bench Pro,core_feat,1,553,B11;B3;B5,0479,gravitational/teleport,SWE-bench Pro,core_feat,1,455,B4;B5;B7;B9,0.8333
+471,0293,ansible/ansible,SWE-bench Pro,code_quality_enh,7,201,B12,0543,navidrome/navidrome,SWE-bench Pro,code_quality_enh,7,181,B7;B9,1.0
+472,0295,gravitational/teleport,SWE-bench Pro,major_bug,3,79,B1;B10;B12;B5,0580,gravitational/teleport,SWE-bench Pro,major_bug,3,79,B1;B6,0.8
+473,0295,gravitational/teleport,SWE-bench Pro,major_bug,3,79,B1;B10;B12;B5,0728,flipt-io/flipt,SWE-bench Pro,major_bug,3,58,B6,1.0
+474,0297,gravitational/teleport,SWE-bench Pro,core_feat,1,185,B1;B12;B6,0674,ansible/ansible,SWE-bench Pro,core_feat,1,215,B10;B5;B6,0.8
+475,0299,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,30,B12;B4,0554,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,37,B12;B6,0.6667
+476,0299,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,30,B12;B4,0638,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,33,B4,0.5
+477,0302,element-hq/element-web,SWE-bench Pro,core_feat,6,259,B12;B2;B5,0658,future-architect/vuls,SWE-bench Pro,core_feat,6,267,B2;B3,0.75
+478,0302,element-hq/element-web,SWE-bench Pro,core_feat,6,259,B12;B2;B5,0687,internetarchive/openlibrary,SWE-bench Pro,core_feat,6,328,B11;B3;B8,1.0
+479,0303,navidrome/navidrome,SWE-bench Pro,performance_enh,2,51,B4;B9,0376,qutebrowser/qutebrowser,SWE-bench Pro,performance_enh,2,43,B12;B5,1.0
+480,0303,navidrome/navidrome,SWE-bench Pro,performance_enh,2,51,B4;B9,0629,qutebrowser/qutebrowser,SWE-bench Pro,performance_enh,2,43,B1;B4,0.6667
+481,0306,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,244,B3,0415,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,239,B3;B6,0.5
+482,0306,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,244,B3,0606,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,6,244,B12;B6,1.0
+483,0307,element-hq/element-web,SWE-bench Pro,core_feat,3,93,B1;B12;B3,0405,flipt-io/flipt,SWE-bench Pro,core_feat,3,108,B1,0.6667
+484,0307,element-hq/element-web,SWE-bench Pro,core_feat,3,93,B1;B12;B3,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0.6
+485,0307,element-hq/element-web,SWE-bench Pro,core_feat,3,93,B1;B12;B3,0680,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,87,B11,1.0
+486,0311,protonmail/webclients,SWE-bench Pro,code_quality_enh,3,103,B1;B11;B2;B6,0500,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,79,B11,0.75
+487,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,0.5
+488,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,0.5
+489,0312,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,4,59,B6,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.0
+490,0314,ansible/ansible,SWE-bench Pro,refactoring_enh,2,96,B1;B11;B8,0562,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,2,119,B1,0.6667
+491,0314,ansible/ansible,SWE-bench Pro,refactoring_enh,2,96,B1;B11;B8,0663,element-hq/element-web,SWE-bench Pro,refactoring_enh,2,82,B2;B6,1.0
+492,0315,flipt-io/flipt,SWE-bench Pro,major_bug,2,61,B11;B3,0330,ansible/ansible,SWE-bench Pro,major_bug,2,59,B1;B5;B6,1.0
+493,0315,flipt-io/flipt,SWE-bench Pro,major_bug,2,61,B11;B3,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,1.0
+494,0315,flipt-io/flipt,SWE-bench Pro,major_bug,2,61,B11;B3,0443,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,61,B2;B3;B6,0.75
+495,0315,flipt-io/flipt,SWE-bench Pro,major_bug,2,61,B11;B3,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,0.3333
+496,0319,internetarchive/openlibrary,SWE-bench Pro,integration_bug,2,100,B10;B2;B3,0466,gravitational/teleport,SWE-bench Pro,integration_bug,2,104,B11;B3,0.75
+497,0321,tutao/tutanota,SWE-bench Pro,code_quality_enh,3,28,B6,0408,ansible/ansible,SWE-bench Pro,code_quality_enh,3,28,B6;B8,0.5
+498,0321,tutao/tutanota,SWE-bench Pro,code_quality_enh,3,28,B6,0519,flipt-io/flipt,SWE-bench Pro,code_quality_enh,3,36,B12;B6,0.5
+499,0322,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,7,204,B1;B11;B6,0603,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,7,213,B11;B12;B8,0.8
+500,0322,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,7,204,B1;B11;B6,0727,navidrome/navidrome,SWE-bench Pro,refactoring_enh,7,174,B10;B11;B9,0.8
+501,0323,flipt-io/flipt,SWE-bench Pro,core_feat,8,366,B1;B11;B12,0409,flipt-io/flipt,SWE-bench Pro,core_feat,8,339,B11;B3;B9,0.8
+502,0323,flipt-io/flipt,SWE-bench Pro,core_feat,8,366,B1;B11;B12,0419,future-architect/vuls,SWE-bench Pro,core_feat,8,407,B2;B3;B6,1.0
+503,0323,flipt-io/flipt,SWE-bench Pro,core_feat,8,366,B1;B11;B12,0669,gravitational/teleport,SWE-bench Pro,core_feat,8,393,B10;B7;B9,1.0
+504,0324,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,5,77,B11,0488,element-hq/element-web,SWE-bench Pro,ui_ux_feat,5,81,B12;B6,1.0
+505,0324,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,5,77,B11,0532,navidrome/navidrome,SWE-bench Pro,ui_ux_feat,5,82,B1;B6,1.0
+506,0326,gravitational/teleport,SWE-bench Pro,minor_bug,2,38,B1;B11,0615,NodeBB/NodeBB,SWE-bench Pro,minor_bug,2,36,B3;B7,1.0
+507,0328,future-architect/vuls,SWE-bench Pro,refactoring_enh,3,443,B1;B11,0390,future-architect/vuls,SWE-bench Pro,refactoring_enh,3,348,B1;B3,0.6667
+508,0329,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,44,B1;B2,0455,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,43,B1;B6,0.6667
+509,0329,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,44,B1;B2,0630,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,52,B12;B6,1.0
+510,0329,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,44,B1;B2,0722,navidrome/navidrome,SWE-bench Pro,code_quality_enh,2,47,B4;B9,1.0
+511,0330,ansible/ansible,SWE-bench Pro,major_bug,2,59,B1;B5;B6,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,0.6667
+512,0330,ansible/ansible,SWE-bench Pro,major_bug,2,59,B1;B5;B6,0443,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,61,B2;B3;B6,0.8
+513,0330,ansible/ansible,SWE-bench Pro,major_bug,2,59,B1;B5;B6,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,1.0
+514,0331,gravitational/teleport,SWE-bench Pro,core_feat,1,423,B4;B5;B7;B9,0340,ansible/ansible,SWE-bench Pro,core_feat,1,582,B11;B3;B6,1.0
+515,0331,gravitational/teleport,SWE-bench Pro,core_feat,1,423,B4;B5;B7;B9,0479,gravitational/teleport,SWE-bench Pro,core_feat,1,455,B4;B5;B7;B9,0.0
+516,0331,gravitational/teleport,SWE-bench Pro,core_feat,1,423,B4;B5;B7;B9,0541,ansible/ansible,SWE-bench Pro,core_feat,1,328,B11;B5,0.8
+517,0333,ansible/ansible,SWE-bench Pro,compatibility_bug,3,88,B10;B11;B2;B3,0339,ansible/ansible,SWE-bench Pro,compatibility_bug,3,72,B10;B3,0.5
+518,0334,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,104,B1;B11;B2,0531,navidrome/navidrome,SWE-bench Pro,core_feat,2,94,B1,0.6667
+519,0334,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,104,B1;B11;B2,0626,future-architect/vuls,SWE-bench Pro,core_feat,2,73,B4,1.0
+520,0336,protonmail/webclients,SWE-bench Pro,data_bug,2,32,B11;B6,0631,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,35,B1,1.0
+521,0340,ansible/ansible,SWE-bench Pro,core_feat,1,582,B11;B3;B6,0479,gravitational/teleport,SWE-bench Pro,core_feat,1,455,B4;B5;B7;B9,1.0
+522,0343,ansible/ansible,SWE-bench Pro,core_feat,2,61,B5;B6,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,1.0
+523,0343,ansible/ansible,SWE-bench Pro,core_feat,2,61,B5;B6,0626,future-architect/vuls,SWE-bench Pro,core_feat,2,73,B4,1.0
+524,0343,ansible/ansible,SWE-bench Pro,core_feat,2,61,B5;B6,0694,element-hq/element-web,SWE-bench Pro,core_feat,2,61,B3;B4;B6,0.75
+525,0347,flipt-io/flipt,SWE-bench Pro,major_bug,4,53,B1;B11;B6,0595,flipt-io/flipt,SWE-bench Pro,major_bug,4,70,B1;B6,0.3333
+526,0347,flipt-io/flipt,SWE-bench Pro,major_bug,4,53,B1;B11;B6,0600,gravitational/teleport,SWE-bench Pro,major_bug,4,63,B11;B9,0.75
+527,0348,ansible/ansible,SWE-bench Pro,refactoring_enh,4,78,B6,0527,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,4,90,B3;B6,0.5
+528,0349,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,6,123,B11;B12;B2;B6,0463,element-hq/element-web,SWE-bench Pro,ui_ux_feat,6,163,B12;B3;B6,0.6
+529,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,0437,gravitational/teleport,SWE-bench Pro,core_feat,3,46,B1;B6,0.6667
+530,0350,ansible/ansible,SWE-bench Pro,core_feat,3,38,B1;B5,0523,protonmail/webclients,SWE-bench Pro,core_feat,3,41,B11,1.0
+531,0353,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,208,B10;B11,0582,ansible/ansible,SWE-bench Pro,core_feat,2,266,B1;B11;B6,0.75
+532,0353,internetarchive/openlibrary,SWE-bench Pro,core_feat,2,208,B10;B11,0623,future-architect/vuls,SWE-bench Pro,core_feat,2,174,B4;B6,1.0
+533,0354,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,53,B1;B2;B6,0393,future-architect/vuls,SWE-bench Pro,minor_bug,1,38,B3;B6,0.75
+534,0354,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,53,B1;B2;B6,0394,element-hq/element-web,SWE-bench Pro,minor_bug,1,40,B1,0.6667
+535,0354,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,53,B1;B2;B6,0556,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,38,B11,1.0
+536,0357,flipt-io/flipt,SWE-bench Pro,core_feat,6,150,B11;B3,0552,flipt-io/flipt,SWE-bench Pro,core_feat,6,108,B1;B12,1.0
+537,0358,protonmail/webclients,SWE-bench Pro,major_bug,1,33,B4;B6;B9,0539,internetarchive/openlibrary,SWE-bench Pro,major_bug,1,35,B1;B10,1.0
+538,0360,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,58,B3,0363,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,51,B1,1.0
+539,0360,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,58,B3,0428,future-architect/vuls,SWE-bench Pro,data_bug,2,48,B3;B6,0.5
+540,0360,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,58,B3,0705,future-architect/vuls,SWE-bench Pro,data_bug,2,70,B2;B6,1.0
+541,0363,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,51,B1,0428,future-architect/vuls,SWE-bench Pro,data_bug,2,48,B3;B6,1.0
+542,0363,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,51,B1,0705,future-architect/vuls,SWE-bench Pro,data_bug,2,70,B2;B6,1.0
+543,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,0.0
+544,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,0597,flipt-io/flipt,SWE-bench Pro,core_feat,4,91,B11;B6,0.6667
+545,0365,gravitational/teleport,SWE-bench Pro,core_feat,4,70,B3;B6,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.5
+546,0366,navidrome/navidrome,SWE-bench Pro,regression_bug,2,62,B10;B11;B6,0410,qutebrowser/qutebrowser,SWE-bench Pro,regression_bug,2,47,B1,1.0
+547,0367,future-architect/vuls,SWE-bench Pro,major_bug,4,76,B12;B3,0595,flipt-io/flipt,SWE-bench Pro,major_bug,4,70,B1;B6,1.0
+548,0367,future-architect/vuls,SWE-bench Pro,major_bug,4,76,B12;B3,0600,gravitational/teleport,SWE-bench Pro,major_bug,4,63,B11;B9,1.0
+549,0369,protonmail/webclients,SWE-bench Pro,core_feat,6,52,B10;B3;B5;B6,0467,protonmail/webclients,SWE-bench Pro,core_feat,6,56,B5,0.75
+550,0369,protonmail/webclients,SWE-bench Pro,core_feat,6,52,B10;B3;B5;B6,0652,navidrome/navidrome,SWE-bench Pro,core_feat,6,67,B10;B9,0.8
+551,0373,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,1,32,B11;B6,0545,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,1,38,B1;B2;B6,0.75
+552,0376,qutebrowser/qutebrowser,SWE-bench Pro,performance_enh,2,43,B12;B5,0629,qutebrowser/qutebrowser,SWE-bench Pro,performance_enh,2,43,B1;B4,1.0
+553,0377,future-architect/vuls,SWE-bench Pro,core_feat,1,277,B3,0471,gravitational/teleport,SWE-bench Pro,core_feat,1,280,B7;B9,1.0
+554,0377,future-architect/vuls,SWE-bench Pro,core_feat,1,277,B3,0541,ansible/ansible,SWE-bench Pro,core_feat,1,328,B11;B5,1.0
+555,0377,future-architect/vuls,SWE-bench Pro,core_feat,1,277,B3,0617,ansible/ansible,SWE-bench Pro,core_feat,1,270,B1;B11;B2,1.0
+556,0377,future-architect/vuls,SWE-bench Pro,core_feat,1,277,B3,0674,ansible/ansible,SWE-bench Pro,core_feat,1,215,B10;B5;B6,1.0
+557,0378,internetarchive/openlibrary,SWE-bench Pro,edge_case_bug,2,141,B11;B6,0485,ansible/ansible,SWE-bench Pro,edge_case_bug,2,117,B6;B8,0.6667
+558,0384,ansible/ansible,SWE-bench Pro,core_feat,6,102,B3;B6,0552,flipt-io/flipt,SWE-bench Pro,core_feat,6,108,B1;B12,1.0
+559,0392,flipt-io/flipt,SWE-bench Pro,compatibility_bug,4,90,B11,0588,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0.5
+560,0392,flipt-io/flipt,SWE-bench Pro,compatibility_bug,4,90,B11,0640,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0.5
+561,0393,future-architect/vuls,SWE-bench Pro,minor_bug,1,38,B3;B6,0394,element-hq/element-web,SWE-bench Pro,minor_bug,1,40,B1,1.0
+562,0393,future-architect/vuls,SWE-bench Pro,minor_bug,1,38,B3;B6,0556,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,38,B11,1.0
+563,0393,future-architect/vuls,SWE-bench Pro,minor_bug,1,38,B3;B6,0676,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,29,B6,0.5
+564,0394,element-hq/element-web,SWE-bench Pro,minor_bug,1,40,B1,0556,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,38,B11,1.0
+565,0394,element-hq/element-web,SWE-bench Pro,minor_bug,1,40,B1,0676,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,29,B6,1.0
+566,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,0443,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,61,B2;B3;B6,0.6667
+567,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,0445,ansible/ansible,SWE-bench Pro,major_bug,2,88,B1;B11,1.0
+568,0396,gravitational/teleport,SWE-bench Pro,major_bug,2,68,B6,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,1.0
+569,0397,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,76,B1;B3,0475,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,104,B3,0.5
+570,0397,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,76,B1;B3,0570,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,101,B12;B5;B6,1.0
+571,0398,flipt-io/flipt,SWE-bench Pro,major_bug,3,221,B1;B12,0643,flipt-io/flipt,SWE-bench Pro,major_bug,3,243,B1;B6,0.6667
+572,0399,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,2,46,B12;B3,0694,element-hq/element-web,SWE-bench Pro,core_feat,2,61,B3;B4;B6,0.75
+573,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,0418,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B11;B3,1.0
+574,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,0.5
+575,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,0602,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,59,B11;B6,0.5
+576,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,0668,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,60,B11;B6,0.5
+577,0402,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,52,B6,0693,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,1.0
+578,0404,qutebrowser/qutebrowser,SWE-bench Pro,customization_feat,1,47,B11;B6,0678,gravitational/teleport,SWE-bench Pro,customization_feat,1,46,B11;B9,0.6667
+579,0405,flipt-io/flipt,SWE-bench Pro,core_feat,3,108,B1,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0.75
+580,0405,flipt-io/flipt,SWE-bench Pro,core_feat,3,108,B1,0680,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,87,B11,1.0
+581,0406,flipt-io/flipt,SWE-bench Pro,major_bug,9,360,B4;B6;B7;B8,0647,flipt-io/flipt,SWE-bench Pro,major_bug,9,350,B3;B6,0.8
+582,0408,ansible/ansible,SWE-bench Pro,code_quality_enh,3,28,B6;B8,0519,flipt-io/flipt,SWE-bench Pro,code_quality_enh,3,36,B12;B6,0.6667
+583,0409,flipt-io/flipt,SWE-bench Pro,core_feat,8,339,B11;B3;B9,0419,future-architect/vuls,SWE-bench Pro,core_feat,8,407,B2;B3;B6,0.8
+584,0409,flipt-io/flipt,SWE-bench Pro,core_feat,8,339,B11;B3;B9,0669,gravitational/teleport,SWE-bench Pro,core_feat,8,393,B10;B7;B9,0.8
+585,0410,qutebrowser/qutebrowser,SWE-bench Pro,regression_bug,2,47,B1,0566,gravitational/teleport,SWE-bench Pro,regression_bug,2,33,B11;B6,1.0
+586,0411,navidrome/navidrome,SWE-bench Pro,code_quality_enh,4,86,B4;B6;B9,0605,flipt-io/flipt,SWE-bench Pro,code_quality_enh,4,61,B1;B8,1.0
+587,0415,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,239,B3;B6,0606,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,6,244,B12;B6,0.6667
+588,0416,flipt-io/flipt,SWE-bench Pro,core_feat,7,160,B1;B2,0431,future-architect/vuls,SWE-bench Pro,core_feat,7,197,B11;B12;B3,1.0
+589,0416,flipt-io/flipt,SWE-bench Pro,core_feat,7,160,B1;B2,0666,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11,1.0
+590,0418,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B11;B3,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,1.0
+591,0418,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,38,B11;B3,0693,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,0.6667
+592,0419,future-architect/vuls,SWE-bench Pro,core_feat,8,407,B2;B3;B6,0669,gravitational/teleport,SWE-bench Pro,core_feat,8,393,B10;B7;B9,1.0
+593,0420,NodeBB/NodeBB,SWE-bench Pro,major_bug,3,32,B3;B5,0450,protonmail/webclients,SWE-bench Pro,major_bug,3,38,B1;B6,1.0
+594,0420,NodeBB/NodeBB,SWE-bench Pro,major_bug,3,32,B3;B5,0730,element-hq/element-web,SWE-bench Pro,major_bug,3,29,B4;B5,0.6667
+595,0421,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,50,B1,0665,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,40,B11,1.0
+596,0427,protonmail/webclients,SWE-bench Pro,security_feat,2,128,B6;B8,0648,element-hq/element-web,SWE-bench Pro,security_feat,2,90,B11;B12;B5;B6,0.8
+597,0428,future-architect/vuls,SWE-bench Pro,data_bug,2,48,B3;B6,0631,internetarchive/openlibrary,SWE-bench Pro,data_bug,2,35,B1,1.0
+598,0429,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,6,560,B11;B6,0697,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,6,403,B11;B3,0.6667
+599,0431,future-architect/vuls,SWE-bench Pro,core_feat,7,197,B11;B12;B3,0461,ansible/ansible,SWE-bench Pro,core_feat,7,241,B7,1.0
+600,0433,flipt-io/flipt,SWE-bench Pro,core_feat,2,28,B1;B6,0547,ansible/ansible,SWE-bench Pro,core_feat,2,30,B1;B11;B8,0.75
+601,0434,flipt-io/flipt,SWE-bench Pro,core_feat,5,63,B11;B6,0549,element-hq/element-web,SWE-bench Pro,core_feat,5,68,B12,1.0
+602,0437,gravitational/teleport,SWE-bench Pro,core_feat,3,46,B1;B6,0523,protonmail/webclients,SWE-bench Pro,core_feat,3,41,B11,1.0
+603,0437,gravitational/teleport,SWE-bench Pro,core_feat,3,46,B1;B6,0540,navidrome/navidrome,SWE-bench Pro,core_feat,3,59,B1;B10,0.6667
+604,0437,gravitational/teleport,SWE-bench Pro,core_feat,3,46,B1;B6,0682,gravitational/teleport,SWE-bench Pro,core_feat,3,62,B11;B6,0.6667
+605,0440,ansible/ansible,SWE-bench Pro,major_bug,2,30,B2,0551,protonmail/webclients,SWE-bench Pro,major_bug,2,26,B5;B6,1.0
+606,0440,ansible/ansible,SWE-bench Pro,major_bug,2,30,B2,0578,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,1.0
+607,0440,ansible/ansible,SWE-bench Pro,major_bug,2,30,B2,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,1.0
+608,0443,NodeBB/NodeBB,SWE-bench Pro,major_bug,2,61,B2;B3;B6,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,0.8
+609,0445,ansible/ansible,SWE-bench Pro,major_bug,2,88,B1;B11,0521,gravitational/teleport,SWE-bench Pro,major_bug,2,101,B6;B8,1.0
+610,0446,element-hq/element-web,SWE-bench Pro,ui_ux_bug,4,46,B12;B6;B7,0633,element-hq/element-web,SWE-bench Pro,ui_ux_bug,4,39,B1;B12,0.75
+611,0446,element-hq/element-web,SWE-bench Pro,ui_ux_bug,4,46,B12;B6;B7,0675,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_bug,4,48,B11;B6,0.75
+612,0450,protonmail/webclients,SWE-bench Pro,major_bug,3,38,B1;B6,0730,element-hq/element-web,SWE-bench Pro,major_bug,3,29,B4;B5,1.0
+613,0453,future-architect/vuls,SWE-bench Pro,regression_bug,7,147,B11;B3;B6,0718,flipt-io/flipt,SWE-bench Pro,regression_bug,7,153,B11;B3;B7,0.5
+614,0454,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,59,B3;B6,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.5
+615,0455,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,43,B1;B6,0630,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,52,B12;B6,0.6667
+616,0455,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,2,43,B1;B6,0722,navidrome/navidrome,SWE-bench Pro,code_quality_enh,2,47,B4;B9,1.0
+617,0456,future-architect/vuls,SWE-bench Pro,compatibility_bug,4,146,B2;B3,0599,protonmail/webclients,SWE-bench Pro,compatibility_bug,4,138,B10;B8,1.0
+618,0457,tutao/tutanota,SWE-bench Pro,edge_case_bug,5,49,B5,0637,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,5,39,B12;B6,1.0
+619,0460,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,24,B6,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,0.6667
+620,0460,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,24,B6,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,1.0
+621,0460,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,24,B6,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,0.5
+622,0462,flipt-io/flipt,SWE-bench Pro,major_bug,2,132,B6;B8,0521,gravitational/teleport,SWE-bench Pro,major_bug,2,101,B6;B8,0.0
+623,0462,flipt-io/flipt,SWE-bench Pro,major_bug,2,132,B6;B8,0608,ansible/ansible,SWE-bench Pro,major_bug,2,163,B10,1.0
+624,0467,protonmail/webclients,SWE-bench Pro,core_feat,6,56,B5,0652,navidrome/navidrome,SWE-bench Pro,core_feat,6,67,B10;B9,1.0
+625,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,0.75
+626,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,0.75
+627,0469,tutao/tutanota,SWE-bench Pro,core_feat,1,30,B11;B6;B9,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,0.3333
+628,0471,gravitational/teleport,SWE-bench Pro,core_feat,1,280,B7;B9,0541,ansible/ansible,SWE-bench Pro,core_feat,1,328,B11;B5,1.0
+629,0471,gravitational/teleport,SWE-bench Pro,core_feat,1,280,B7;B9,0617,ansible/ansible,SWE-bench Pro,core_feat,1,270,B1;B11;B2,1.0
+630,0471,gravitational/teleport,SWE-bench Pro,core_feat,1,280,B7;B9,0674,ansible/ansible,SWE-bench Pro,core_feat,1,215,B10;B5;B6,1.0
+631,0474,element-hq/element-web,SWE-bench Pro,minor_bug,2,59,B5;B6,0579,ansible/ansible,SWE-bench Pro,minor_bug,2,59,B1;B6,0.6667
+632,0474,element-hq/element-web,SWE-bench Pro,minor_bug,2,59,B5;B6,0645,internetarchive/openlibrary,SWE-bench Pro,minor_bug,2,56,B1;B6,0.6667
+633,0475,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,104,B3,0536,ansible/ansible,SWE-bench Pro,code_quality_enh,2,116,B1;B11;B6,1.0
+634,0475,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,2,104,B3,0570,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,101,B12;B5;B6,1.0
+635,0476,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,4,50,B12;B6,0605,flipt-io/flipt,SWE-bench Pro,code_quality_enh,4,61,B1;B8,1.0
+636,0477,future-architect/vuls,SWE-bench Pro,code_quality_enh,1,113,B6,0493,tutao/tutanota,SWE-bench Pro,code_quality_enh,1,121,B3;B7,1.0
+637,0479,gravitational/teleport,SWE-bench Pro,core_feat,1,455,B4;B5;B7;B9,0541,ansible/ansible,SWE-bench Pro,core_feat,1,328,B11;B5,0.8
+638,0480,future-architect/vuls,SWE-bench Pro,data_bug,7,222,B1;B3,0553,ansible/ansible,SWE-bench Pro,data_bug,7,285,B1;B2;B6,0.75
+639,0482,qutebrowser/qutebrowser,SWE-bench Pro,integration_feat,3,32,B6,0507,flipt-io/flipt,SWE-bench Pro,integration_feat,3,34,B6,0.0
+640,0484,navidrome/navidrome,SWE-bench Pro,core_feat,4,214,B1;B8,0596,ansible/ansible,SWE-bench Pro,core_feat,4,254,B4;B6;B7;B8,0.8
+641,0487,NodeBB/NodeBB,SWE-bench Pro,core_feat,7,106,B2;B9,0666,internetarchive/openlibrary,SWE-bench Pro,core_feat,7,120,B11,1.0
+642,0488,element-hq/element-web,SWE-bench Pro,ui_ux_feat,5,81,B12;B6,0532,navidrome/navidrome,SWE-bench Pro,ui_ux_feat,5,82,B1;B6,0.6667
+643,0489,element-hq/element-web,SWE-bench Pro,ui_ux_enh,9,137,B12;B5,0702,element-hq/element-web,SWE-bench Pro,ui_ux_enh,9,163,B12;B5,0.0
+644,0497,gravitational/teleport,SWE-bench Pro,core_feat,1,102,B11,0526,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,75,B6,1.0
+645,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,1.0
+646,0498,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,30,B1;B11,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,0.6667
+647,0500,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,79,B11,0704,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,3,72,B6,1.0
+648,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,0520,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,32,B11;B6,0.6667
+649,0502,NodeBB/NodeBB,SWE-bench Pro,core_feat,1,35,B4;B6,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,1.0
+650,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,0526,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,75,B6,1.0
+651,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,0619,gravitational/teleport,SWE-bench Pro,core_feat,1,70,B11;B6,1.0
+652,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,0.5
+653,0505,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,1,56,B2,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,1.0
+654,0508,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,3,42,B5,0573,ansible/ansible,SWE-bench Pro,refactoring_enh,3,38,B6;B8,1.0
+655,0508,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,3,42,B5,0721,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,3,52,B11,1.0
+656,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,0699,navidrome/navidrome,SWE-bench Pro,core_feat,4,32,B11,1.0
+657,0516,ansible/ansible,SWE-bench Pro,core_feat,4,38,B6;B7,0714,internetarchive/openlibrary,SWE-bench Pro,core_feat,4,51,B6,0.5
+658,0517,internetarchive/openlibrary,SWE-bench Pro,core_feat,5,553,B3;B6,0688,element-hq/element-web,SWE-bench Pro,core_feat,5,488,B1;B10;B5;B9,1.0
+659,0519,flipt-io/flipt,SWE-bench Pro,code_quality_enh,3,36,B12;B6,0724,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,3,42,B1;B6,0.6667
+660,0524,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,4,162,B2;B6,0589,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,4,164,B2;B6,0.0
+661,0524,internetarchive/openlibrary,SWE-bench Pro,code_quality_enh,4,162,B2;B6,0607,protonmail/webclients,SWE-bench Pro,code_quality_enh,4,138,B10;B4;B5,1.0
+662,0526,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,75,B6,0619,gravitational/teleport,SWE-bench Pro,core_feat,1,70,B11;B6,0.5
+663,0526,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,75,B6,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,0.5
+664,0530,element-hq/element-web,SWE-bench Pro,ui_ux_feat,7,66,B12,0567,element-hq/element-web,SWE-bench Pro,ui_ux_feat,7,82,B12;B8,0.5
+665,0531,navidrome/navidrome,SWE-bench Pro,core_feat,2,94,B1,0626,future-architect/vuls,SWE-bench Pro,core_feat,2,73,B4,1.0
+666,0536,ansible/ansible,SWE-bench Pro,code_quality_enh,2,116,B1;B11;B6,0570,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,101,B12;B5;B6,0.8
+667,0540,navidrome/navidrome,SWE-bench Pro,core_feat,3,59,B1;B10,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0.8
+668,0540,navidrome/navidrome,SWE-bench Pro,core_feat,3,59,B1;B10,0682,gravitational/teleport,SWE-bench Pro,core_feat,3,62,B11;B6,1.0
+669,0541,ansible/ansible,SWE-bench Pro,core_feat,1,328,B11;B5,0617,ansible/ansible,SWE-bench Pro,core_feat,1,270,B1;B11;B2,0.75
+670,0542,navidrome/navidrome,SWE-bench Pro,refactoring_enh,3,149,B11;B6;B9,0644,navidrome/navidrome,SWE-bench Pro,refactoring_enh,3,149,B1;B11,0.75
+671,0546,protonmail/webclients,SWE-bench Pro,code_quality_enh,2,30,B6,0679,NodeBB/NodeBB,SWE-bench Pro,code_quality_enh,2,30,B1;B8,1.0
+672,0548,ansible/ansible,SWE-bench Pro,performance_bug,4,36,B10;B4;B6;B9,0683,ansible/ansible,SWE-bench Pro,performance_bug,4,29,B6,0.75
+673,0550,protonmail/webclients,SWE-bench Pro,core_feat,11,162,B10;B5;B6;B8,0651,protonmail/webclients,SWE-bench Pro,core_feat,11,133,B1;B6,0.8
+674,0551,protonmail/webclients,SWE-bench Pro,major_bug,2,26,B5;B6,0578,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,1.0
+675,0551,protonmail/webclients,SWE-bench Pro,major_bug,2,26,B5;B6,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,0.6667
+676,0554,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,37,B12;B6,0638,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,33,B4,1.0
+677,0554,protonmail/webclients,SWE-bench Pro,ui_ux_feat,2,37,B12;B6,0662,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,46,B4,1.0
+678,0555,element-hq/element-web,SWE-bench Pro,minor_bug,1,22,B12;B6,0676,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,29,B6,0.5
+679,0556,qutebrowser/qutebrowser,SWE-bench Pro,minor_bug,1,38,B11,0676,internetarchive/openlibrary,SWE-bench Pro,minor_bug,1,29,B6,1.0
+680,0566,gravitational/teleport,SWE-bench Pro,regression_bug,2,33,B11;B6,0593,flipt-io/flipt,SWE-bench Pro,regression_bug,2,24,B1;B11;B6,0.3333
+681,0571,navidrome/navidrome,SWE-bench Pro,refactoring_enh,7,126,B11;B9,0727,navidrome/navidrome,SWE-bench Pro,refactoring_enh,7,174,B10;B11;B9,0.3333
+682,0573,ansible/ansible,SWE-bench Pro,refactoring_enh,3,38,B6;B8,0721,internetarchive/openlibrary,SWE-bench Pro,refactoring_enh,3,52,B11,1.0
+683,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,0602,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,59,B11;B6,0.6667
+684,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,0668,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,60,B11;B6,0.6667
+685,0575,navidrome/navidrome,SWE-bench Pro,code_quality_enh,1,51,B2;B6,0693,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,41,B1;B11,1.0
+686,0576,internetarchive/openlibrary,SWE-bench Pro,edge_case_bug,1,32,B1;B6,0665,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,40,B11,1.0
+687,0576,internetarchive/openlibrary,SWE-bench Pro,edge_case_bug,1,32,B1;B6,0691,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,31,B1;B10,0.6667
+688,0577,internetarchive/openlibrary,SWE-bench Pro,api_feat,2,97,B1;B11,0719,internetarchive/openlibrary,SWE-bench Pro,api_feat,2,106,B11;B3,0.6667
+689,0578,ansible/ansible,SWE-bench Pro,major_bug,2,28,B1;B11,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,0.6667
+690,0579,ansible/ansible,SWE-bench Pro,minor_bug,2,59,B1;B6,0645,internetarchive/openlibrary,SWE-bench Pro,minor_bug,2,56,B1;B6,0.0
+691,0580,gravitational/teleport,SWE-bench Pro,major_bug,3,79,B1;B6,0728,flipt-io/flipt,SWE-bench Pro,major_bug,3,58,B6,0.5
+692,0583,navidrome/navidrome,SWE-bench Pro,major_bug,2,52,B11;B3;B8,0614,ansible/ansible,SWE-bench Pro,major_bug,2,37,B1;B6,1.0
+693,0586,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_feat,4,55,B1;B12,0587,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,4,76,B1;B5,0.6667
+694,0588,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0599,protonmail/webclients,SWE-bench Pro,compatibility_bug,4,138,B10;B8,1.0
+695,0588,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0640,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,0.0
+696,0589,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,4,164,B2;B6,0607,protonmail/webclients,SWE-bench Pro,code_quality_enh,4,138,B10;B4;B5,1.0
+697,0595,flipt-io/flipt,SWE-bench Pro,major_bug,4,70,B1;B6,0600,gravitational/teleport,SWE-bench Pro,major_bug,4,63,B11;B9,1.0
+698,0597,flipt-io/flipt,SWE-bench Pro,core_feat,4,91,B11;B6,0627,NodeBB/NodeBB,SWE-bench Pro,core_feat,4,102,B1;B11;B6,0.3333
+699,0599,protonmail/webclients,SWE-bench Pro,compatibility_bug,4,138,B10;B8,0640,qutebrowser/qutebrowser,SWE-bench Pro,compatibility_bug,4,102,B11;B6,1.0
+700,0602,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,59,B11;B6,0668,qutebrowser/qutebrowser,SWE-bench Pro,code_quality_enh,1,60,B11;B6,0.0
+701,0603,qutebrowser/qutebrowser,SWE-bench Pro,refactoring_enh,7,213,B11;B12;B8,0727,navidrome/navidrome,SWE-bench Pro,refactoring_enh,7,174,B10;B11;B9,0.8
+702,0617,ansible/ansible,SWE-bench Pro,core_feat,1,270,B1;B11;B2,0674,ansible/ansible,SWE-bench Pro,core_feat,1,215,B10;B5;B6,1.0
+703,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0680,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,87,B11,1.0
+704,0618,NodeBB/NodeBB,SWE-bench Pro,core_feat,3,77,B1;B3;B4;B6,0682,gravitational/teleport,SWE-bench Pro,core_feat,3,62,B11;B6,0.8
+705,0619,gravitational/teleport,SWE-bench Pro,core_feat,1,70,B11;B6,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,0.6667
+706,0622,future-architect/vuls,SWE-bench Pro,compatibility_bug,1,55,B1;B11,0700,ansible/ansible,SWE-bench Pro,compatibility_bug,1,63,B1;B11,0.0
+707,0626,future-architect/vuls,SWE-bench Pro,core_feat,2,73,B4,0694,element-hq/element-web,SWE-bench Pro,core_feat,2,61,B3;B4;B6,0.6667
+708,0630,element-hq/element-web,SWE-bench Pro,code_quality_enh,2,52,B12;B6,0722,navidrome/navidrome,SWE-bench Pro,code_quality_enh,2,47,B4;B9,1.0
+709,0633,element-hq/element-web,SWE-bench Pro,ui_ux_bug,4,39,B1;B12,0675,qutebrowser/qutebrowser,SWE-bench Pro,ui_ux_bug,4,48,B11;B6,1.0
+710,0638,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,33,B4,0662,internetarchive/openlibrary,SWE-bench Pro,ui_ux_feat,2,46,B4,0.0
+711,0658,future-architect/vuls,SWE-bench Pro,core_feat,6,267,B2;B3,0687,internetarchive/openlibrary,SWE-bench Pro,core_feat,6,328,B11;B3;B8,0.75
+712,0659,navidrome/navidrome,SWE-bench Pro,core_feat,1,46,B1;B2,0709,internetarchive/openlibrary,SWE-bench Pro,core_feat,1,62,B3;B6,1.0
+713,0665,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,40,B11,0691,qutebrowser/qutebrowser,SWE-bench Pro,edge_case_bug,1,31,B1;B10,1.0
+714,0680,qutebrowser/qutebrowser,SWE-bench Pro,core_feat,3,87,B11,0682,gravitational/teleport,SWE-bench Pro,core_feat,3,62,B11;B6,0.5
+715,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,1.0
+716,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,1.0
+717,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0.0
+718,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,1.0
+719,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,1.0
+720,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0.0
+721,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+722,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,1.0
+723,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+724,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+725,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+726,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+727,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+728,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+729,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+730,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+731,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+732,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+733,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,0.5
+734,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+735,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+736,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+737,0732,google/gson,PolyBench Java,Bug Fix,1,4,B1,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+738,0734,google/gson,PolyBench Java,Feature,3,97,B11;B6,0820,apache/dubbo,PolyBench Java,Feature,3,113,B11,0.5
+739,0734,google/gson,PolyBench Java,Feature,3,97,B11;B6,0856,trinodb/trino,PolyBench Java,Feature,3,68,B9,1.0
+740,0734,google/gson,PolyBench Java,Feature,3,97,B11;B6,0861,trinodb/trino,PolyBench Java,Feature,3,70,B11,0.5
+741,0734,google/gson,PolyBench Java,Feature,3,97,B11;B6,0884,trinodb/trino,PolyBench Java,Feature,3,89,B7;B9,1.0
+742,0734,google/gson,PolyBench Java,Feature,3,97,B11;B6,0890,trinodb/trino,PolyBench Java,Feature,3,123,B8;B9,1.0
+743,0734,google/gson,PolyBench Java,Feature,3,97,B11;B6,0896,trinodb/trino,PolyBench Java,Feature,3,85,B1,1.0
+744,0735,google/gson,PolyBench Java,Bug Fix,2,12,B5,0799,apache/rocketmq,PolyBench Java,Bug Fix,2,9,B4;B5,0.5
+745,0735,google/gson,PolyBench Java,Bug Fix,2,12,B5,0813,apache/dubbo,PolyBench Java,Bug Fix,2,16,B3,1.0
+746,0735,google/gson,PolyBench Java,Bug Fix,2,12,B5,0815,apache/dubbo,PolyBench Java,Bug Fix,2,14,B11,1.0
+747,0735,google/gson,PolyBench Java,Bug Fix,2,12,B5,0819,apache/rocketmq,PolyBench Java,Bug Fix,2,12,B2;B7,1.0
+748,0735,google/gson,PolyBench Java,Bug Fix,2,12,B5,0871,trinodb/trino,PolyBench Java,Bug Fix,2,17,B11,1.0
+749,0738,apache/rocketmq,PolyBench Java,Bug Fix,2,19,B2,0813,apache/dubbo,PolyBench Java,Bug Fix,2,16,B3,1.0
+750,0738,apache/rocketmq,PolyBench Java,Bug Fix,2,19,B2,0815,apache/dubbo,PolyBench Java,Bug Fix,2,14,B11,1.0
+751,0738,apache/rocketmq,PolyBench Java,Bug Fix,2,19,B2,0871,trinodb/trino,PolyBench Java,Bug Fix,2,17,B11,1.0
+752,0738,apache/rocketmq,PolyBench Java,Bug Fix,2,19,B2,0889,trinodb/trino,PolyBench Java,Bug Fix,2,27,B11;B8,1.0
+753,0739,google/gson,PolyBench Java,Bug Fix,3,89,B1,0766,apache/rocketmq,PolyBench Java,Bug Fix,3,101,B3,1.0
+754,0739,google/gson,PolyBench Java,Bug Fix,3,89,B1,0829,apache/dubbo,PolyBench Java,Bug Fix,3,85,B3;B5,1.0
+755,0740,apache/dubbo,PolyBench Java,Bug Fix,2,53,B11,0762,google/gson,PolyBench Java,Bug Fix,2,45,B3,1.0
+756,0740,apache/dubbo,PolyBench Java,Bug Fix,2,53,B11,0767,google/gson,PolyBench Java,Bug Fix,2,46,B2,1.0
+757,0740,apache/dubbo,PolyBench Java,Bug Fix,2,53,B11,0779,apache/dubbo,PolyBench Java,Bug Fix,2,62,B11,0.0
+758,0740,apache/dubbo,PolyBench Java,Bug Fix,2,53,B11,0798,apache/dubbo,PolyBench Java,Bug Fix,2,50,B4,1.0
+759,0740,apache/dubbo,PolyBench Java,Bug Fix,2,53,B11,0810,apache/rocketmq,PolyBench Java,Bug Fix,2,42,B10;B5,1.0
+760,0740,apache/dubbo,PolyBench Java,Bug Fix,2,53,B11,0873,trinodb/trino,PolyBench Java,Bug Fix,2,40,B1,1.0
+761,0741,google/gson,PolyBench Java,Bug Fix,4,61,B1,0763,google/gson,PolyBench Java,Bug Fix,4,62,B5,1.0
+762,0741,google/gson,PolyBench Java,Bug Fix,4,61,B1,0831,apache/dubbo,PolyBench Java,Bug Fix,4,54,B11,1.0
+763,0741,google/gson,PolyBench Java,Bug Fix,4,61,B1,0847,apache/rocketmq,PolyBench Java,Bug Fix,4,58,B4;B5,1.0
+764,0742,apolloconfig/apollo,PolyBench Java,Bug Fix,2,7,B1;B5,0768,google/guava,PolyBench Java,Bug Fix,2,4,B2,1.0
+765,0742,apolloconfig/apollo,PolyBench Java,Bug Fix,2,7,B1;B5,0775,google/gson,PolyBench Java,Bug Fix,2,4,B5,0.5
+766,0742,apolloconfig/apollo,PolyBench Java,Bug Fix,2,7,B1;B5,0799,apache/rocketmq,PolyBench Java,Bug Fix,2,9,B4;B5,0.6667
+767,0743,google/gson,PolyBench Java,Bug Fix,1,42,B6,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,1.0
+768,0743,google/gson,PolyBench Java,Bug Fix,1,42,B6,0811,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,1.0
+769,0743,google/gson,PolyBench Java,Bug Fix,1,42,B6,0818,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,1.0
+770,0743,google/gson,PolyBench Java,Bug Fix,1,42,B6,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,1.0
+771,0743,google/gson,PolyBench Java,Bug Fix,1,42,B6,0852,trinodb/trino,PolyBench Java,Bug Fix,1,47,B11,1.0
+772,0743,google/gson,PolyBench Java,Bug Fix,1,42,B6,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,1.0
+773,0744,apolloconfig/apollo,PolyBench Java,Feature,3,46,B5;B6;B8,0804,apache/rocketmq,PolyBench Java,Feature,3,61,B10;B3;B9,1.0
+774,0744,apolloconfig/apollo,PolyBench Java,Feature,3,46,B5;B6;B8,0876,trinodb/trino,PolyBench Java,Feature,3,38,B11,1.0
+775,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,1.0
+776,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,1.0
+777,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0.0
+778,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,1.0
+779,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0.0
+780,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+781,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+782,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+783,0746,google/gson,PolyBench Java,Bug Fix,1,9,B1,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,1.0
+784,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,1.0
+785,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,1.0
+786,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,1.0
+787,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+788,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,1.0
+789,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+790,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+791,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+792,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0.5
+793,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+794,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+795,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,1.0
+796,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+797,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+798,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+799,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+800,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+801,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+802,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+803,0747,google/gson,PolyBench Java,Bug Fix,1,3,B5,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+804,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,1.0
+805,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0.0
+806,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0.0
+807,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,1.0
+808,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0.0
+809,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,1.0
+810,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,1.0
+811,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,1.0
+812,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0.0
+813,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+814,0751,google/gson,PolyBench Java,Bug Fix,1,22,B11,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+815,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,1.0
+816,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,1.0
+817,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,1.0
+818,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,1.0
+819,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,1.0
+820,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,1.0
+821,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,1.0
+822,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+823,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,0.0
+824,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,1.0
+825,0753,google/gson,PolyBench Java,Bug Fix,1,16,B1,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,0.5
+826,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0.0
+827,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,1.0
+828,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0.0
+829,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,1.0
+830,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,1.0
+831,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,1.0
+832,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0.0
+833,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+834,0754,google/gson,PolyBench Java,Bug Fix,1,22,B11,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+835,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,1.0
+836,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,1.0
+837,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,1.0
+838,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,1.0
+839,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,1.0
+840,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+841,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+842,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,1.0
+843,0756,google/gson,PolyBench Java,Bug Fix,1,15,B2,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,1.0
+844,0757,google/gson,PolyBench Java,Bug Fix,3,61,B6,0829,apache/dubbo,PolyBench Java,Bug Fix,3,85,B3;B5,1.0
+845,0757,google/gson,PolyBench Java,Bug Fix,3,61,B6,0888,trinodb/trino,PolyBench Java,Bug Fix,3,43,B11,1.0
+846,0758,google/gson,PolyBench Java,Feature,2,23,B1,0825,apache/rocketmq,PolyBench Java,Feature,2,19,B11,1.0
+847,0758,google/gson,PolyBench Java,Feature,2,23,B1,0891,trinodb/trino,PolyBench Java,Feature,2,28,B4,1.0
+848,0759,apache/dubbo,PolyBench Java,Bug Fix,4,134,B1,0776,google/gson,PolyBench Java,Bug Fix,4,115,B1,0.0
+849,0759,apache/dubbo,PolyBench Java,Bug Fix,4,134,B1,0796,apache/dubbo,PolyBench Java,Bug Fix,4,164,B11;B6,1.0
+850,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,1.0
+851,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0.0
+852,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,1.0
+853,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0.0
+854,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+855,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+856,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+857,0761,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+858,0762,google/gson,PolyBench Java,Bug Fix,2,45,B3,0767,google/gson,PolyBench Java,Bug Fix,2,46,B2,1.0
+859,0762,google/gson,PolyBench Java,Bug Fix,2,45,B3,0779,apache/dubbo,PolyBench Java,Bug Fix,2,62,B11,1.0
+860,0762,google/gson,PolyBench Java,Bug Fix,2,45,B3,0798,apache/dubbo,PolyBench Java,Bug Fix,2,50,B4,1.0
+861,0762,google/gson,PolyBench Java,Bug Fix,2,45,B3,0810,apache/rocketmq,PolyBench Java,Bug Fix,2,42,B10;B5,1.0
+862,0762,google/gson,PolyBench Java,Bug Fix,2,45,B3,0873,trinodb/trino,PolyBench Java,Bug Fix,2,40,B1,1.0
+863,0763,google/gson,PolyBench Java,Bug Fix,4,62,B5,0831,apache/dubbo,PolyBench Java,Bug Fix,4,54,B11,1.0
+864,0763,google/gson,PolyBench Java,Bug Fix,4,62,B5,0847,apache/rocketmq,PolyBench Java,Bug Fix,4,58,B4;B5,0.5
+865,0764,google/gson,PolyBench Java,Feature,1,53,B6,0834,apache/rocketmq,PolyBench Java,Feature,1,74,B2,1.0
+866,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0.5
+867,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0.5
+868,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,1.0
+869,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,1.0
+870,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,1.0
+871,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+872,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,1.0
+873,0765,apolloconfig/apollo,PolyBench Java,Bug Fix,1,26,B5;B6,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+874,0766,apache/rocketmq,PolyBench Java,Bug Fix,3,101,B3,0829,apache/dubbo,PolyBench Java,Bug Fix,3,85,B3;B5,0.5
+875,0767,google/gson,PolyBench Java,Bug Fix,2,46,B2,0779,apache/dubbo,PolyBench Java,Bug Fix,2,62,B11,1.0
+876,0767,google/gson,PolyBench Java,Bug Fix,2,46,B2,0798,apache/dubbo,PolyBench Java,Bug Fix,2,50,B4,1.0
+877,0767,google/gson,PolyBench Java,Bug Fix,2,46,B2,0810,apache/rocketmq,PolyBench Java,Bug Fix,2,42,B10;B5,1.0
+878,0767,google/gson,PolyBench Java,Bug Fix,2,46,B2,0873,trinodb/trino,PolyBench Java,Bug Fix,2,40,B1,1.0
+879,0768,google/guava,PolyBench Java,Bug Fix,2,4,B2,0775,google/gson,PolyBench Java,Bug Fix,2,4,B5,1.0
+880,0768,google/guava,PolyBench Java,Bug Fix,2,4,B2,0806,apache/dubbo,PolyBench Java,Bug Fix,2,3,B11,1.0
+881,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,1.0
+882,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,1.0
+883,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,1.0
+884,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,1.0
+885,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,1.0
+886,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+887,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+888,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,1.0
+889,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+890,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,1.0
+891,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+892,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+893,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+894,0769,apache/dubbo,PolyBench Java,Bug Fix,1,7,B3,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+895,0770,apache/rocketmq,PolyBench Java,Feature,2,16,B9,0825,apache/rocketmq,PolyBench Java,Feature,2,19,B11,1.0
+896,0771,google/gson,PolyBench Java,Bug Fix,3,36,B4;B6,0888,trinodb/trino,PolyBench Java,Bug Fix,3,43,B11,1.0
+897,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,0.0
+898,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,1.0
+899,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0.0
+900,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+901,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+902,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,0.0
+903,0772,google/gson,PolyBench Java,Bug Fix,1,16,B11,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,1.0
+904,0774,apache/rocketmq,PolyBench Java,Feature,1,11,B11;B3,0821,apache/dubbo,PolyBench Java,Feature,1,10,B1,1.0
+905,0775,google/gson,PolyBench Java,Bug Fix,2,4,B5,0806,apache/dubbo,PolyBench Java,Bug Fix,2,3,B11,1.0
+906,0776,google/gson,PolyBench Java,Bug Fix,4,115,B1,0796,apache/dubbo,PolyBench Java,Bug Fix,4,164,B11;B6,1.0
+907,0777,google/gson,PolyBench Java,Feature,1,19,B2,0809,apache/dubbo,PolyBench Java,Feature,1,17,B12;B3,1.0
+908,0778,google/gson,PolyBench Java,Feature,9,107,B11,0786,apache/rocketmq,PolyBench Java,Feature,9,106,B7,1.0
+909,0779,apache/dubbo,PolyBench Java,Bug Fix,2,62,B11,0798,apache/dubbo,PolyBench Java,Bug Fix,2,50,B4,1.0
+910,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,1.0
+911,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+912,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+913,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,0.0
+914,0780,apache/dubbo,PolyBench Java,Bug Fix,1,13,B11,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,1.0
+915,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,1.0
+916,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,1.0
+917,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0.0
+918,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+919,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,1.0
+920,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+921,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+922,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+923,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+924,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+925,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+926,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+927,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+928,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+929,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+930,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,0.5
+931,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+932,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+933,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+934,0781,apache/dubbo,PolyBench Java,Bug Fix,1,4,B1,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+935,0782,apache/dubbo,PolyBench Java,Feature,1,91,B11,0834,apache/rocketmq,PolyBench Java,Feature,1,74,B2,1.0
+936,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,1.0
+937,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,1.0
+938,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+939,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,1.0
+940,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+941,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+942,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+943,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,1.0
+944,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+945,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+946,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+947,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,1.0
+948,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+949,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+950,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+951,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+952,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+953,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+954,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+955,0783,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B4,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+956,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0.0
+957,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,1.0
+958,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,1.0
+959,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+960,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,1.0
+961,0787,apache/dubbo,PolyBench Java,Bug Fix,1,29,B5,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+962,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,1.0
+963,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0.0
+964,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+965,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+966,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,1.0
+967,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+968,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+969,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0.0
+970,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0.0
+971,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+972,0789,apache/rocketmq,PolyBench Java,Bug Fix,1,7,B11,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+973,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,1.0
+974,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+975,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+976,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0.0
+977,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+978,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+979,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+980,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+981,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+982,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+983,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+984,0790,apache/dubbo,PolyBench Java,Bug Fix,1,6,B1,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+985,0792,apache/rocketmq,PolyBench Java,Feature,1,6,B3;B4,0859,trinodb/trino,PolyBench Java,Feature,1,5,B11,1.0
+986,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0.0
+987,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+988,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+989,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+990,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+991,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0.0
+992,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+993,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0.0
+994,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0.0
+995,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+996,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.0
+997,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+998,0793,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+999,0794,apache/dubbo,PolyBench Java,Bug Fix,5,56,B10,0864,trinodb/trino,PolyBench Java,Bug Fix,5,64,B2;B5,1.0
+1000,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,1.0
+1001,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,1.0
+1002,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+1003,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,1.0
+1004,0795,apache/rocketmq,PolyBench Java,Bug Fix,1,31,B5,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+1005,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,1.0
+1006,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1007,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+1008,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,1.0
+1009,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+1010,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0.0
+1011,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1012,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+1013,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0.0
+1014,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0.0
+1015,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0.0
+1016,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1017,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.0
+1018,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1019,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1020,0797,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B11,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1021,0798,apache/dubbo,PolyBench Java,Bug Fix,2,50,B4,0810,apache/rocketmq,PolyBench Java,Bug Fix,2,42,B10;B5,1.0
+1022,0798,apache/dubbo,PolyBench Java,Bug Fix,2,50,B4,0873,trinodb/trino,PolyBench Java,Bug Fix,2,40,B1,1.0
+1023,0799,apache/rocketmq,PolyBench Java,Bug Fix,2,9,B4;B5,0819,apache/rocketmq,PolyBench Java,Bug Fix,2,12,B2;B7,1.0
+1024,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1025,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+1026,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+1027,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+1028,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1029,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,1.0
+1030,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+1031,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+1032,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+1033,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1034,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+1035,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1036,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1037,0800,apache/rocketmq,PolyBench Java,Bug Fix,1,4,B6,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,0.0
+1038,0802,apache/rocketmq,PolyBench Java,Feature,3,20,B8,0879,trinodb/trino,PolyBench Java,Feature,3,17,B9,1.0
+1039,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+1040,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+1041,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,1.0
+1042,0803,apache/rocketmq,PolyBench Java,Bug Fix,1,12,B8,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,0.5
+1043,0804,apache/rocketmq,PolyBench Java,Feature,3,61,B10;B3;B9,0856,trinodb/trino,PolyBench Java,Feature,3,68,B9,0.6667
+1044,0804,apache/rocketmq,PolyBench Java,Feature,3,61,B10;B3;B9,0861,trinodb/trino,PolyBench Java,Feature,3,70,B11,1.0
+1045,0804,apache/rocketmq,PolyBench Java,Feature,3,61,B10;B3;B9,0896,trinodb/trino,PolyBench Java,Feature,3,85,B1,1.0
+1046,0805,apache/rocketmq,PolyBench Java,Bug Fix,2,148,B3,0849,apache/rocketmq,PolyBench Java,Bug Fix,2,126,B3;B8,0.5
+1047,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,1.0
+1048,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+1049,0807,apache/rocketmq,PolyBench Java,Bug Fix,1,24,B8,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+1050,0810,apache/rocketmq,PolyBench Java,Bug Fix,2,42,B10;B5,0873,trinodb/trino,PolyBench Java,Bug Fix,2,40,B1,1.0
+1051,0811,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0818,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0.0
+1052,0811,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,1.0
+1053,0811,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0852,trinodb/trino,PolyBench Java,Bug Fix,1,47,B11,1.0
+1054,0811,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,0.5
+1055,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,1.0
+1056,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+1057,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+1058,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0.0
+1059,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+1060,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+1061,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1062,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+1063,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1064,0812,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,0.0
+1065,0813,apache/dubbo,PolyBench Java,Bug Fix,2,16,B3,0815,apache/dubbo,PolyBench Java,Bug Fix,2,14,B11,1.0
+1066,0813,apache/dubbo,PolyBench Java,Bug Fix,2,16,B3,0819,apache/rocketmq,PolyBench Java,Bug Fix,2,12,B2;B7,1.0
+1067,0813,apache/dubbo,PolyBench Java,Bug Fix,2,16,B3,0871,trinodb/trino,PolyBench Java,Bug Fix,2,17,B11,1.0
+1068,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0.5
+1069,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+1070,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1071,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,1.0
+1072,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+1073,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+1074,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+1075,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1076,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+1077,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1078,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1079,0814,apache/dubbo,PolyBench Java,Bug Fix,1,4,B8,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1080,0815,apache/dubbo,PolyBench Java,Bug Fix,2,14,B11,0819,apache/rocketmq,PolyBench Java,Bug Fix,2,12,B2;B7,1.0
+1081,0815,apache/dubbo,PolyBench Java,Bug Fix,2,14,B11,0871,trinodb/trino,PolyBench Java,Bug Fix,2,17,B11,0.0
+1082,0817,apache/rocketmq,PolyBench Java,Refactoring,2,4,,0843,apache/rocketmq,PolyBench Java,Refactoring,2,4,B6,1.0
+1083,0818,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,1.0
+1084,0818,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0852,trinodb/trino,PolyBench Java,Bug Fix,1,47,B11,1.0
+1085,0818,apache/rocketmq,PolyBench Java,Bug Fix,1,45,B10;B3,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,0.5
+1086,0819,apache/rocketmq,PolyBench Java,Bug Fix,2,12,B2;B7,0871,trinodb/trino,PolyBench Java,Bug Fix,2,17,B11,1.0
+1087,0820,apache/dubbo,PolyBench Java,Feature,3,113,B11,0884,trinodb/trino,PolyBench Java,Feature,3,89,B7;B9,1.0
+1088,0820,apache/dubbo,PolyBench Java,Feature,3,113,B11,0890,trinodb/trino,PolyBench Java,Feature,3,123,B8;B9,1.0
+1089,0820,apache/dubbo,PolyBench Java,Feature,3,113,B11,0896,trinodb/trino,PolyBench Java,Feature,3,85,B1,1.0
+1090,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,1.0
+1091,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0.5
+1092,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+1093,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1094,0826,apache/rocketmq,PolyBench Java,Bug Fix,1,8,B1,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1095,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,0852,trinodb/trino,PolyBench Java,Bug Fix,1,47,B11,0.0
+1096,0827,apache/dubbo,PolyBench Java,Bug Fix,1,36,B11,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,1.0
+1097,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,1.0
+1098,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1099,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,1.0
+1100,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+1101,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,1.0
+1102,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+1103,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1104,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+1105,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1106,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1107,0830,apache/rocketmq,PolyBench Java,Bug Fix,1,5,B5;B8,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1108,0831,apache/dubbo,PolyBench Java,Bug Fix,4,54,B11,0847,apache/rocketmq,PolyBench Java,Bug Fix,4,58,B4;B5,1.0
+1109,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,1.0
+1110,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0.0
+1111,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0.0
+1112,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1113,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.0
+1114,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1115,0832,apache/dubbo,PolyBench Java,Bug Fix,1,2,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1116,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,1.0
+1117,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,1.0
+1118,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1119,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+1120,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1121,0833,apache/dubbo,PolyBench Java,Bug Fix,1,2,B3,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,0.0
+1122,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0.5
+1123,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0.5
+1124,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.5
+1125,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1126,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1127,0835,apache/rocketmq,PolyBench Java,Bug Fix,1,6,B1;B11,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1128,0836,apache/rocketmq,PolyBench Java,Bug Fix,7,115,B10,0837,apache/rocketmq,PolyBench Java,Bug Fix,7,108,B9,1.0
+1129,0836,apache/rocketmq,PolyBench Java,Bug Fix,7,115,B10,0880,trinodb/trino,PolyBench Java,Bug Fix,7,106,B11,1.0
+1130,0837,apache/rocketmq,PolyBench Java,Bug Fix,7,108,B9,0880,trinodb/trino,PolyBench Java,Bug Fix,7,106,B11,1.0
+1131,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0.0
+1132,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0.0
+1133,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1134,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.0
+1135,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1136,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1137,0838,apache/dubbo,PolyBench Java,Bug Fix,1,4,B11,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1138,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.0
+1139,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1140,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1141,0840,google/gson,PolyBench Java,Bug Fix,1,6,B11,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1142,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,1.0
+1143,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0.0
+1144,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1145,0841,apache/rocketmq,PolyBench Java,Bug Fix,1,2,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1146,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,1.0
+1147,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1148,0842,apache/dubbo,PolyBench Java,Bug Fix,1,2,B1;B12,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1149,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,1.0
+1150,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,1.0
+1151,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+1152,0848,apache/dubbo,PolyBench Java,Bug Fix,1,19,B11,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+1153,0852,trinodb/trino,PolyBench Java,Bug Fix,1,47,B11,0874,trinodb/trino,PolyBench Java,Bug Fix,1,35,B3,1.0
+1154,0855,trinodb/trino,PolyBench Java,Feature,3,29,B11;B8,0876,trinodb/trino,PolyBench Java,Feature,3,38,B11,0.5
+1155,0856,trinodb/trino,PolyBench Java,Feature,3,68,B9,0861,trinodb/trino,PolyBench Java,Feature,3,70,B11,1.0
+1156,0856,trinodb/trino,PolyBench Java,Feature,3,68,B9,0884,trinodb/trino,PolyBench Java,Feature,3,89,B7;B9,0.5
+1157,0856,trinodb/trino,PolyBench Java,Feature,3,68,B9,0896,trinodb/trino,PolyBench Java,Feature,3,85,B1,1.0
+1158,0861,trinodb/trino,PolyBench Java,Feature,3,70,B11,0884,trinodb/trino,PolyBench Java,Feature,3,89,B7;B9,1.0
+1159,0861,trinodb/trino,PolyBench Java,Feature,3,70,B11,0896,trinodb/trino,PolyBench Java,Feature,3,85,B1,1.0
+1160,0862,trinodb/trino,PolyBench Java,Bug Fix,1,24,B3,0894,trinodb/trino,PolyBench Java,Bug Fix,1,24,B1,1.0
+1161,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,1.0
+1162,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,1.0
+1163,0865,trinodb/trino,PolyBench Java,Bug Fix,1,15,B3,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,1.0
+1164,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,1.0
+1165,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1166,0869,trinodb/trino,PolyBench Java,Bug Fix,1,3,B11,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1167,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,1.0
+1168,0877,trinodb/trino,PolyBench Java,Bug Fix,1,5,B10,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1169,0881,trinodb/trino,PolyBench Java,Feature,2,39,B8,0891,trinodb/trino,PolyBench Java,Feature,2,28,B4,1.0
+1170,0881,trinodb/trino,PolyBench Java,Feature,2,39,B8,0895,trinodb/trino,PolyBench Java,Feature,2,40,B2,1.0
+1171,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,1.0
+1172,0882,trinodb/trino,PolyBench Java,Bug Fix,1,15,B1,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,0.5
+1173,0883,trinodb/trino,PolyBench Java,Bug Fix,1,3,B3,0885,trinodb/trino,PolyBench Java,Bug Fix,1,6,B6,1.0
+1174,0884,trinodb/trino,PolyBench Java,Feature,3,89,B7;B9,0890,trinodb/trino,PolyBench Java,Feature,3,123,B8;B9,0.6667
+1175,0884,trinodb/trino,PolyBench Java,Feature,3,89,B7;B9,0896,trinodb/trino,PolyBench Java,Feature,3,85,B1,1.0
+1176,0886,trinodb/trino,PolyBench Java,Bug Fix,1,12,B11,0887,trinodb/trino,PolyBench Java,Bug Fix,1,13,B1;B8,1.0
+1177,0891,trinodb/trino,PolyBench Java,Feature,2,28,B4,0895,trinodb/trino,PolyBench Java,Feature,2,40,B2,1.0

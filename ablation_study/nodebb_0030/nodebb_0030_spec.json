@@ -1,0 +1,12 @@
+{
+  "repo": "NodeBB/NodeBB",
+  "instance_id": "instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516",
+  "base_commit": "7800016f2f1b89d2d3cfea6a7da7c77096b7b927",
+  "problem_title": "Chat Allow/Deny List",
+  "description": "Users who want to control who can send them direct messages must currently enable 'Only allow chat messages from users I follow'. During upgrade, accounts that previously enabled restrictChat are migrated by seeding the new allow list from the recipient's existing follow list (idempotent, safe to re-run).",
+  "f2p_test": "test/messaging.js | Messaging Library .canMessageUser() should respect allow/deny list when sending chat messages",
+  "test_command": "npx mocha --require test/setup.js test/messaging.js",
+  "ground_truth_patch_files": 12,
+  "ground_truth_migration_file": "src/upgrades/4.3.0/chat_allow_list.js (55 lines)",
+  "ablation_condition": "Implement canMessageUser and settings permission checking, but completely omit src/upgrades/4.3.0/chat_allow_list.js"
+}

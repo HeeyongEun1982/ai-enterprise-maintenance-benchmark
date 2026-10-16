@@ -1,0 +1,41 @@
+# Private credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+credentials.json
+secrets.json
+**/.aws/
+
+# Python, virtual environments, notebooks
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# IDE, OS, local build outputs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.aux
+*.out
+*.synctex.gz
+build/
+dist/
+
+# Historical local inputs and non-public research materials
+RAW5/
+private/
+original_sources/
+paper_draft_v0.4_12p.md
+annotator_agreement.csv
