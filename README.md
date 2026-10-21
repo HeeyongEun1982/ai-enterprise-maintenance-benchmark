@@ -71,24 +71,25 @@ The `name` field of `data/framework-snapshot.json` is authoritative; translation
 
 | Code | Frozen original name |
 |---|---|
-| `A1` | 제품 동작·업무 규칙 |
-| `A2` | 구조·구현 방식 |
-| `A3` | 시험·품질 확인 |
-| `A4` | 실행·운영 |
-| `A5` | 배포·버전·환경 전환 |
-| `A6` | 개발 절차·문서·프로젝트 지원 |
-| `B1` | 기능 결과·입력 조건 |
-| `B2` | 수치·계산 정확성 |
-| `B3` | 데이터 관계·정합성 |
-| `B4` | 시간·순서에 따른 의미 |
-| `B5` | 상태·업무 흐름 |
-| `B6` | 기존 정보·동작의 보존 |
-| `B7` | 동시 실행·트랜잭션 경계 |
-| `B8` | 권한·보호 |
-| `B9` | 성능·자원 사용 |
-| `B10` | 서비스 지속·실패 대응 |
-| `B11` | 인터페이스·환경 호환 |
-| `B12` | 사용자 상호작용 |
+| `A1` | Product Behavior and Business Rules |
+| `A2` | Structure and Implementation Approach |
+| `A3` | Testing and Quality Verification |
+| `A4` | Execution and Operations |
+| `A5` | Deployment, Versioning, and Environment Transition |
+| `A6` | Development Process, Documentation, and Project Support |
+| `B1` | Functional Outcomes and Input Conditions |
+| `B2` | Numerical and Computational Accuracy |
+| `B3` | Data Relationships and Integrity |
+| `B4` | Temporal and Sequential Semantics |
+| `B5` | State and Business Workflow |
+| `B6` | Preservation of Existing Information and Behavior |
+| `B7` | Concurrency and Transaction Boundaries |
+| `B8` | Authorization and Protection |
+| `B9` | Performance and Resource Utilization |
+| `B10` | Service Continuity and Failure Handling |
+| `B11` | Interface and Environment Compatibility |
+| `B12` | User Interaction |
+
 
 ## Validity and transparency
 
