@@ -1,122 +1,112 @@
-# [Gate 1 검증 완료 보고서 (최종 확정본)] 데이터셋 복구 및 거시 통계 확정
+# Gate 1 Verification Report: Dataset Preparation and Descriptive Statistics
 
-* **대상 디렉터리**: `d:\Study\benchmark\Paper\v0.4`
-* **작성 일시**: 2026-10-15 (최종 보완 완료)
-* **상태**: Gate 1 학술용 재현 패키지 3건 보완 완료 및 최종 종료
+Study: **Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance and AI Coding Benchmarks**.
 
----
+The original report was dated 2026-10-15. This edition updates its paths and descriptions to the current public package. Paths below are relative to the `git/` package root; clickable links are relative to this report.
 
-## 1. 개요 및 검증 요약
-본 문서는 `전체_작업_계획서.md v0.4`의 **[Gate 1: 데이터셋 복구 및 통계 정합성 검증]** 단계에서 수행된 최종 작업 결과와 확정 통계표를 기록한 공식 보고서입니다.
+## 1. Scope and packaged inputs
 
-선생님의 최종 정밀 검토에서 지적된 **마지막 3가지 보완 사항**을 완벽히 해결하여 학술용 재현 패키지를 완성했습니다:
-1. **재현 스크립트 자기 복사 버그 수정**: `scripts/01_generate_baseline_tasks.py`의 `with open(__file__, 'w')` 블록을 제거하여 자체 실행 시 파일 절단(0바이트) 현상을 원천 방지.
-2. **통계표 재생성 스크립트 추가**: `scripts/04_generate_gate1_statistics.py`를 신규 작성하여 Fisher 검정, Odds Ratio, 95% CI 및 `gate1_verified_table.md`가 원본 수치에서 100% 자동 생성되도록 구현.
-3. **원문 근거 보완 및 복수 근거 전수 보존**: 
-   - 23건의 불일치 원인 규명: 기존 CSV 생성 시 `replace('\n', ' ')`에 의한 개행문자 공백 치환 및 SWE-bench Pro 원본의 `requirements` 필드 참조 확인 $\rightarrow$ 개행 보존 시 **3,446건 전수 100.00% 정확한 문자열 일치** 확인.
-   - 58개 평가 항목의 복수 근거(총 88건의 추가 근거, 전체 3,534건)를 `ab_long.csv`의 `all_evidence` JSON 컬럼 및 개별 정규화 테이블 `ab_all_evidences.csv`(3,534행)로 영구 보존.
+Gate 1 covers benchmark metadata, criterion assignments, criterion-level frequency comparisons, E1 matched pairs, and quotation traceability. Its principal outputs are:
 
----
+- [Task metadata](../data/baseline_tasks.csv): 944 tasks.
+- [Criterion assignments](../data/ab_long.csv): 3,446 unique task–criterion rows.
+- [Individual evidence quotations](../data/ab_all_evidences.csv): 3,534 rows.
+- [E1 matched pairs](../data/e1_matched_pairs.csv): 1,177 pairs.
+- [Criterion-level statistical table](gate1_verified_table.md): 18 criteria.
 
-## 2. 944개 과제 메타데이터 복구 결과 (`baseline_tasks.csv`)
+The packaged source inputs are:
 
-### 1) 벤치마크 계열(Family) 분포
-* **SWE-bench Pro**: **731개** (77.4%)
-* **PolyBench Java**: **165개** (17.5%)
-* **SWE-EVO**: **48개** (5.1%)
-* **전체 합계**: **944개** (100.0%)
+| Purpose | Input paths from the package root |
+| :--- | :--- |
+| Metadata extraction (script 01) | `data/inputs/maintenance18-ai944/comparison.json`, `data/inputs/se-ai-comparison/tasks/0001.json` through `0944.json` |
+| Assignment and evidence export (script 02) | `data/02_generate_ab_long/framework-snapshot.json`, `data/02_generate_ab_long/table-view.json`, `data/02_generate_ab_long/tasks/0001.json` through `0944.json` |
+| Fineract criterion counts | `data/fineract/summary.json` |
+| Public criterion names and order | `data/framework-snapshot.json` |
 
-### 2) BL1 작업 유형 복구 및 다중 라벨 보존
-* **다중 라벨 보존 (`native_issue_types`)**:
-  - 원본 `issue_specificity`의 배열 구조를 JSON 문자열로 100% 보존.
-  - **SWE-bench Pro 731개 중 576개(78.8%)의 복수 라벨 과제** 정보를 원형 그대로 유지.
-* **대표 라벨 지정 (`primary_issue_type`)**:
-  - E1 통제 매칭 분석의 기준점으로 첫 번째 라벨(`primary_issue_type`)을 지정.
-* **복구 현황**:
-  - **SWE-bench Pro (731개)**: `primary_issue_type` 731개 정상 추출 (유효)
-  - **PolyBench Java (165개)**: `task_category`에서 165개 전수 복구 (유효: Bug Fix 106, Feature 44, Refactoring 13, Testing 1, Security 1)
-  - **SWE-EVO (48개)**: 원본에 작업 유형 메타데이터 부재 (정상 결측, `unknown`)
-  - $\rightarrow$ **유효한 BL1: 896개 (94.9%) / 결측: 48개 (5.1%)**
+See the input documentation for [script 01](../data/inputs/README.md) and [script 02](../data/02_generate_ab_long/README.md). Default execution uses packaged inputs; no external RAW5 folder is required. Script 02 exports existing assessments rather than performing new semantic classification. Its input snapshot is retained separately from the public snapshot.
 
----
+## 2. Benchmark metadata
 
-## 3. 18개 차원 거시 통계 검정 확정표 (`gate1_verified_table.md`)
+| Benchmark family | Tasks | Percentage |
+| :--- | ---: | ---: |
+| SWE-bench Pro v1 | 731 | 77.4% |
+| PolyBench Java | 165 | 17.5% |
+| SWE-EVO | 48 | 5.1% |
+| Total | 944 | 100.0% |
 
-`scripts/04_generate_gate1_statistics.py`로 원본 데이터(`summary.json`, `ab_long.csv`)에서 결정론적으로 재생성되는 최종 확정 통계표입니다.
+`native_issue_types` preserves the source labels as a JSON array string. Among the 731 SWE-bench Pro tasks, 576 (78.8%) have multiple labels. `primary_issue_type` uses the first label for E1 matching; it does not replace the preserved full label list.
 
-| 코드 | 공식 명칭 | Fineract (N=2,925) | AI 944 (N=944) | Odds Ratio (95% CI) | Fisher p-value | 유의한 쪽 (Higher In, $\alpha=0.0028$) |
-| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| **A1** | 제품 동작·업무 규칙 | 1688 (57.71%) | 426 (45.13%) | 1.66 [1.43, 1.92] | $1.98 \times 10^{-11}$ | **Fineract 더 많음** |
-| **A2** | 구조·구현 방식 | 987 (33.74%) | 572 (60.59%) | 0.33 [0.28, 0.39] | $9.83 \times 10^{-48}$ | **AI 944 더 많음** |
-| **A3** | 시험·품질 확인 | 442 (15.11%) | 94 (9.96%) | 1.61 [1.27, 2.04] | $4.67 \times 10^{-5}$ | **Fineract 더 많음** |
-| **A4** | 실행·운영 | 232 (7.93%) | 122 (12.92%) | 0.58 [0.46, 0.73] | $9.08 \times 10^{-6}$ | **AI 944 더 많음** |
-| **A5** | 배포·버전·환경 전환 | 470 (16.07%) | 60 (6.36%) | 2.82 [2.13, 3.73] | $9.34 \times 10^{-16}$ | **Fineract 더 많음** |
-| **A6** | 개발 절차·문서·프로젝트 지원 | 325 (11.11%) | 53 (5.61%) | 2.10 [1.56, 2.84] | $2.75 \times 10^{-7}$ | **Fineract 더 많음** |
-| **B1** | 기능 결과·입력 조건 | 942 (32.21%) | 315 (33.37%) | 0.95 [0.81, 1.11] | 0.5226 | 유의차 없음 (n.s.) |
-| **B2** | 수치·계산 정확성 | 452 (15.45%) | 65 (6.89%) | 2.47 [1.88, 3.24] | $1.24 \times 10^{-12}$ | **Fineract 더 많음** |
-| **B3** | 데이터 관계·정합성 | 600 (20.51%) | 214 (22.67%) | 0.88 [0.74, 1.05] | 0.1683 | 유의차 없음 (n.s.) |
-| **B4** | 시간·순서에 따른 의미 | 520 (17.78%) | 86 (9.11%) | 2.16 [1.69, 2.75] | $3.27 \times 10^{-11}$ | **Fineract 더 많음** |
-| **B5** | 상태·업무 흐름 | 465 (15.90%) | 131 (13.88%) | 1.17 [0.95, 1.45] | 0.1465 | 유의차 없음 (n.s.) |
-| **B6** | 기존 정보·동작의 보존 | 336 (11.49%) | 368 (38.98%) | 0.20 [0.17, 0.24] | $5.79 \times 10^{-72}$ | **AI 944 더 많음 (3.4배)** |
-| **B7** | 동시 실행·트랜잭션 경계 | 64 (2.19%) | 42 (4.45%) | 0.48 [0.32, 0.71] | 0.0005 | **AI 944 더 많음 (2.0배)** |
-| **B8** | 권한·보호 | 250 (8.55%) | 154 (16.31%) | 0.48 [0.39, 0.59] | $8.72 \times 10^{-11}$ | **AI 944 더 많음** |
-| **B9** | 성능·자원 사용 | 129 (4.41%) | 83 (8.79%) | 0.48 [0.36, 0.64] | $9.59 \times 10^{-7}$ | **AI 944 더 많음** |
-| **B10**| 서비스 지속·실패 대응 | 83 (2.84%) | 87 (9.22%) | 0.29 [0.21, 0.39] | $1.50 \times 10^{-14}$ | **AI 944 더 많음** |
-| **B11**| 인터페이스·환경 호환 | 975 (33.33%) | 391 (41.42%) | 0.71 [0.61, 0.82] | $7.85 \times 10^{-6}$ | **AI 944 더 많음** |
-| **B12**| 사용자 상호작용 | 390 (13.33%) | 183 (19.39%) | 0.64 [0.53, 0.78] | $9.10 \times 10^{-6}$ | **AI 944 더 많음** |
+PolyBench Java supplies 165 task categories: Bug Fix 106, Feature 44, Refactoring 13, Testing 1, and Security 1. SWE-EVO does not supply the corresponding task-type metadata, so its 48 tasks are marked `unknown`. In total, 896 tasks have a usable primary type and 48 do not.
 
-* **검정 종합**: Bonferroni 보정 기준($\alpha = 0.05 / 18 = 0.0028$) 하에서 **15개 항목 유의, 3개 항목(B1, B3, B5) 비유의**.
+## 3. Criterion-level frequency comparisons
 
----
+[Script 04](../scripts/04_generate_gate1_statistics.py) reads the Fineract summary, public codebook, benchmark task list, and assignment CSV. It computes two-sided Fisher exact tests, odds ratios, and approximate log-odds 95% confidence intervals, and writes `evidence/gate1_verified_table.md`.
 
-## 4. E1 통제쌍 실측 구성 및 매칭 규칙 (`e1_matched_pairs.csv`)
+The following table preserves the original report's numerical results. English criterion descriptions are provided here for readability; the packaged codebook retains its source names. Odds ratios compare Fineract with AI. The Bonferroni decision threshold is `0.05 / 18` (approximately 0.002778); confidence intervals are unadjusted 95% intervals.
 
-### 1) 매칭 규칙 (Matching Rules)
-1. **작업 유형 일치**: `primary_issue_type`이 정확히 일치할 것 (`unknown` 제외).
-2. **수정 파일 수 일치**: `patch_files_count`가 정확히 동일할 것.
-3. **코드 변경 규모(Churn) 오차 범위**: $|LOC_1 - LOC_2| \le \max(3, 30\% \times \max(LOC_1, LOC_2))$.
-4. **유효성**: 두 과제 중 최소 1개 이상이 B조건을 보유할 것.
+| Code | Criterion (English description) | Fineract (N=2,925) | AI (N=944) | Odds ratio (95% CI) | Fisher p-value | Higher frequency after correction |
+| :---: | :--- | :---: | :---: | :---: | :---: | :--- |
+| **A1** | Product behavior and business rules | 1688 (57.71%) | 426 (45.13%) | 1.66 [1.43, 1.92] | $1.98 \times 10^{-11}$ | Higher in Fineract |
+| **A2** | Structure and implementation approach | 987 (33.74%) | 572 (60.59%) | 0.33 [0.28, 0.39] | $9.83 \times 10^{-48}$ | Higher in AI |
+| **A3** | Testing and quality assurance | 442 (15.11%) | 94 (9.96%) | 1.61 [1.27, 2.04] | $4.67 \times 10^{-5}$ | Higher in Fineract |
+| **A4** | Execution and operations | 232 (7.93%) | 122 (12.92%) | 0.58 [0.46, 0.73] | $9.08 \times 10^{-6}$ | Higher in AI |
+| **A5** | Deployment, version, and environment transitions | 470 (16.07%) | 60 (6.36%) | 2.82 [2.13, 3.73] | $9.34 \times 10^{-16}$ | Higher in Fineract |
+| **A6** | Development process, documentation, and project support | 325 (11.11%) | 53 (5.61%) | 2.10 [1.56, 2.84] | $2.75 \times 10^{-7}$ | Higher in Fineract |
+| **B1** | Functional results and input conditions | 942 (32.21%) | 315 (33.37%) | 0.95 [0.81, 1.11] | 0.5226 | No significant difference |
+| **B2** | Numerical and calculation accuracy | 452 (15.45%) | 65 (6.89%) | 2.47 [1.88, 3.24] | $1.24 \times 10^{-12}$ | Higher in Fineract |
+| **B3** | Data relationships and consistency | 600 (20.51%) | 214 (22.67%) | 0.88 [0.74, 1.05] | 0.1683 | No significant difference |
+| **B4** | Temporal and ordering semantics | 520 (17.78%) | 86 (9.11%) | 2.16 [1.69, 2.75] | $3.27 \times 10^{-11}$ | Higher in Fineract |
+| **B5** | State and business workflows | 465 (15.90%) | 131 (13.88%) | 1.17 [0.95, 1.45] | 0.1465 | No significant difference |
+| **B6** | Preservation of existing information and behavior | 336 (11.49%) | 368 (38.98%) | 0.20 [0.17, 0.24] | $5.79 \times 10^{-72}$ | Higher in AI |
+| **B7** | Concurrent execution and transaction boundaries | 64 (2.19%) | 42 (4.45%) | 0.48 [0.32, 0.71] | 0.0005 | Higher in AI |
+| **B8** | Authorization and protection | 250 (8.55%) | 154 (16.31%) | 0.48 [0.39, 0.59] | $8.72 \times 10^{-11}$ | Higher in AI |
+| **B9** | Performance and resource use | 129 (4.41%) | 83 (8.79%) | 0.48 [0.36, 0.64] | $9.59 \times 10^{-7}$ | Higher in AI |
+| **B10** | Service continuity and failure handling | 83 (2.84%) | 87 (9.22%) | 0.29 [0.21, 0.39] | $1.50 \times 10^{-14}$ | Higher in AI |
+| **B11** | Interface and environment compatibility | 975 (33.33%) | 391 (41.42%) | 0.71 [0.61, 0.82] | $7.85 \times 10^{-6}$ | Higher in AI |
+| **B12** | User interaction | 390 (13.33%) | 183 (19.39%) | 0.64 [0.53, 0.78] | $9.10 \times 10^{-6}$ | Higher in AI |
 
-### 2) 통제 매칭 결과 집계
-* **총 매칭 쌍 수**: **1,177쌍**
-  - SWE-bench Pro 내부 매칭: **714쌍**
-  - PolyBench Java 내부 매칭: **463쌍**
-  - Cross-family 매칭: 0쌍 (계열 내 동질성 유지)
-* **분석에 참여한 고유 과제 수**: **581개**
-* **B조건 평균 Jaccard 거리 ($\bar{d}_J$)**: **0.8138** (중앙값 1.0000, 표준편차 0.2745)
-* **완전 불일치 쌍 ($d_J = 1.0000$)**: **676쌍 (57.43%)**
+Fifteen criteria meet the corrected significance threshold. B1, B3, and B5 do not. These comparisons describe criterion frequencies across the two corpora.
 
-### 3) 통계적 한계 및 해석 지침
-* 1,177쌍은 단일 과제가 여러 쌍에 참여하는 **비독립적 표본(Non-independent pairs)**입니다.
-* 따라서 이를 독립표본 t-검정으로 처리하여 가설을 검정하지 않으며, **"표면적 복잡도 지표(작업 유형, 파일 수, Churn)가 완전히 통제된 상태에서도 소프트웨어 요구조건은 0.8138 수준의 높은 의미적 이질성(Semantic Heterogeneity)을 보인다"**는 기술통계적 분포 사실로 엄정하게 기술합니다.
+## 4. E1 matched-pair construction
 
----
+[Script 03](../scripts/03_generate_e1_matched_pairs.py) uses `data/baseline_tasks.csv` and `data/ab_long.csv`. A pair is retained when:
 
-## 5. 원문 추적 가능성(Traceability) 및 근거 보완 검증 결과
+1. Both tasks have the same `primary_issue_type`, excluding `unknown`.
+2. Both have the same `patch_files_count`.
+3. The absolute difference in `patch_loc_total` is at most `max(3, int(0.3 * max(LOC_1, LOC_2)))`.
+4. At least one task has a B criterion.
 
-### 1) 23건의 불일치 원인 규명 및 100% 일치 확인
-선생님께서 지적하신 23건(Task 0028: 7건, Task 0031: 5건, Task 0033: 5건, Task 0034: 6건)을 원본 JSON 파일과 정밀 대조했습니다:
-* **원인 1 (출처 필드)**: 이들 과제는 `SWE-bench Pro` 과제로서 문제 본문(`problem_statement`) 외에 공식 요구사항 명세인 `requirements` 필드에 해당 불릿포인트가 기재되어 있었습니다.
-* **원인 2 (개행문자 치환)**: 기존 생성 스크립트에서 단일행 CSV 유지를 위해 `quote.replace('\n', ' ')` 처리를 적용하여 원본의 개행(`\n`)이 공백(` `)으로 치환되어 문자열 일치에 실패했던 것입니다.
-* **조치 결과**: 표준 RFC 4180 CSV 인용 규칙을 적용하여 원형 개행을 보존한 결과, **3,446건 평가 항목 전수(100.00%)가 원본 JSON 필드(`requirements`, `problem_statement`, `interface` 등)와 정확히 1:1 일치**함을 확인했습니다.
+The resulting CSV has 1,177 pairs: 714 within SWE-bench Pro and 463 within PolyBench Java. No cross-family pairs occur in this output; the script does not impose a separate same-family filter. There are 581 distinct participating tasks.
 
-### 2) 58개 평가 항목의 복수 근거 전수 보존
-* 3,446개 평가 항목 중 **58개 항목이 2개 이상의 복수 근거(총 88개의 추가 근거)**를 포함하고 있습니다 (전체 근거 건수: 3,534건).
-* **보존 조치**:
-  1. `data_and_tables/ab_long.csv` (3,446행): 과제·기준 중복 0건 원칙을 유지하며, `evidence_count`, `evidence_source_field`, 첫 번째 대표 근거(`evidence_quote`), 그리고 모든 근거 리스트를 보존한 `all_evidence` (JSON 문자열) 컬럼을 탑재.
-  2. `data_and_tables/ab_all_evidences.csv` (3,534행): Gate 2의 요구조건 의존관계(Dependency Chain) 추적을 위하여 각 근거를 개별 행으로 정규화한 상세 테이블을 신규 생성. (3,534건 전수 원문 일치율 100.00% 검증 완료)
+The mean Jaccard distance between B-criterion sets is 0.8138, the median is 1.0000, and the sample standard deviation is 0.2745. There are 676 disjoint pairs (57.43%). The CSV stores distances rounded to four decimal places.
 
----
+A task can participate in multiple pairs, so these are dependent pair observations. The results describe differences in condition sets among tasks matched on the stated metadata; matching does not establish equal task difficulty.
 
-## 6. 재현 스크립트 패키지 구성 (`Paper/v0.4/scripts/`)
+## 5. Quotation traceability and multiple evidence records
 
-Gate 1의 모든 결과물은 다음 4개의 파이썬 스크립트를 통해 언제든 100% 동일하게 재생성됩니다:
+The original preparation record identified 23 quotation mismatches across tasks 0028 (7), 0031 (5), 0033 (5), and 0034 (6). It attributed these to quotations appearing in the `requirements` field and to replacement of source newlines with spaces during CSV export.
 
-1. `scripts/01_generate_baseline_tasks.py`: `comparison.json`과 `tasks/*.json`에서 다중 라벨을 보존하며 `baseline_tasks.csv`를 생성. (자체 파일 절단 버그 제거 완료)
-2. `scripts/02_generate_ab_long.py`: 원문 개행 및 출처 필드를 보존하여 `ab_long.csv` (3,446행) 및 `ab_all_evidences.csv` (3,534행)를 동시 생성.
-3. `scripts/03_generate_e1_matched_pairs.py`: 4대 매칭 규칙을 적용하여 1,177개 통제쌍(`e1_matched_pairs.csv`)을 결정론적으로 산출.
-4. `scripts/04_generate_gate1_statistics.py`: Fisher 정확 검정, Odds Ratio, 95% CI를 원본에서 계산하여 `gate1_verified_table.md`를 자동 생성.
+The current export preserves source newlines using CSV quoting and records `evidence_source_field`. During this report update, all 3,446 representative quotations and all 3,534 individual quotations were checked as exact substrings of their recorded fields in `data/02_generate_ab_long/tasks/*.json`.
 
----
+Of the 3,446 assignments, 58 have multiple evidence records, contributing 88 quotations beyond the first quotation per assignment:
 
-**결론**: Gate 1의 학술용 재현 패키지 보완 3건이 완료되었으며, 결정론적 재현성·통계적 정합성·원문 추적성 검증을 통과하여 Gate 1을 최종 종료합니다. 이제 Gate 2(Fineract 실제 유지보수 요구조건 의존관계 및 AI 벤치마크 평가 하네스 단절 분석)로 진입합니다.
+- `data/ab_long.csv` stores one row per task–criterion combination, including `evidence_count`, the representative quotation, its source field, and the complete evidence list in `all_evidence`.
+- `data/ab_all_evidences.csv` stores each quotation separately, including its evidence index and source field.
+
+Quotation matching checks source traceability. The semantic classification remains available for review through the codebook, assessments, and quoted source material.
+
+## 6. Regeneration and verification
+
+Run these commands from the package root after installing `requirements.txt`:
+
+```bash
+python scripts/01_generate_baseline_tasks.py
+python scripts/02_generate_ab_long.py
+python scripts/03_generate_e1_matched_pairs.py
+python scripts/04_generate_gate1_statistics.py
+python scripts/verify_all_claims.py
+```
+
+Scripts 01–04 overwrite their corresponding outputs. Scripts 01 and 02 also accept `--output-dir` for comparison runs. All default input and output paths are resolved from the script location.
+
+The historical script self-truncation issue is absent from the current script 01. The current scripts preserve multiple source labels and multiple evidence quotations. `verify_all_claims.py` checks selected counts and summary statistics; it does not rerun all source-quotation comparisons described above.
