@@ -1,14 +1,20 @@
 # Enterprise Maintenance Requirements × AI Coding Benchmark Evaluation
 
-Research materials for the manuscript **“Beyond Task Complexity: Mapping Enterprise Maintenance Requirements to AI Coding Benchmark Evaluation”** (submitted for review at BenchSOC 2026). This repository is a **frozen analysis and partial verification package**, **not** an executable re-run of complete AI benchmark containers and not an independent annotation-reliability study.
+Research materials for the manuscript **“Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance and AI Coding Benchmarks”** (submitted for review at BenchSOC 2026). This repository provides the analysis source code, classification criteria, results, and supporting evidence for the study.
 
 ## Study scope
 
-- Enterprise corpus: **2,925** Apache Fineract resolved issues, decomposed into **3,811** requirement units. The full raw Jira issue export is **not** included in this public candidate; summarized annotations and selected traceability excerpts are provided.
-- Benchmarks: **944** AI coding tasks: SWE-bench Pro **v1 (731 tasks)**, PolyBench Java **165**, SWE-EVO **48**. The SWE-bench Pro default dataset changed to V2 in September 2026; the 731-task study uses **v1**, not today's default. See [original v1 dataset](https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro).
+- Enterprise corpus: **2,925** Apache Fineract resolved issues, decomposed into **3,811** requirement units. The full raw Jira issue export is **not** included in this public package; summarized annotations and selected traceability excerpts are provided.
+- Benchmarks: **944** AI coding tasks: SWE-bench Pro **v1 (731 tasks)**, PolyBench Java **165**, SWE-EVO **48**. We use the larger v1 task set to cover a broader range of tasks: v1 contains 731 tasks, compared with 642 in v2. The reported results describe v1; v2 changes both task membership and task contents. See [versioned datasets and release notes](https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro).
 - **3,446** task–criterion assignments against the frozen 18-criterion A/B taxonomy (six maintenance activities and twelve fulfillment conditions).
 - E1: **1,177** matching pairs, mean Jaccard distance **0.8138** and **676** fully disjoint pairs. Matching controls native issue type and number of changed files exactly, and patch churn within a tolerance. This is not matched difficulty.
 - E2: Corpus co-occurrence (e.g. Fineract B4–B2 phi ~**+0.430**, AI phi ~**−0.013**), **16** source-grounded business dependency relationships plus one technical reference, and four illustrative benchmark-oracle case studies. Co-occurrence is not causality and examples are not prevalence estimates.
+
+### Follow-up on SWE-bench Pro v2
+
+The NodeBB task remains in v2, but its explicit migration requirement was removed; the v1 specification-versus-test finding therefore does not transfer unchanged to v2. See the [submitted paper's goals and structural criteria](evidence/PAPER_GAP_AND_V2_REVIEW_PROTOCOL.md) and [structural review and counterexamples](evidence/V2_STRUCTURAL_REVIEW.md).
+
+A subsequent [Proton Drive #0599 pipeline experiment](evidence/V2_PIPELINE_OMISSION_CASE.md) omitted a required root-key lookup: the published test bodies still satisfied 7/7 in a controlled adapter-based assertion replay because the encryption mock returned a fixed packet without checking its input key. A submission-omission control satisfied only 3/7, and an added key-binding assertion detected the lookup omission. [Reproduction code and results](ablation_study/proton_0599/README.md) are included. This is not an official Jest/container benchmark pass. The earlier batch-order-only interpretation remains withdrawn; the new evidence concerns a required intermediate operation and its downstream input binding. The original quantitative results remain v1 results.
 
 ## Start here
 
@@ -39,14 +45,19 @@ python scripts/04_generate_gate1_statistics.py
 python scripts/09_generate_gate3_artifacts.py
 ```
 
-`01_generate_baseline_tasks.py` and `02_generate_ab_long.py` require separately obtained original **RAW5** upstream inputs (`--raw5 PATH`). These RAW5 sources are **not packaged**, so those two generators are **not self-contained**. For example:
+`01_generate_baseline_tasks.py` reads the included original inputs under `data/inputs/` by default. The 944 task records, original family-mapping JSON and provenance manifest are included; see the [input inventory](data/inputs/README.md). To regenerate without overwriting the published CSV:
 
 ```bash
-python scripts/01_generate_baseline_tasks.py --help
-python scripts/02_generate_ab_long.py --help
+python scripts/01_generate_baseline_tasks.py --output-dir baseline-check
 ```
 
-`06_reviewer_rebuttal_metrics.py` uses included summaries, but any core-versus-infrastructure subdivision requiring the original full Fineract issue text is unavailable in the release. `10_verify_gate4.py` is an optional manuscript-text check requiring a separate draft path via the `PAPER_DRAFT` environment variable; the submitted manuscript is not distributed here.
+`02_generate_ab_long.py` reads its dedicated inputs under `data/02_generate_ab_long/`: the original codebook, assessment table and 944 task records. See the [script 02 input inventory](data/02_generate_ab_long/README.md). To regenerate without overwriting the published CSVs:
+
+```bash
+python scripts/02_generate_ab_long.py --output-dir ab-check
+```
+
+`06_reviewer_rebuttal_metrics.py` reads four packaged inputs, including the [2,925-record Fineract input](data/06_reviewer_rebuttal_metrics/README.md). Its keyword-based core/infra sets are computed but not used by the printed metrics. Manuscript-content checks are excluded from this package's verification scripts.
 
 ## Key files
 
@@ -93,7 +104,7 @@ The `name` field of `data/framework-snapshot.json` is authoritative; translation
 
 ## Validity and transparency
 
-A single primary investigator performed the semantic coding. There is **no substantiated blinded second coder or Cohen's kappa estimate** for this study. The earlier inter-annotator CSV and claimed κ figure were removed from this release because their independent collection/provenance was not established. The historical `evidence/STORYLINE_VERIFICATION_REPORT.md` also records this limitation. See [annotation protocol](data/ANNOTATION_PROTOCOL.md).
+A single primary investigator performed the semantic coding. There is **no substantiated blinded second coder or Cohen's kappa estimate** for this study. The earlier inter-annotator CSV and claimed κ figure were removed from this release because their independent collection/provenance was not established. See [annotation protocol](data/ANNOTATION_PROTOCOL.md).
 
 Automated citation, string-offset and consistency checks confirm only their respective mechanical properties; they are not semantic adjudication. The four qualitative oracle case studies use **static analysis of specified artifacts**, not executed benchmarks, full-harness coverage, or measured resolved rates. Selected illustrative cases cannot support population-wide oracle omission rates or claims about real-world production failure prevalence.
 
@@ -105,4 +116,4 @@ See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [LICENSE.md](LICENSE.md
 
 ## Citation and paper status
 
-Manuscript: *Beyond Task Complexity: Mapping Enterprise Maintenance Requirements to AI Coding Benchmark Evaluation* (BenchSOC 2026 submission). **Do not use an accepted-proceedings BibTeX entry unless and until acceptance/publication details are confirmed.** Cite original benchmark authors and dataset versions separately; see upstream dataset pages for authoritative references.
+Manuscript: *Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance and AI Coding Benchmarks* (BenchSOC 2026 submission). **Do not use an accepted-proceedings BibTeX entry unless and until acceptance/publication details are confirmed.** Cite original benchmark authors and dataset versions separately; see upstream dataset pages for authoritative references.
