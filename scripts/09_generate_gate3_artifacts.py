@@ -107,17 +107,17 @@ def get_contingency_and_phi(dataset_codes, total_n, c1, c2):
     return n11, phi, p_val
 
 target_pairs = [
-    ('B4', 'B2', '소급 변경 -> 수치 연쇄 재계산 (Temporal Retroactive -> Numerical Recalculation)'),
-    ('A1', 'B4', '업무 규칙 -> 시간적 소급 적용 (Business Rule -> Temporal Retroactive)'),
-    ('A1', 'B2', '업무 규칙 -> 복합 수치 산출 (Business Rule -> Numerical Recalculation)'),
-    ('A1', 'B3', '업무 규칙 -> 데이터 관계 정합성 (Business Rule -> Data Consistency)'),
-    ('B4', 'B3', '시간 소급 -> 상태 정합성 (Temporal Retroactive -> State Consistency)'),
-    ('B4', 'B6', '시간 소급 -> 상태 보존 (Temporal Retroactive -> State Preservation)'),
-    ('B2', 'B3', '수치 재산출 -> 원장 정합성 (Numerical Recalculation -> Data Integrity)'),
-    ('B2', 'B6', '수치 재산출 -> 상태 보존 (Numerical Recalculation -> State Preservation)'),
-    ('B3', 'B6', '정합성 유지 -> 상태 불변 보존 (Data Integrity -> State Preservation)'),
-    ('B7', 'B6', '트랜잭션 격리 -> 상태 보존 (Transaction Isolation -> State Preservation)'),
-    ('B7', 'B3', '트랜잭션 격리 -> 원장 무결성 (Transaction Isolation -> Data Integrity)')
+    ('B4', 'B2', 'Temporal Retroactive -> Numerical Recalculation'),
+    ('A1', 'B4', 'Business Rule -> Temporal Retroactive'),
+    ('A1', 'B2', 'Business Rule -> Numerical Recalculation'),
+    ('A1', 'B3', 'Business Rule -> Data Consistency'),
+    ('B4', 'B3', 'Temporal Retroactive -> State Consistency'),
+    ('B4', 'B6', 'Temporal Retroactive -> State Preservation'),
+    ('B2', 'B3', 'Numerical Recalculation -> Data Integrity'),
+    ('B2', 'B6', 'Numerical Recalculation -> State Preservation'),
+    ('B3', 'B6', 'Data Integrity -> State Preservation'),
+    ('B7', 'B6', 'Transaction Isolation -> State Preservation'),
+    ('B7', 'B3', 'Transaction Isolation -> Data Integrity')
 ]
 
 phi_rows = []

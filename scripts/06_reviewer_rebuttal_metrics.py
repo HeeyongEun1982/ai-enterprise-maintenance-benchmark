@@ -1,5 +1,4 @@
 """
-Script 06: Reviewer Rebuttal Metrics Generator
 Computes all quantitative metrics required to address the Peer Reviewer's 4 Major Concerns:
 1. Confounder Analysis & Benchmark Family Stratification
 2. Descriptive analysis of frozen annotations (no independent reliability claim)
@@ -20,7 +19,7 @@ def run_rebuttal_metrics():
     base_path = os.path.join(data_dir, "baseline_tasks.csv")
     # Strictly relative paths for complete portability
     summary_path = os.path.join(data_dir, "fineract", "summary.json")
-    fineract_issues_file = os.path.join(data_dir, "fineract", "fineract_resolved_issues.json")
+    fineract_issues_file = os.path.join(data_dir, "06_reviewer_rebuttal_metrics", "fineract_issues.json")
 
 
     print("================================================================================")
@@ -56,7 +55,7 @@ def run_rebuttal_metrics():
                 fin_infra_issues.add(key)
 
     else:
-        print("[NOTE] Full Jira issue export not bundled: Fineract core/infra keyword subdivision unavailable; other metrics use the frozen summary.")
+        raise FileNotFoundError(f"Required packaged Fineract input not found: {fineract_issues_file}")
 
     # 3. Load AI Benchmark
     ai_tasks = {}

@@ -12,11 +12,31 @@ with open(summary_file, 'r', encoding='utf-8') as f:
 N_fin = sum_data.get('source_issues', 2925)
 fineract_counts = {e['code']: e['issue_count'] for e in sum_data['entries']}
 
-# 2. Load framework-snapshot.json for official names and order
+# 2. Load the source codebook; use English display names in the output table.
 fs_file = os.path.join(data_dir, "framework-snapshot.json")
 with open(fs_file, 'r', encoding='utf-8') as f:
     fs_data = json.load(f)
 code_to_name = {e['code']: e['name'] for e in fs_data['entries']}
+english_names = {
+    'A1': 'Product behavior and business rules',
+    'A2': 'Structure and implementation approach',
+    'A3': 'Testing and quality assurance',
+    'A4': 'Execution and operations',
+    'A5': 'Deployment, version, and environment transitions',
+    'A6': 'Development process, documentation, and project support',
+    'B1': 'Functional results and input conditions',
+    'B2': 'Numerical and calculation accuracy',
+    'B3': 'Data relationships and consistency',
+    'B4': 'Temporal and ordering semantics',
+    'B5': 'State and business workflows',
+    'B6': 'Preservation of existing information and behavior',
+    'B7': 'Concurrent execution and transaction boundaries',
+    'B8': 'Authorization and protection',
+    'B9': 'Performance and resource use',
+    'B10': 'Service continuity and failure handling',
+    'B11': 'Interface and environment compatibility',
+    'B12': 'User interaction',
+}
 
 # 3. Load baseline_tasks.csv for total AI tasks count
 baseline_csv = os.path.join(data_dir, "baseline_tasks.csv")
@@ -40,7 +60,7 @@ codes_order = [f"A{i}" for i in range(1, 7)] + [f"B{i}" for i in range(1, 13)]
 alpha_bonferroni = 0.05 / 18 # ~0.002778
 
 lines = []
-lines.append(f"| 코드 | 공식 명칭 | Fineract (N={N_fin:,}) | AI 944 (N={N_ai:,}) | Odds Ratio (95% CI) | Fisher p-value | 유의한 쪽 (Higher In) |")
+lines.append(f"| Code | Criterion (English description) | Fineract (N={N_fin:,}) | AI 944 (N={N_ai:,}) | Odds Ratio (95% CI) | Fisher p-value | Higher In |")
 lines.append("| :---: | :--- | :---: | :---: | :---: | :---: | :---: |")
 
 stat_summary = {
@@ -50,7 +70,7 @@ stat_summary = {
 }
 
 for code in codes_order:
-    name = code_to_name[code]
+    name = english_names[code]
     a = fineract_counts[code]
     b = N_fin - a
     c = ai_counts[code]
@@ -69,13 +89,13 @@ for code in codes_order:
     p_str = f"{p_val:.2e}" if p_val < 0.0001 else f"{p_val:.4f}"
     
     if p_val >= alpha_bonferroni:
-        higher = "유의차 없음 (n.s.)"
+        higher = "No significant difference (n.s.)"
         stat_summary['not_significant'] += 1
     elif odds > 1:
-        higher = "**Fineract 더 많음**"
+        higher = "**Higher in Fineract**"
         stat_summary['fineract_higher'] += 1
     else:
-        higher = "**AI 944 더 많음**"
+        higher = "**Higher in AI 944**"
         stat_summary['ai_higher'] += 1
         
     line = f"| **{code}** | {name} | {a} ({fin_pct:.2f}%) | {c} ({ai_pct:.2f}%) | {odds:.2f} [{ci_low:.2f}, {ci_high:.2f}] | {p_str} | {higher} |"

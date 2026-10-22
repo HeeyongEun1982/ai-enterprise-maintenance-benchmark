@@ -21,17 +21,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Historical Production Requirement (Resolved)',
         'from_code': 'A1',
-        'from_name': '제품 동작·업무 규칙 (소급 이자율 변경 허용)',
+        'from_name': 'Product Behavior and Business Rules (allow backdated interest-rate changes)',
         'to_code': 'B4',
-        'to_name': '시간·순서에 따른 의미 (소급 역분개 재처리 트리거)',
+        'to_name': 'Temporal and Sequential Semantics (trigger backdated reversal and replay)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Paired Verbatim Clauses',
         'verbatim_raw_quote': 'Backdate can be done on already paid Installments as well',
         'raw_quote_start_pos': 261,
         'paired_consequence_quote': 'Installments paid Interest amount will be reverse replayed as per the new Interest rate from the applied date',
         'paired_consequence_pos': 559,
-        'causal_relationship_synthesis': '기납부 회차에 대한 소급 변경 허용(Requirement Details #3)과 이에 따른 이자 금액 연쇄 역분개 재처리(Requirement Details #5)의 결합을 통해, 소급 변경(A1)이 연쇄 역분개 재처리(B4)를 직접 트리거함을 명시함.',
-        'boundary_and_invariance': '대출 실행일 이후 과거 모든 일자로부터 이자율 소급 적용 허용.'
+        'causal_relationship_synthesis': 'The combination of allowing backdated changes to paid installments (Requirement Details #3) and the resulting cascading reversal and replay of interest amounts (Requirement Details #5) explicitly links the backdated change (A1) to reversal and replay (B4).',
+        'boundary_and_invariance': 'Allow backdated interest rates to take effect from any past date after loan disbursement.'
     },
     {
         'dep_id': 'DEP-02',
@@ -40,17 +40,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Historical Production Requirement (Resolved)',
         'from_code': 'B4',
-        'from_name': '시간·순서에 따른 의미 (소급 재처리)',
+        'from_name': 'Temporal and Sequential Semantics (backdated replay)',
         'to_code': 'B2',
-        'to_name': '수치·계산 정확성 (상환 일정 EMI 및 이자 재계산)',
+        'to_name': 'Numerical and Computational Accuracy (recalculate repayment-schedule EMI and interest)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'Repayment schedule will be recalculated with New EMI and Interest from the Interest applied schedule date',
         'raw_quote_start_pos': 325,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '소급 재처리 실행 시 적용일 이후 기납부 및 미납/일부납 회차의 상환 일정에 대해 신규 EMI 및 이자를 연쇄적으로 재계산한다.',
-        'boundary_and_invariance': '기납부 회차의 원금/이자 배분 변경 시 연쇄 역분개 재처리 강제.'
+        'causal_relationship_synthesis': 'Backdated replay cascades into recalculating EMI and interest in the repayment schedule for paid, unpaid and partially paid installments from the effective date onward.',
+        'boundary_and_invariance': 'Changes to principal/interest allocations in paid installments require cascading reversal and replay.'
     },
     {
         'dep_id': 'DEP-03',
@@ -59,17 +59,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Historical Production Requirement (Resolved)',
         'from_code': 'B2',
-        'from_name': '수치·계산 정확성 (EMI 재산출)',
+        'from_name': 'Numerical and Computational Accuracy (recalculate EMI)',
         'to_code': 'B6',
-        'to_name': '기존 정보·동작 보존 (회차 총수 불변식)',
+        'to_name': 'Preservation of Existing Information and Behavior (invariant installment count)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'No of Installments will remain the same, only EMI and Interest would get affected',
         'raw_quote_start_pos': 843,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '소급 이자율 변경으로 개별 회차의 EMI와 이자 금액이 변동되더라도, 전체 상환 회차 총수(No of Installments)는 변하지 않고 엄격히 보존되어야 한다.',
-        'boundary_and_invariance': '계약 원장의 구조적 불변식: 회차 총수 불변.'
+        'causal_relationship_synthesis': "Although a backdated interest-rate change modifies each installment's EMI and interest amount, the total number of installments must remain unchanged.",
+        'boundary_and_invariance': 'Structural invariant of the contractual ledger: preserve the total installment count.'
     },
     {
         'dep_id': 'DEP-04',
@@ -78,17 +78,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Historical Production Requirement (Resolved)',
         'from_code': 'B4',
-        'from_name': '시간·순서에 따른 의미 (상각 후 거래 소급 재처리)',
+        'from_name': 'Temporal and Sequential Semantics (replay backdated transactions after charge-off)',
         'to_code': 'B3',
-        'to_name': '데이터 관계·정합성 (표준 회계 분개 규칙 보존)',
+        'to_name': 'Data Relationships and Integrity (preserve standard accounting-entry rules)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'If the repayment that was made before the charge-off is reversed and replayed due to backdated Interest modification,then the accounting entry of the reversed transaction and replayed transaction should follow *standard accounting rules and not charge-off accounting rules*',
         'raw_quote_start_pos': 1005,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '대손 상각(charge-off) 이전에 납부된 거래가 소급 이자 변경으로 역분개 재처리될 때, 재처리 분개는 상각 회계 규칙이 아닌 표준 회계 분개 규칙을 유지해야 한다.',
-        'boundary_and_invariance': '원장 거래 상태별 회계 분개 전이 불변식 통제.'
+        'causal_relationship_synthesis': 'When a repayment made before charge-off is reversed and replayed following a backdated interest change, the replayed entries must follow standard accounting rules rather than charge-off accounting rules.',
+        'boundary_and_invariance': 'Control the invariant governing accounting-entry transitions for each ledger transaction state.'
     },
 
     # -------------------------------------------------------------------------
@@ -101,17 +101,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Historical Production Requirement (Resolved)',
         'from_code': 'A1',
-        'from_name': '제품 동작·업무 규칙 (예금 입금 취소/역분개)',
+        'from_name': 'Product Behavior and Business Rules (cancel/reverse a savings deposit)',
         'to_code': 'B4, B2',
-        'to_name': '시간 재처리 및 잔액 재계산 (일일 잔액 재계산 트리거)',
+        'to_name': 'Temporal Replay and Balance Recalculation (trigger daily-balance recalculation)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Paired Verbatim Clauses',
         'verbatim_raw_quote': 'now reverse the deposit of 500 .',
         'raw_quote_start_pos': 1494,
         'paired_consequence_quote': 'system will\xa0recalculateDailyBalances and reverse the charge transaction on this section of the code',
         'paired_consequence_pos': 1532,
-        'causal_relationship_synthesis': '재현 절차 Step 3(입금 500 취소)이 실행되면 직후 Step 4에서 시스템이 recalculateDailyBalances를 호출하여 당좌대월 잔액을 재산출하고 연관 수수료 거래를 자동 취소/재처리함을 선후 절차로 명시함.',
-        'boundary_and_invariance': '과거 거래 취소 시점부터 당좌대월 및 일일 잔액 전면 재계산.'
+        'causal_relationship_synthesis': 'Reproduction Step 3 reverses a deposit of 500. The immediately following Step 4 states that the system calls recalculateDailyBalances, recalculates overdraft balances, and automatically reverses/reprocesses the associated charge transaction.',
+        'boundary_and_invariance': 'Recalculate overdraft and daily balances from the cancellation date of the historical transaction.'
     },
     {
         'dep_id': 'DEP-06',
@@ -120,17 +120,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Historical Production Requirement (Resolved)',
         'from_code': 'B4',
-        'from_name': '시간·순서에 따른 의미 (역분개 후 신규 수수료 생성)',
+        'from_name': 'Temporal and Sequential Semantics (create a replacement charge after reversal)',
         'to_code': 'B3, B6',
-        'to_name': '데이터 관계·정합성 (수수료 납부 관계 객체 보존)',
+        'to_name': 'Data Relationships and Integrity (preserve charge-payment relationship objects)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'now since the new charge created does not have the charged paid by object in the table "\xa0 m_savings_account_charge_paid_by" recalculating the account balance becomes wrong',
         'raw_quote_start_pos': 2160,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '일일 잔액 재계산 과정에서 수수료 거래가 복제/재생성될 때 m_savings_account_charge_paid_by 관계 객체가 누락되면 이후 잔액 재계산이 구조적으로 오염된다.',
-        'boundary_and_invariance': '외래키 관계 객체 누락 시 계좌 잔액 원장 오염 발생.'
+        'causal_relationship_synthesis': 'When a charge transaction is copied/recreated during daily-balance recalculation, omitting the m_savings_account_charge_paid_by relationship object corrupts subsequent balance recalculation.',
+        'boundary_and_invariance': 'Missing foreign-key relationship objects corrupt account-ledger balances.'
     },
 
     # -------------------------------------------------------------------------
@@ -143,17 +143,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'B7',
-        'from_name': '동시 실행·트랜잭션 경계 (회차별 독립 트랜잭션)',
+        'from_name': 'Concurrency and Transaction Boundaries (independent transaction per installment)',
         'to_code': 'B6',
-        'to_name': '기존 정보·동작 보존 (성공 회차 영속 커밋 보존)',
+        'to_name': 'Preservation of Existing Information and Behavior (retain durable commits for successful installments)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Paired Verbatim Clauses',
         'verbatim_raw_quote': 'Each due savings-charge installment is processed in an independent transaction.',
         'raw_quote_start_pos': 853,
         'paired_consequence_quote': 'A successfully collected installment remains committed regardless of the outcome of another installment.',
         'paired_consequence_pos': 1016,
-        'causal_relationship_synthesis': '각 회차별 저축 수수료는 독립 트랜잭션으로 처리되어(AC #1), 특정 회차의 실패 여부와 무관하게 성공 회차의 원장 커밋과 잔액 차감이 영속 보존된다(AC #3).',
-        'boundary_and_invariance': '단일 회차(one due savings-charge installment)가 원자적 트랜잭션 경계임.'
+        'causal_relationship_synthesis': 'Each due savings-charge installment is processed in an independent transaction (AC #1), so successful ledger commits and balance deductions remain durable regardless of failures in other installments (AC #3).',
+        'boundary_and_invariance': 'One due savings-charge installment defines the atomic transaction boundary.'
     },
     {
         'dep_id': 'DEP-08',
@@ -162,17 +162,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'B7',
-        'from_name': '트랜잭션 경계 격리',
+        'from_name': 'Transaction-Boundary Isolation',
         'to_code': 'B3',
-        'to_name': '데이터 관계·정합성 (부분 실패 시 전체 원장 오염 방지)',
+        'to_name': 'Data Relationships and Integrity (prevent ledger-wide corruption after partial failure)',
         'dependency_classification': 'Inferred Dependency',
         'quote_verification_status': 'Inferred (Domain Engineering Principle)',
         'verbatim_raw_quote': 'Each due savings-charge installment is processed in an independent transaction.',
         'raw_quote_start_pos': 853,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '원문은 독립 트랜잭션을 명시하며, 이것이 부분 실패 시 타 회차 원장 및 계좌 잔액 엔티티와의 관계 정합성을 보존하기 위한 격리 조치임은 소프트웨어 아키텍처 원리에 따른 연구자 해석임.',
-        'boundary_and_invariance': '원문의 독립 트랜잭션 명시와 데이터 정합성 보존 목적의 해석을 분리 표기.'
+        'causal_relationship_synthesis': "The source explicitly requires independent transactions. Interpreting this as isolation intended to preserve relationships between other installments' ledger entries and account-balance entities after partial failure is a researcher interpretation based on software architecture principles.",
+        'boundary_and_invariance': 'Distinguish the explicit independent-transaction requirement from the interpreted purpose of preserving data integrity.'
     },
     {
         'dep_id': 'DEP-09',
@@ -181,17 +181,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'A4',
-        'from_name': '실행·운영 (배치 작업 재실행)',
+        'from_name': 'Execution and Operations (rerun a batch job)',
         'to_code': 'B6',
-        'to_name': '기존 정보·동작 보존 (멱등성 및 중복 징수 방지)',
+        'to_name': 'Preservation of Existing Information and Behavior (idempotency and prevention of duplicate collection)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'Re-running the job resumes from the first unpaid installment without collecting previously committed installments again.',
         'raw_quote_start_pos': 2293,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '배치 작업 재실행(A4) 시 이미 커밋된 이전 회차는 건너뛰고 첫 미납 회차부터 재개함으로써 멱등성과 중복 징수 방지(B6)를 직접 강제함을 원문이 명시함.',
-        'boundary_and_invariance': '배치 장애 복구 시 트랜잭션 멱등성 보장.'
+        'causal_relationship_synthesis': 'The source explicitly requires a rerun batch job (A4) to skip already committed installments and resume at the first unpaid installment, directly enforcing idempotency and preventing duplicate collection (B6).',
+        'boundary_and_invariance': 'Maintain transaction idempotency during batch-failure recovery.'
     },
     {
         'dep_id': 'DEP-10',
@@ -200,17 +200,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'A1, B5',
-        'from_name': '업무 규칙 및 상태 흐름 (잔액 부족 처리)',
+        'from_name': 'Business Rules and State Workflow (handle insufficient balances)',
         'to_code': 'B7, B6',
-        'to_name': '트랜잭션 격리 및 배치 정상 완료 보존',
+        'to_name': 'Transaction Isolation and Preservation of Successful Batch Completion',
         'dependency_classification': 'Co-required',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'the job is not marked as failed solely because of the insufficient balance',
         'raw_quote_start_pos': 1718,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '특정 계좌의 잔액 부족은 업무상 정상 미납 결과로 처리되어 해당 회차를 동결하되 전체 배치 작업을 실패 처리하지 않는다.',
-        'boundary_and_invariance': '잔액 부족을 시스템 예외가 아닌 비즈니스 미납 상태로 격리.'
+        'causal_relationship_synthesis': 'An insufficient account balance is treated as a normal unpaid business outcome: the affected installment remains unpaid, but the entire batch job is not marked as failed.',
+        'boundary_and_invariance': 'Isolate insufficient funds as an unpaid business state rather than a system exception.'
     },
 
     # -------------------------------------------------------------------------
@@ -223,17 +223,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'A1',
-        'from_name': '제품 동작·업무 규칙 (과거 거래 정정)',
+        'from_name': 'Product Behavior and Business Rules (correct a historical transaction)',
         'to_code': 'B4',
-        'to_name': '시간·순서에 따른 의미 (이른 날짜 기준 연쇄 재처리)',
+        'to_name': 'Temporal and Sequential Semantics (cascade replay from the earlier date)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'The loan is replayed from the earlier of the original and new transaction dates.',
         'raw_quote_start_pos': 2147,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '환불/감면 거래의 일자나 금액 수정 시, 원 거래일과 신규 거래일 중 더 이른 날짜(earlier date)부터 대출 거래 전체를 연쇄 소급 재처리한다.',
-        'boundary_and_invariance': '원 거래 취소 및 동일 타입 신규 거래 생성을 통한 연쇄 무효화 강제.'
+        'causal_relationship_synthesis': 'When a refund/waiver transaction date or amount is modified, replay the loan transaction sequence from the earlier of the original and new transaction dates.',
+        'boundary_and_invariance': 'Require cascading invalidation through reversal of the original transaction and creation of a new transaction of the same type.'
     },
     {
         'dep_id': 'DEP-12',
@@ -242,17 +242,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'B4',
-        'from_name': '시간·순서에 따른 의미 (소급 재처리)',
+        'from_name': 'Temporal and Sequential Semantics (backdated replay)',
         'to_code': 'B3, B2, B5',
-        'to_name': '다중 엔티티 연쇄 갱신 (일정·잔액·배분·미수수익·상태)',
+        'to_name': 'Cascading Updates Across Entities (schedule, balances, allocations, accruals and status)',
         'dependency_classification': 'Co-required',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'The schedule, balances, allocations, accruals and loan status (e.g. closed \u2194 active, overpaid) are recalculated correctly.',
         'raw_quote_start_pos': 2228,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '소급 재처리 실행 결과로 상환 일정(schedule), 원장 잔액(balances), 상환 배분(allocations), 미수수익 발생액(accruals), 대출 상태(loan status)가 동시에 연쇄 재계산된다.',
-        'boundary_and_invariance': '단일 거래 수정이 5개 이상의 핵심 도메인 엔티티에 파급.'
+        'causal_relationship_synthesis': 'Backdated replay cascades into recalculating the repayment schedule, ledger balances, payment allocations, accrued income and loan status together.',
+        'boundary_and_invariance': 'A single transaction modification affects at least five core domain entities.'
     },
     {
         'dep_id': 'DEP-13',
@@ -261,17 +261,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'A1',
-        'from_name': '제품 동작·업무 규칙 (수수료 조정 작업)',
+        'from_name': 'Product Behavior and Business Rules (adjust a charge)',
         'to_code': 'B3',
-        'to_name': '데이터 관계·정합성 (원 수수료 관계 링크 보존)',
+        'to_name': 'Data Relationships and Integrity (preserve the original charge relationship)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'The new transaction stays linked to the same loan charge (LoanChargePaidBy / charge relation).',
         'raw_quote_start_pos': 3368,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '수수료 조정(Charge Adjustment) 신규 거래는 일반 상환 거래로 취급되지 않고 원 수수료 엔티티(LoanChargePaidBy)와의 연결 관계를 엄격히 유지해야 한다.',
-        'boundary_and_invariance': '수수료-조정 거래 간 1:1 관계 추적성 보존.'
+        'causal_relationship_synthesis': 'A new Charge Adjustment transaction must not be treated as an ordinary repayment; it must retain its relationship to the original charge entity through LoanChargePaidBy.',
+        'boundary_and_invariance': 'Preserve one-to-one traceability between a charge and its adjustment transaction.'
     },
     {
         'dep_id': 'DEP-14',
@@ -280,17 +280,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'A1, B3',
-        'from_name': '업무 규칙 및 관계 링크 (취소 거래 복원)',
+        'from_name': 'Business Rules and Relationships (restore a reversed transaction)',
         'to_code': 'B2',
-        'to_name': '수치·계산 정확성 (가용 한도 재산출)',
+        'to_name': 'Numerical and Computational Accuracy (recalculate the available adjustment limit)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'counting the reversed original as available again',
         'raw_quote_start_pos': 3561,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '신규 조정 금액은 해당 수수료의 가용 한도를 초과할 수 없으며, 취소된 원 거래의 금액을 가용 한도로 재산입하여 상한선을 재계산한다.',
-        'boundary_and_invariance': '취소 거래 금액 가용 한도 복원을 통한 과다 감면 방지 통제.'
+        'causal_relationship_synthesis': 'A new adjustment amount must not exceed the available limit for the charge. Recalculate that limit by adding the reversed original transaction amount back to the available amount.',
+        'boundary_and_invariance': 'Prevent excessive waivers by restoring the reversed transaction amount to the available adjustment limit.'
     },
     {
         'dep_id': 'DEP-15',
@@ -299,17 +299,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Domain Accounting Principle Interpretation',
         'from_code': 'B3, B2',
-        'from_name': '관계 정합성 및 수치 정확성',
+        'from_name': 'Relational Integrity and Numerical Accuracy',
         'to_code': 'B6',
-        'to_name': '기존 정보·동작 보존 (회계 원장 차대 불변식)',
+        'to_name': 'Preservation of Existing Information and Behavior (ledger debit-credit invariant)',
         'dependency_classification': 'Inferred Dependency',
         'quote_verification_status': 'Inferred (Domain Accounting Principle)',
         'verbatim_raw_quote': 'Journal entries are reversed for the original transaction and posted for the new one, using the correct accounts for that transaction type.',
         'raw_quote_start_pos': 2357,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '거래 취소 및 신규 분개 전표 전기 후, 대출 계좌의 누적 원장 차변과 대변의 합계는 복식부기 회계 원리에 따라 정합성을 유지해야 한다.',
-        'boundary_and_invariance': '원문은 분개 전기를 명시하며, 차대 균형 유지는 금융 도메인 원리에 기초한 연구자 도출 해석임.'
+        'causal_relationship_synthesis': 'After reversing a transaction and posting replacement journal entries, cumulative debits and credits in the loan-account ledger must remain consistent under double-entry accounting principles.',
+        'boundary_and_invariance': 'The source explicitly requires journal posting; maintaining debit-credit balance is a researcher interpretation derived from financial-domain principles.'
     },
 
     # -------------------------------------------------------------------------
@@ -322,17 +322,17 @@ dep_rows = [
         'issue_resolution': 'Unresolved',
         'evidence_role': 'Active Enterprise Maintenance Specification (Unresolved)',
         'from_code': 'A5',
-        'from_name': '배포·버전·환경 전환 (설정 데이터 통합 마이그레이션)',
+        'from_name': 'Deployment, Versioning, and Environment Transition (consolidate configuration data through migration)',
         'to_code': 'B6',
-        'to_name': '기존 정보·동작 보존 (레거시 유효 동작 보존)',
+        'to_name': 'Preservation of Existing Information and Behavior (preserve effective legacy behavior)',
         'dependency_classification': 'Explicit Dependency',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'For installations that already configured both rows, the effective behaviour does not change.',
         'raw_quote_start_pos': 1527,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '이중 설정(허용 여부, 한도)을 단일 설정으로 통합하는 DB 마이그레이션 시, 기존 한도 설정값을 복제하고 기존 설치본의 유효 동작을 동일하게 보존한다.',
-        'boundary_and_invariance': 'Liquibase 마이그레이션 실행 후 기존 시스템의 유효 런타임 행위 불변 보존.'
+        'causal_relationship_synthesis': 'During a database migration that consolidates two settings (permission and limit) into one, copy the existing limit value and preserve the effective behavior of existing installations.',
+        'boundary_and_invariance': "Preserve the existing system's effective runtime behavior after the Liquibase migration."
     },
 
     # -------------------------------------------------------------------------
@@ -345,17 +345,17 @@ dep_rows = [
         'issue_resolution': 'Fixed',
         'evidence_role': 'Technical Runtime Call Trace (Supplementary Reference, not direct requirement specification)',
         'from_code': 'A2',
-        'from_name': '기술적 함수 호출 스택 (스케줄러 생성기 내부 호출)',
+        'from_name': 'Technical Function Call Stack (internal schedule-generator calls)',
         'to_code': 'B1',
-        'to_name': '내부 널 포인터 결함 방어 (런타임 예외 방어)',
+        'to_name': 'Internal Null-Pointer Defect Prevention (runtime exception handling)',
         'dependency_classification': 'Technical Call Graph',
         'quote_verification_status': 'Exact Verbatim Match',
         'verbatim_raw_quote': 'updateAmountsBasedOnCurrentEarlyPayments (AbstractLoanScheduleGenerator.java:640)',
         'raw_quote_start_pos': 239,
         'paired_consequence_quote': 'N/A',
         'paired_consequence_pos': -1,
-        'causal_relationship_synthesis': '조기 상환 재계산 시 내부 상환 일정 생성기 메서드 간의 연쇄 호출 스택트레이스로서, 업무 요구사항이 아닌 런타임 함수 호출 경로를 증명하는 보조 기술 자료임.',
-        'boundary_and_invariance': '업무 요구조건 의존관계 집계(16건)에서는 제외하고 기술 참조로만 활용.'
+        'causal_relationship_synthesis': 'The cascading stack trace between internal repayment-schedule generator methods during early-payment recalculation is supplementary technical evidence of a runtime call path, not a business requirement specification.',
+        'boundary_and_invariance': 'Exclude this item from the 16 business requirement dependencies and retain it only as a technical reference.'
     }
 ]
 
@@ -375,55 +375,55 @@ print(f"Generated: {dep_csv} ({len(dep_rows)} rows: 16 core + 1 supplementary)")
 map_rows = [
     {
         'axis_id': 'Axis-1',
-        'comparative_role': 'Direct Functional Comparison (직접 비교 사례)',
-        'functional_domain': 'Configuration Data Migration & Idempotency (설정 데이터 이행 및 멱등성)',
+        'comparative_role': 'Direct Functional Comparison',
+        'functional_domain': 'Configuration Data Migration and Idempotency',
         'fineract_anchor': 'FINERACT-2934 (Open / Unresolved)',
-        'fineract_dimension_and_codes': 'A5 (배포·환경 전환), B6 (기존 데이터 보존)',
-        'fineract_core_requirement': '강제 출금 설정 체계 단일화 시 기존 한도 값을 신규 구조로 일괄 복제 이행하고 기존 설치본의 유효 동작을 보존하는 Liquibase 마이그레이션',
+        'fineract_dimension_and_codes': 'A5 (Deployment and Environment Transition), B6 (Preservation of Existing Data)',
+        'fineract_core_requirement': 'A Liquibase migration that consolidates forced-withdrawal settings, copies existing limit values into the new structure in bulk, and preserves the effective behavior of existing installations.',
         'ai_task_id': '0030',
         'ai_repo': 'NodeBB/NodeBB',
         'ai_family': 'SWE-bench Pro',
         'ai_instance_id': 'instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516',
-        'selection_rationale': '과제 문제 설명(Problem Statement)에서 기존 restrictChat 활성 계정을 chatAllowList로 이전하는 배치 업그레이드 스크립트(src/upgrades/4.3.0/chat_allow_list.js) 및 반복 실행 멱등성을 명시적으로 요구하여, 동일 과제 내부에서 설정 마이그레이션 요구조건과 평가 하네스 단언문의 범위를 1:1로 직접 비교할 수 있는 최적의 사례.'
+        'selection_rationale': 'The problem statement explicitly requires a batch upgrade script (src/upgrades/4.3.0/chat_allow_list.js) to migrate accounts with restrictChat enabled to chatAllowList, including safe repeated execution. This provides a direct within-task comparison between configuration-migration requirements and evaluation-harness assertion scope.'
     },
     {
         'axis_id': 'Axis-2',
-        'comparative_role': 'Evaluation Scope & Abstraction Gap (평가 범위 및 추상화 층위의 차이를 설명하는 사례)',
-        'functional_domain': 'Temporal State Transition & Recalculation (시간적 상태 전이 및 소급 재계산)',
+        'comparative_role': 'Evaluation Scope and Abstraction Gap',
+        'functional_domain': 'Temporal State Transitions and Backdated Recalculation',
         'fineract_anchor': 'FINERACT-2930 (In Progress) / FINERACT-2338 (Resolved)',
-        'fineract_dimension_and_codes': 'A1 (거래 수정) -> B4 (소급 재처리) -> B2 (수치 계산) -> B3 (관계 정합성)',
-        'fineract_core_requirement': '과거 거래 일자/금액 수정 시 원 거래일과 신규일 중 이른 날짜부터 후속 일정·잔액·분개·상태를 연쇄 소급 재처리',
+        'fineract_dimension_and_codes': 'A1 (Transaction Modification) -> B4 (Backdated Replay) -> B2 (Numerical Calculation) -> B3 (Relational Integrity)',
+        'fineract_core_requirement': 'After modifying a historical transaction date or amount, replay subsequent schedules, balances, journal entries and states from the earlier of the original and new dates.',
         'ai_task_id': '0139',
         'ai_repo': 'element-hq/element-web',
         'ai_family': 'SWE-bench Pro',
         'ai_instance_id': 'instance_element-hq__element-web-dae13ac8522fc6d41e64d1ac6e3174486fdcce0c-vnan',
-        'selection_rationale': '룸 타임라인과 스레드 타임라인 간에 읽음 영수증(receipt)이 역전될 때 미읽음 배지(badge) 소급 재계산을 다루지만, 금융의 소급 원장 재계산과는 개발 목적이 다르며, Mock 기반 단위 테스트가 측정하는 인메모리 상태 판정의 국소적 범위를 설명하는 사례.'
+        'selection_rationale': 'The task recalculates unread badges when read receipts are reordered across room and thread timelines. Its development purpose differs from backdated financial-ledger recalculation; it illustrates the localized in-memory state decisions measured by mock-based unit tests.'
     },
     {
         'axis_id': 'Axis-3',
-        'comparative_role': 'Concurrency & Isolation Level Hierarchy (동시성 및 격리 수준의 층위 차이를 설명하는 사례)',
-        'functional_domain': 'In-Process Thread Safety vs Transaction Failure Isolation (단일 프로세스 스레드 안전성 vs 업무 트랜잭션 부분 실패 격리)',
+        'comparative_role': 'Concurrency and Isolation-Level Hierarchy',
+        'functional_domain': 'In-Process Thread Safety versus Business-Transaction Partial-Failure Isolation',
         'fineract_anchor': 'FINERACT-2836 (In Progress) / FINERACT-753 (Resolved)',
-        'fineract_dimension_and_codes': 'B7 (동시 실행·트랜잭션 경계)',
-        'fineract_core_requirement': '수수료 부과 회차별 독립 트랜잭션 분리를 통한 부분 실패 격리, 잔액 부족 시 성공 건 커밋 보존 및 재실행 멱등성 보장',
+        'fineract_dimension_and_codes': 'B7 (Concurrency and Transaction Boundaries)',
+        'fineract_core_requirement': 'Process each charge installment in an independent transaction to isolate partial failures, preserve successful commits when another installment has insufficient funds, and ensure idempotent reruns.',
         'ai_task_id': '0819',
         'ai_repo': 'apache/rocketmq',
         'ai_family': 'PolyBench Java',
         'ai_instance_id': 'apache__rocketmq-516',
-        'selection_rationale': '다중 스레드 환경에서 StatsItemSet 테이블 삽입 시 발생하는 레이스 컨디션을 putIfAbsent로 원자화하는 고강도 스레드 안전성 스트레스 테스트를 포함하여, 단일 JVM 프로세스 내 원자적 연산과 엔터프라이즈 업무 트랜잭션의 독립 격리·커밋 보존 간의 층위 차이를 규명하는 사례.'
+        'selection_rationale': 'The task includes a high-load thread-safety stress test that makes StatsItemSet insertion atomic with putIfAbsent. It illustrates the distinction between atomic operations within one JVM and independent isolation and commit preservation in enterprise business transactions.'
     },
     {
         'axis_id': 'Axis-4',
-        'comparative_role': 'Positive Benchmark Evaluation Case / Aligned Counterexample (벤치마크의 긍정적 평가 사례 / 정합 반례)',
-        'functional_domain': 'Engine Persistence Backup, Schema Restoration, and Retention Pruning (실제 DB 엔진 백업, 스키마 복원 및 보존 개수 정리)',
+        'comparative_role': 'Positive Benchmark Evaluation Case / Aligned Counterexample',
+        'functional_domain': 'Database-Engine Backup, Schema Restoration and Retention Pruning',
         'fineract_anchor': 'Database Infrastructure Backup & Disaster Recovery Operational Baseline',
-        'fineract_dimension_and_codes': 'A4 (실행·운영), B10 (서비스 지속·실패 대응)',
-        'fineract_core_requirement': '운영 중인 DB의 무중단 백업 파일 생성 및 파괴적 재해 복구 시 스키마 복원 무결성 보장',
+        'fineract_dimension_and_codes': 'A4 (Execution and Operations), B10 (Service Continuity and Failure Handling)',
+        'fineract_core_requirement': 'Create backup files from a running database without service interruption and preserve schema-restoration integrity during recovery from destructive failures.',
         'ai_task_id': '0495',
         'ai_repo': 'navidrome/navidrome',
         'ai_family': 'SWE-bench Pro',
         'ai_instance_id': 'instance_navidrome__navidrome-55730514ea59d5f1d0b8e3f8745569c29bdbf7b4',
-        'selection_rationale': 'SQLite 데이터베이스 백업 생성, 파괴적 DDL 삭제 후 복원, 그리고 백업 보존 개수 및 오래된 파일 정리(Pruning)를 실제 DB 엔진을 가동하여 검증하는 944개 과제 중 유일무이한 영속 DB 조작 테스트 과제.'
+        'selection_rationale': 'The only task among the 944 analyzed tasks that tests persistent database operations using a running engine to create SQLite backups, restore after destructive DDL deletion, and enforce backup-count retention and pruning of old files.'
     }
 ]
 
@@ -445,48 +445,48 @@ harness_rows = [
         'task_id': '0030',
         'repo': 'NodeBB/NodeBB',
         'test_files': 'test/messaging.js, test/user.js',
-        'engineering_correctness': '적절한 단위 권한 테스트: mock 사용자의 allow/deny 설정에 따른 canMessageUser()의 차단/허용 분기 및 [[error:chat-restricted]] 에러 반환을 엄밀하게 단언함.',
+        'engineering_correctness': "An appropriate unit permission test: directly asserts the allow/deny branches of canMessageUser() for mock users' settings and the exact [[error:chat-restricted]] error.",
         'actual_assertion_snippet': "await assert.rejects(Messaging.canMessageUser(uid2, uid1), { message: '[[error:chat-restricted]]' });",
-        'evaluated_scope': '채팅 메시지 전송 시점의 서버 측 리프 권한 검사 (In-memory leaf permission gating)',
-        'industrial_representativeness_gap': '문제 명세에서 명시적으로 요구한 레거시 계정의 업그레이드 마이그레이션 스크립트(src/upgrades/4.3.0/chat_allow_list.js) 및 반복 실행 멱등성 검증이 F2P 평가 단언문에 포함되지 않아, 설정 데이터 이행 역량이 평가 범위에서 축소 측정(Construct Underrepresentation)됨.',
-        'unverified_industrial_conditions': '배치 업그레이드 스크립트의 실제 실행, 기존 restrictChat=1 사용자 계정의 DB 키 일괄 변환 정합성, 다중 실행 시 멱등성 보존.',
-        'boundary_calibration': '하네스의 전체 회귀 테스트를 수정/삭제하여 실행 검증한 것이 아니며, F2P로 추가된 단위 테스트 단언문이 리프 권한 분기에 국한되어 있음을 실증함.'
+        'evaluated_scope': 'Server-side leaf permission checks at chat-message submission time (in-memory permission gating).',
+        'industrial_representativeness_gap': 'The F2P assertions do not include the legacy-account upgrade script (src/upgrades/4.3.0/chat_allow_list.js) or repeated-execution idempotency explicitly required by the specification, underrepresenting configuration-data migration within the inspected evaluation scope.',
+        'unverified_industrial_conditions': 'Execution of the batch upgrade script; integrity of bulk database-key conversion for existing restrictChat=1 accounts; preservation of idempotency across repeated runs.',
+        'boundary_calibration': "No execution experiment modified or removed the harness's complete regression tests. The evidence shows that the added F2P unit-test assertions focus on leaf permission branches."
     },
     {
         'case_id': 'Case_ElementWeb_0139',
         'task_id': '0139',
         'repo': 'element-hq/element-web',
         'test_files': 'test/Unread-test.ts, test/test-utils/threads.ts',
-        'engineering_correctness': '우수한 단위 분기 테스트: 모의 객체(mock)를 활용하여 영수증 역전, 본인 전송, 스레드 미읽음 등 8개 이상의 복합 상태 전이 분기 로직을 충실하게 단언함.',
+        'engineering_correctness': 'A thorough unit branch test: uses mocks to assert more than eight compound state-transition branches, including receipt reordering, self-sent messages and unread thread messages.',
         'actual_assertion_snippet': "expect(doesRoomHaveUnreadMessages(room)).toBe(true); expect(doesRoomHaveUnreadMessages(room)).toBe(false); [Mock: mocked(haveRendererForEvent).mockReturnValue(true); thread.initialEventsFetched = true;]",
-        'evaluated_scope': '메모리 상에서 합성된 룸/스레드 이벤트 계층에 대한 미읽음 배지 상태 판정 로직 (In-memory state transition logic)',
-        'industrial_representativeness_gap': '원래 과제 범위가 IndexedDB나 라이브 동기화를 요구하지 않으므로 이는 개별 과제의 결함이 아님. 다만 이 테스트 통과를 복잡한 비동기 분산 클라이언트의 영속 상태 일관성 역량으로 일반화하여 해석할 수는 없음.',
-        'unverified_industrial_conditions': 'IndexedDB 영속 캐시 동기화, 네트워크 지연에 따른 타임라인 이벤트 역순 도착 시 원장 갱신, 라이브 동기화 파이프라인 통합.',
-        'boundary_calibration': '모킹 자체는 소프트웨어공학적으로 적절한 단위 격리 기법이며, 본 사례는 개별 평가 결함이 아니라 평가 대상 역량(Scope)의 경계를 규명함.'
+        'evaluated_scope': 'Unread-badge decisions over synthesized room/thread event hierarchies held in memory (in-memory state-transition logic).',
+        'industrial_representativeness_gap': 'The task does not require IndexedDB or live synchronization, so this is not a defect in the individual task. Passing these tests cannot be generalized to persistent-state consistency in a complex asynchronous distributed client.',
+        'unverified_industrial_conditions': 'IndexedDB persistent-cache synchronization; stored-state updates when timeline events arrive out of order because of network latency; live synchronization-pipeline integration.',
+        'boundary_calibration': 'Mocking is an appropriate unit-isolation technique. This case identifies the boundary of the measured capability rather than a defect in the individual evaluation.'
     },
     {
         'case_id': 'Case_RocketMQ_0819',
         'task_id': '0819',
         'repo': 'apache/rocketmq',
         'test_files': 'common/src/test/java/org/apache/rocketmq/common/stats/StatsItemSetTest.java',
-        'engineering_correctness': '고강도 동시성 스트레스 테스트: 100개 워커 스레드의 ThreadPoolExecutor로 10,000개 작업을 제출하고 50회 반복하여 putIfAbsent의 원자적 누적(20,000L)을 엄밀하게 단언함.',
+        'engineering_correctness': 'A high-load concurrency stress test: submits 10,000 tasks through a ThreadPoolExecutor with 100 worker threads and repeats 50 times, asserting atomic putIfAbsent accumulation of 20,000L.',
         'actual_assertion_snippet': "assertEquals(20000L, test_unit().longValue()); [Framework: executor = new ThreadPoolExecutor(100, 200, 10, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10000)); for (int i = 0; i < 50; i++) ...]",
-        'evaluated_scope': '단일 JVM 프로세스 내부의 공유 메모리 자료구조 스레드 안전성 (In-process multi-threaded race condition)',
-        'industrial_representativeness_gap': '단일 JVM 내 공유 메모리 원자적 연산 검증으로서는 매우 우수함. 그러나 이는 업무 트랜잭션 단위의 독립 트랜잭션 분리, 부분 실패 격리, 실패 시 성공 건 커밋 보존, 재실행 시 중복 징수 방지(FINERACT-2836 기준)와는 평가 대상의 층위가 다름.',
-        'unverified_industrial_conditions': '회차별 독립 트랜잭션 경계 설정, 부분 실패 시 성공 건 영속 커밋, 재실행 시 중복 징수 방지 멱등성 보장.',
-        'boundary_calibration': '스레드 안전성 검증으로서 매우 훌륭한 테스트이며, 본 사례는 단일 프로세스 메모리 동시성과 업무 트랜잭션 격리 간의 층위 차이를 보여줌.'
+        'evaluated_scope': 'Thread safety of shared-memory data structures within a single JVM (in-process multithreaded race conditions).',
+        'industrial_representativeness_gap': 'The test provides strong verification of shared-memory atomicity within one JVM. Its evaluation level differs from independent business-transaction boundaries, partial-failure isolation, preservation of successful commits after failures, and duplicate-collection prevention on reruns as required by FINERACT-2836.',
+        'unverified_industrial_conditions': 'Independent transaction boundaries per installment; durable commits for successful installments despite partial failures; idempotent reruns that prevent duplicate collection.',
+        'boundary_calibration': 'A strong thread-safety test that illustrates the distinction between single-process memory concurrency and business-transaction isolation.'
     },
     {
         'case_id': 'Case_Navidrome_0495',
         'task_id': '0495',
         'repo': 'navidrome/navidrome',
         'test_files': 'db/backup_test.go',
-        'engineering_correctness': '실제 DB 엔진 조작 및 파일 관리 테스트: 실제 SQLite 백업 파일 생성, 파괴적 DDL 실행(DELETE FROM sqlite_master), 백업 복원 동작, 그리고 백업 보존 개수 초과 시 오래된 백업 파일 정리(Pruning)를 오류 없이 엄밀하게 단언함.',
+        'engineering_correctness': 'An actual database-engine and file-management test: asserts SQLite backup creation, destructive DDL (DELETE FROM sqlite_master), backup restoration, and pruning of old files when the retention count is exceeded.',
         'actual_assertion_snippet': "Expect(isSchemaEmpty(Db().WriteDB())).To(BeFalse()); Expect(len(timesDecreasingChronologically) - pruneCount).To(Equal(expected)); Expect(err).To(MatchError(os.ErrNotExist)); [Setup: path, err := Db().Backup(ctx); ExecContext(ctx, 'DELETE FROM sqlite_master ...'); Expect(isSchemaEmpty(Db().WriteDB())).To(BeTrue());]",
-        'evaluated_scope': 'SQLite 백업 파일 생성, 파괴 후 복원 시 스키마 존재 여부, 및 백업 파일 보존 정책(Retention Pruning) 실행 검증',
-        'industrial_representativeness_gap': '벤치마크가 실제 DB 엔진 복원과 파일 보존 정책을 테스트할 수 있음을 입증하는 유의미한 긍정 반례임. 다만 단언문의 깊이가 스키마 레벨과 파일 존재성에 머물러 복합 엔터프라이즈 데이터 관계 및 업무 불변식 보존까지는 포괄하지 않음.',
-        'unverified_industrial_conditions': '복원 후 개별 비즈니스 테이블 레코드의 값 보존, 복합 외래키 관계 무결성, 도메인 불변식 보존.',
-        'boundary_calibration': '테스트 구성 및 단언문 실측에 기반하며, Gate 1 분류(A4, B1, B4, B8, B10; B6 미포함)와의 정합성을 엄격히 유지하는 정합 반례임.'
+        'evaluated_scope': 'SQLite backup-file creation, schema presence after destructive operations and restoration, and enforcement of backup-file retention pruning.',
+        'industrial_representativeness_gap': 'A meaningful positive counterexample showing that a benchmark can test actual database-engine restoration and file-retention policies. The assertions remain at schema and file-existence levels and do not cover preservation of complex enterprise data relationships or business invariants.',
+        'unverified_industrial_conditions': 'Preservation of individual business-table record values after restoration; complex foreign-key integrity; preservation of domain invariants.',
+        'boundary_calibration': 'An aligned counterexample based on the test configuration and observed assertions, consistent with the Gate 1 labels (A4, B1, B4, B8, B10; B6 excluded).'
     }
 ]
 
@@ -507,46 +507,46 @@ verdict_rows = [
     {
         'case_id': 'Case_NodeBB_0030',
         'target_task': 'NodeBB Task #0030',
-        'comparative_role': 'Direct Functional Comparison (설정 데이터 이행 직접 비교)',
-        'engineering_soundness': '의도된 단위 권한 판정 로직을 정확히 검증함 (Sound Leaf Permission Test)',
-        'evaluation_scope': '단위 함수 레벨의 실시간 메시징 허용/거부 판정 (In-memory leaf logic)',
-        'industrial_representativeness': '과제 명세에는 기존 설정의 마이그레이션과 반복 실행 안전성(idempotency)이 명시되어 있지만, 분석된 F2P 추가 테스트는 메시징 권한 판정에 집중되어 있음',
-        'construct_underrepresentation_aspect': '소프트웨어 진화 및 영속 설정 이행 역량의 축소 측정 (Underrepresents Configuration Migration & Idempotency)',
-        'academic_conclusion': '과제 명세에는 설정 마이그레이션과 멱등성이 명시되어 있으나, 추가된 F2P 단위 테스트 단언문(test/messaging.js)은 리프 권한 판정에 집중되어 있어, F2P 평가 단언문에 설정 마이그레이션 실행 및 멱등성 검사가 명시적으로 포함되지 않음을 입증함.',
-        'certainty_and_boundary': 'F2P 추가 테스트 단언문 정적 분석에 기반한 명확한 사실이며, 기존 회귀 테스트나 P2P를 포함한 전체 하네스의 결함을 주장하는 것이 아니라 F2P 추가 평가 단언문의 검증 범위로 결론을 엄격히 한정함.'
+        'comparative_role': 'Direct Functional Comparison (configuration-data migration)',
+        'engineering_soundness': 'Accurately verifies the intended unit permission logic (sound leaf permission test).',
+        'evaluation_scope': 'Real-time messaging allow/deny decisions at the unit-function level (in-memory leaf logic).',
+        'industrial_representativeness': 'The specification explicitly requires migration of existing settings and safe repeated execution (idempotency), but the inspected added F2P tests focus on messaging permission decisions.',
+        'construct_underrepresentation_aspect': 'Underrepresents software evolution and persistent configuration migration, including idempotency.',
+        'academic_conclusion': 'Although configuration migration and idempotency are explicit specification requirements, the added F2P unit-test assertions in test/messaging.js focus on leaf permission decisions and do not explicitly include migration execution or idempotency checks.',
+        'certainty_and_boundary': 'A finding from static inspection of the added F2P assertions. The conclusion is restricted to their verification scope and does not assert a defect in the complete harness, including existing regression tests or P2P.'
     },
     {
         'case_id': 'Case_ElementWeb_0139',
         'target_task': 'Element-Web Task #0139',
-        'comparative_role': 'Evaluation Scope & Abstraction Gap (평가 범위 및 추상화 층위 차이 설명)',
-        'engineering_soundness': '모의 객체를 통해 복잡한 영수증 분기 상태 전이를 정밀하게 검증함 (Sound Mock-based Branch Test)',
-        'evaluation_scope': '인메모리 합성 객체 상에서의 미읽음 상태 판정 분기 로직 (In-memory state transitions)',
-        'industrial_representativeness': '실제 클라이언트 영속 스토리지(IndexedDB) 및 서버 동기화 파이프라인 정합성은 평가 범위 밖임',
-        'construct_underrepresentation_aspect': '영속 클라이언트 상태 일관성 및 비동기 동기화 역량의 축소 측정 (Underrepresents Persistent State & Sync Invariants)',
-        'academic_conclusion': '모킹 자체는 정당한 단위 테스트 기법이나, 국소 상태 판단 검증만으로 복잡한 비동기 분산 클라이언트의 유지보수 역량을 평가했다고 일반화할 수는 없음 (평가 능력 층위의 차이).',
-        'certainty_and_boundary': '테스트 코드 및 모의 객체 분석에 기반하며, 모킹을 결함으로 보지 않고 측정 대상 역량의 경계로 정확히 기술함.'
+        'comparative_role': 'Evaluation Scope and Abstraction Gap',
+        'engineering_soundness': 'Precisely verifies complex receipt-related state-transition branches using mock objects (sound mock-based branch test).',
+        'evaluation_scope': 'Unread-state decision branches over synthesized in-memory objects (in-memory state transitions).',
+        'industrial_representativeness': 'Consistency of real client persistent storage (IndexedDB) and server synchronization pipelines is outside the evaluation scope.',
+        'construct_underrepresentation_aspect': 'Underrepresents persistent client-state consistency and asynchronous synchronization invariants.',
+        'academic_conclusion': 'Mocking is a legitimate unit-testing technique, but localized state-decision checks cannot be generalized to maintenance capability for a complex asynchronous distributed client; these are different levels of evaluated capability.',
+        'certainty_and_boundary': 'Based on test-code and mock-object inspection. Mocking is described as a boundary of the measured capability, not as a defect.'
     },
     {
         'case_id': 'Case_RocketMQ_0819',
         'target_task': 'RocketMQ Task #0819',
-        'comparative_role': 'Concurrency & Isolation Level Hierarchy (동시성 층위 차이 설명)',
-        'engineering_soundness': '100개 스레드 고부하 경합 환경에서 원자성을 엄밀하게 검증함 (Sound Multi-thread Stress Test)',
-        'evaluation_scope': '단일 프로세스 공유 메모리 자료구조의 스레드 안전성 (In-process thread-safety)',
-        'industrial_representativeness': '단일 JVM 공유 메모리 원자성과 엔터프라이즈 업무 트랜잭션의 독립 격리·커밋 보존 요구와는 평가 층위가 다름',
-        'construct_underrepresentation_aspect': '업무 트랜잭션 부분 실패 격리 및 커밋 보존 역량의 축소 측정 (Underrepresents Business Transaction Failure Isolation)',
-        'academic_conclusion': '단일 JVM 동시성 검증으로서는 매우 훌륭한 테스트이나, 이 성공이 곧 업무 트랜잭션 단위의 독립 격리, 부분 실패 격리, 커밋 보존 역량을 의미하지는 않음 (서로 다른 개발 역량의 공존).',
-        'certainty_and_boundary': '테스트 파라미터 실측에 기반하며, FINERACT-2836에 없는 2PC나 분산 브로커 조건을 배제하고 업무 트랜잭션 격리 층위 차이로 엄격히 한정함.'
+        'comparative_role': 'Concurrency and Isolation-Level Hierarchy',
+        'engineering_soundness': 'Directly verifies atomicity under high-load contention with 100 threads (sound multithreaded stress test).',
+        'evaluation_scope': 'Thread safety of shared-memory data structures within a single process (in-process thread safety).',
+        'industrial_representativeness': 'Shared-memory atomicity within one JVM is evaluated at a different level from independent isolation and commit preservation in enterprise business transactions.',
+        'construct_underrepresentation_aspect': 'Underrepresents business-transaction partial-failure isolation and commit-preservation capability.',
+        'academic_conclusion': 'This is a strong single-JVM concurrency test. Its success does not by itself establish independent business-transaction isolation, partial-failure isolation or commit-preservation capability; these are distinct development capabilities.',
+        'certainty_and_boundary': 'Based on observed test parameters. The conclusion concerns business-transaction isolation and excludes two-phase commit or distributed-broker conditions not required by FINERACT-2836.'
     },
     {
         'case_id': 'Case_Navidrome_0495',
         'target_task': 'Navidrome Task #0495',
-        'comparative_role': 'Positive Benchmark Evaluation Case / Aligned Counterexample (긍정 평가 반례)',
-        'engineering_soundness': '실제 SQLite DB 엔진을 가동하여 백업 생성, 파괴 후 복원, 및 백업 파일 정리(Pruning)를 성공적으로 검증함 (Sound Engine-level Integration Test)',
-        'evaluation_scope': 'SQLite 백업 파일 생성, 파괴적 DDL 후 스키마 존재 여부 확인 (!isSchemaEmpty), 및 백업 보존 개수 관리',
-        'industrial_representativeness': '엔터프라이즈의 심층 비즈니스 데이터 및 복합 관계 불변식 보존까지는 포괄하지 못함',
-        'construct_underrepresentation_aspect': '영속 데이터 심층 비즈니스 불변식 역량의 부분적 대표 (Partially Represents DB Recovery, Bounded to Schema & Retention)',
-        'academic_conclusion': '벤치마크가 실제 DB 엔진 복원과 파일 보존 관리를 테스트할 수 있음을 입증하는 강력한 긍정 반례이지만, 검증의 깊이는 스키마 및 파일 레벨로 한정됨 (정합 반례를 통한 평가 지평의 객관적 제시).',
-        'certainty_and_boundary': '테스트 구성 및 단언문 실측에 기반하며, Gate 1 분류(A4, B1, B4, B8, B10; B6 미포함)와의 정합성을 엄격히 유지함.'
+        'comparative_role': 'Positive Benchmark Evaluation Case / Aligned Counterexample',
+        'engineering_soundness': 'Uses an actual SQLite engine to verify backup creation, restoration after destructive changes, and backup-file pruning (sound engine-level integration test).',
+        'evaluation_scope': 'SQLite backup-file creation, schema-presence checks after destructive DDL (!isSchemaEmpty), and backup-retention count management.',
+        'industrial_representativeness': 'Does not cover preservation of deeper enterprise business data or complex relational invariants.',
+        'construct_underrepresentation_aspect': 'Partially represents persistent-data recovery, bounded to schema and retention rather than deeper business invariants.',
+        'academic_conclusion': 'A strong positive counterexample demonstrating that benchmarks can test actual database-engine restoration and file-retention management, with verification depth restricted to schema and file levels.',
+        'certainty_and_boundary': 'Based on the test configuration and observed assertions, consistent with the Gate 1 labels (A4, B1, B4, B8, B10; B6 excluded).'
     }
 ]
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Master Verification Script for Replication Package:
-Beyond Task Complexity: Mapping Enterprise Maintenance Requirements to AI Coding Benchmark Evaluation
+Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance and AI Coding Benchmarks
 Submitting to BenchSOC 2026 / ICSOC 2026
 
 This script performs six numerical and structural consistency checks for a subset
@@ -182,7 +182,7 @@ def verify_fineract_dependencies():
 def main():
     print("================================================================================")
     print("Replication Package Automated Verification")
-    print("Paper: Beyond Task Complexity: Mapping Enterprise Maintenance Requirements to AI Coding Benchmark Evaluation")
+    print("Paper: Beyond Surface Metrics: Multi-Condition Requirements in Enterprise Maintenance and AI Coding Benchmarks")
     print("Target: BenchSOC 2026 / ICSOC 2026")
     print("================================================================================\n")
     

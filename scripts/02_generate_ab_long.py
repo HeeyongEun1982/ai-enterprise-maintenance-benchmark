@@ -2,23 +2,34 @@ import json, os, csv
 
 import argparse
 from pathlib import Path
-parser = argparse.ArgumentParser(description="Optional rebuild; requires the original RAW5 source tree, which is not included in this release.")
-parser.add_argument("--raw5", type=Path, required=True, help="Path to the original RAW5 input directory")
-parser.add_argument("--output-dir", type=Path, default=Path(__file__).resolve().parents[1] / "data")
+repo_root = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description="Regenerate A/B assessment and evidence CSVs from the packaged original inputs.")
+inputs = parser.add_mutually_exclusive_group()
+inputs.add_argument("--input-dir", type=Path, help="Input folder containing the codebook, assessment table and tasks/ (default: data/02_generate_ab_long)")
+inputs.add_argument("--raw5", type=Path, help="Optional legacy RAW5 root to use instead of the packaged inputs.")
+parser.add_argument("--output-dir", type=Path, default=repo_root / "data", help="CSV output folder (default: data). Existing files are overwritten.")
 args = parser.parse_args()
-raw5_dir = str(args.raw5.expanduser().resolve())
+if args.raw5:
+    legacy_dir = args.raw5.expanduser().resolve() / "03_AI944개_전체_비교평가" / "comparison"
+    metadata_dir = legacy_dir / "maintenance18-ai944"
+    raw_tasks_dir = legacy_dir / "se-ai-comparison" / "tasks"
+else:
+    # Resolve ../data/02_generate_ab_long relative to this script, regardless of the working directory.
+    input_dir = (args.input_dir or repo_root / "data" / "02_generate_ab_long").expanduser().resolve()
+    metadata_dir = input_dir
+    raw_tasks_dir = input_dir / "tasks"
 data_dir = str(args.output_dir.expanduser().resolve())
 os.makedirs(data_dir, exist_ok=True)
 
 # 1. Load framework-snapshot.json for immutable codebook
-fs_file = os.path.join(raw5_dir, "03_AI944개_전체_비교평가/comparison/maintenance18-ai944/framework-snapshot.json")
+fs_file = metadata_dir / "framework-snapshot.json"
 with open(fs_file, 'r', encoding='utf-8') as f:
     fs_data = json.load(f)
 
 immutable_codebook = {e['code']: e['name'] for e in fs_data['entries']}
 
 # 2. Load table-view.json
-tv_file = os.path.join(raw5_dir, "03_AI944개_전체_비교평가/comparison/maintenance18-ai944/table-view.json")
+tv_file = metadata_dir / "table-view.json"
 with open(tv_file, 'r', encoding='utf-8') as f:
     tv_data = json.load(f)
 tv_rows = tv_data if isinstance(tv_data, list) else tv_data.get('rows', [])
