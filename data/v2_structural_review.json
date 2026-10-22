@@ -1,0 +1,802 @@
+{
+  "date": "2026-10-21",
+  "paper": {
+    "file": "BenchSOC_v3.pdf",
+    "sha256": "efe54c16315edd8d8013fc2123e24cc89d681967a3690247cfcff6a62094dd7c",
+    "pages": 13
+  },
+  "upstream_revision": "66f92766bba642462d4bbe5479e83f91f9211862",
+  "strict_criteria_document": "evidence/PAPER_GAP_AND_V2_REVIEW_PROTOCOL.md",
+  "method": "Manual, purposive structural review. Keyword retrieval does not establish semantics or exhaustive coverage.",
+  "scope": {
+    "instructions_downloaded": 642,
+    "previous_keyword_candidates": 83,
+    "candidate_tasks_with_artifacts": 18,
+    "candidate_files": 108,
+    "manually_recorded_decisions": 15
+  },
+  "conclusion": "No strict NodeBB-equivalent gap confirmed in the recorded review; not a proof of absence across all v2 tasks.",
+  "strict_equivalent_confirmed": 0,
+  "runtime_experiment": "not_executed",
+  "checks": {
+    "teleport_0670_selected_legacy_migration_chain_present": true,
+    "teleport_0670_new_test_not_in_stored_v1_patch": true
+  },
+  "cases": [
+    {
+      "instance_id": "instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516",
+      "original_study_task_id": "0030",
+      "status": "not_explicit",
+      "reason": "v2 removed the legacy migration requirement; task remains.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516/instruction.md",
+          "sha256": "95b6c3079596ea9534b6db5784d2cc937c3c4ea1df7d0bbf2c941798c8e5d92c",
+          "bytes": 3098
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516/tests/test_patch.patch",
+          "sha256": "d16892b016ef5b00756bc71a0a752d3def4a689aa4fff7877816ebae47c7cc28",
+          "bytes": 6159
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516/tests/config.json",
+          "sha256": "59bd3834b8159d47d7442242a9a4e7a90a29b4f82cc3798a23266871604ad187",
+          "bytes": 540317
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516/tests/run_script.sh",
+          "sha256": "aac4e739db2e04d4463555319080e5f8d87dfffc64bff2b6da46cb8ee586a501",
+          "bytes": 1292
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_NodeBB__NodeBB-a5afad27e52fd336163063ba40dcadc80233ae10-vd59a5728dfc977f44533186ace531248c2917516/solution/gold_patch.diff",
+          "sha256": "0b6dbbb77ff0ea448e347b078084f4041bd6dac33d6f76c078834409c09fe59b",
+          "bytes": 15718
+        }
+      ],
+      "selected_tests": [
+        "test/i18n.js",
+        "test/user.js",
+        "test/messaging.js"
+      ]
+    },
+    {
+      "instance_id": "instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "original_study_task_id": "0521",
+      "status": "related_partial_gap",
+      "reason": "Migration is actually called. Missing pre-existing/partial-state fixtures is not equivalent to bypassing migration entirely.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/instruction.md",
+          "sha256": "1c2078bb8e5f5e40a26a56cba6f5f4671aab69b66658e378e9d4a00e0a4e3097",
+          "bytes": 2958
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/test_patch.patch",
+          "sha256": "e892bf0152cc0a907ea6d80af3084375021c489104a56092f82173fa2d917e39",
+          "bytes": 2393
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/config.json",
+          "sha256": "5031f9c943f185ba85a62653f176be9c2fbdcc5b02bb4c5ca8c35a7fbaf7abed",
+          "bytes": 140
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/run_script.sh",
+          "sha256": "662195304de77f4695213c107ea341ac6dc6611c357d30c4c9ce78b73a73bfa7",
+          "bytes": 773
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/solution/gold_patch.diff",
+          "sha256": "81fe08231249a7063af2b1830abbd7d044f66a5c4142ae90dc83fa2d5e149d11",
+          "bytes": 4726
+        }
+      ],
+      "selected_tests": [
+        "TestRemoteDBCAMigration"
+      ]
+    },
+    {
+      "instance_id": "instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921",
+      "original_study_task_id": "0599",
+      "status": "related_partial_gap",
+      "reason": "Migration action and packet batches are tested. Order/count omissions do not establish the NodeBB state-transition mechanism.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/instruction.md",
+          "sha256": "ec6592a251549839be781eb669939e1c633909d9ada61405a4e1fc6883cd705e",
+          "bytes": 6304
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/test_patch.patch",
+          "sha256": "d0792179940e5be1c522116f1c78cc443f014a9908c49c4f0269a1dbe11481ef",
+          "bytes": 8802
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/config.json",
+          "sha256": "c2dd274ea11a1dfb8b20ef74c5b8df1b0edf2f94f04d5adb5177f2dc853bf737",
+          "bytes": 1102
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/run_script.sh",
+          "sha256": "9310a87b6e012c3fa937de4cb10fd4d72a69df9555f37bf2a338cc494ec238c6",
+          "bytes": 5020
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/solution/gold_patch.diff",
+          "sha256": "288136e44c2c8baaebd04dc4159baf763b0ce83dd3f17279d8eca63184a27354",
+          "bytes": 12837
+        }
+      ],
+      "selected_tests": [
+        "applications/drive/src/app/store/_shares/useShareActions.test.ts",
+        "src/app/store/_shares/useShareActions.test.ts"
+      ]
+    },
+    {
+      "instance_id": "instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037",
+      "original_study_task_id": "0670",
+      "status": "aligned_counterexample",
+      "reason": "Selected test seeds legacy events, asserts zero search hits, executes migration, then asserts three search hits.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037/instruction.md",
+          "sha256": "dff482a373984c9be10d26066d44e6a742affbaa259e90835680b72250ec8ebe",
+          "bytes": 6222
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037/tests/test_patch.patch",
+          "sha256": "c93c43838f955801e29f7c0be1903bcd1c764d8887f0fb6eac9e78892b60942b",
+          "bytes": 13435
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037/tests/config.json",
+          "sha256": "a4c9cf4540d83ea839fe09a411262756beb093463ca49bf3d525dbf82299fc30",
+          "bytes": 405
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037/tests/run_script.sh",
+          "sha256": "3f162dcc5391ad61ef9a4a807ce52e32874f9d1fad764604fb8d39605ade119a",
+          "bytes": 1825
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-1316e6728a3ee2fc124e2ea0cc6a02044c87a144-v626ec2a48416b10a88641359a169d99e935ff037/solution/gold_patch.diff",
+          "sha256": "1afac7497e46ffe86733e14c8c801c807f39516e2c606da2caceb06486b64244",
+          "bytes": 24073
+        }
+      ],
+      "selected_tests": [
+        "TestDateRangeGenerator",
+        "TestRFD24IndexExists",
+        "TestRFD24EmitStoresDate",
+        "TestRFD24EmitAndSearchAcrossMonth",
+        "TestRFD24MigrateMakesLegacySearchable"
+      ]
+    },
+    {
+      "instance_id": "instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6",
+      "original_study_task_id": "0039",
+      "status": "aligned_counterexample",
+      "reason": "Test invokes OSS migration repeatedly and checks role/user/cluster mappings.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6/instruction.md",
+          "sha256": "455f622982dd91d7ed6beae95dc0e77062d0a4da79f864a4a3a808c87728e420",
+          "bytes": 2113
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6/tests/test_patch.patch",
+          "sha256": "a5ab5a41f10678c8f0769b9ce1eea0ec49153e447fd737cad67ccb0efe31a7c2",
+          "bytes": 3115
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6/tests/config.json",
+          "sha256": "f4265a34f509e64decf216dee2b88429d62e872e1346a82b44874f00d59f0c37",
+          "bytes": 336
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6/tests/run_script.sh",
+          "sha256": "955e730096d90c330ae7bb6f856e7a3081e50714e3dbb94b0dc3ecc82294696d",
+          "bytes": 1795
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-b5d8169fc0a5e43fee2616c905c6d32164654dc6/solution/gold_patch.diff",
+          "sha256": "45fd467f03e5930b38d1c9017708e5b5488671601360aeeda88fd9b90c599cc1",
+          "bytes": 6653
+        }
+      ],
+      "selected_tests": [
+        "TestMigrateOSS/User",
+        "TestMigrateOSS",
+        "TestMigrateOSS/EmptyCluster",
+        "TestMigrateOSS/TrustedCluster"
+      ]
+    },
+    {
+      "instance_id": "instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184",
+      "original_study_task_id": "0691",
+      "status": "aligned_counterexample",
+      "reason": "Malformed stored configuration is written and loaded through migration; expected controlled errors are asserted.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184/instruction.md",
+          "sha256": "64fddbe423b0a9e9ec6ba9d299d2b535e4ad21853e85c019338ab054d838ebc8",
+          "bytes": 3691
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184/tests/test_patch.patch",
+          "sha256": "4fc0f9207d9ef08bf7715a37721d8ac6b48908aa3cd162f2336a210532a567f9",
+          "bytes": 1039
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184/tests/config.json",
+          "sha256": "ccea601dcafab8e317b328d959b511400c50834f981df4bd46ae21ef440bf700",
+          "bytes": 19188
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184/tests/run_script.sh",
+          "sha256": "871f9256d3ea1953a617ba07e7ea738f05e41cb53c9966be5575c88721ac20ac",
+          "bytes": 1358
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_qutebrowser__qutebrowser-8d05f0282a271bfd45e614238bd1b555c58b3fc1-v35616345bb8052ea303186706cec663146f0f184/solution/gold_patch.diff",
+          "sha256": "5fa7bdd2e4d306ee635ce73442f847a10756a5cdcce3a18221aa2cff437bccb6",
+          "bytes": 3588
+        }
+      ],
+      "selected_tests": [
+        "tests/unit/config/test_configfiles.py"
+      ]
+    },
+    {
+      "instance_id": "instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be",
+      "original_study_task_id": "0201",
+      "status": "aligned_related_case",
+      "reason": "Genre relation persistence and derived counts are exercised; explicit legacy conversion is not established.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be/instruction.md",
+          "sha256": "5edb2569c0ec1e0a48cb1d327c5e409536ddf7ee3e63167f892baebe0344408f",
+          "bytes": 2896
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be/tests/test_patch.patch",
+          "sha256": "66565250921a903c8f7fcadae70b2d30dda82a9169fabeaebe56c4d3517b7146",
+          "bytes": 4809
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be/tests/config.json",
+          "sha256": "c6e519f12c1251743a66bb7cf066a099bbbd1347d76a530f012bf7f2d537e907",
+          "bytes": 124
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be/tests/run_script.sh",
+          "sha256": "2edf94c06b2c060b1e627a66193bc28db11fc441f49808db2fa6894f2b3b0a64",
+          "bytes": 1018
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5e549255201e622c911621a7b770477b1f5a89be/solution/gold_patch.diff",
+          "sha256": "58e3ddb4db9170cc8db74275b69b1c5d2bcf6f7d2accb07ca108f547bbe21fb3",
+          "bytes": 12885
+        }
+      ],
+      "selected_tests": [
+        "TestPersistence"
+      ]
+    },
+    {
+      "instance_id": "instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a",
+      "original_study_task_id": "0727",
+      "status": "aligned_related_case",
+      "reason": "Selected DB tests exercise backup, destructive schema change and restore; not a leaf-only omission.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a/instruction.md",
+          "sha256": "781eacf083c08d210fee6613f21ae2d833eda2d279377413ba91bd9c55adf970",
+          "bytes": 3043
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a/tests/test_patch.patch",
+          "sha256": "ac2c16e2e86649313ed1776055cede3f62aeedbd3ed4a4db432d4123fb137555",
+          "bytes": 13820
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a/tests/config.json",
+          "sha256": "c41ff5addea6692b3a0b7b4eda65a76d2d0ac77f46a497d73fd0f2d6b6c224f3",
+          "bytes": 146
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a/tests/run_script.sh",
+          "sha256": "7eb45884ea635d7877e5edd496c65cd8a2e206cef91f75d73b18e473da2676ad",
+          "bytes": 1028
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-3982ba725883e71d4e3e618c61d5140eeb8d850a/solution/gold_patch.diff",
+          "sha256": "24b238a1def8b5379d3ab782643273fcf7d8231dfdf6f49ac33dc91c8b62b820",
+          "bytes": 9432
+        }
+      ],
+      "selected_tests": [
+        "TestPersistence",
+        "TestDB"
+      ]
+    },
+    {
+      "instance_id": "instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504",
+      "original_study_task_id": "0088",
+      "status": "not_explicit",
+      "reason": "API replacement and saved Player are required; legacy record conversion is not explicitly mandated.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504/instruction.md",
+          "sha256": "ecd4cb93bc88e2f0af9e24a0ceb9088181361802795fb53b2137e2811aee460f",
+          "bytes": 2934
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504/tests/test_patch.patch",
+          "sha256": "0808458344f5907ecdac2abf2635bbcbbd33cbf8a33da7abde20abb5f14954fd",
+          "bytes": 1521
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504/tests/config.json",
+          "sha256": "ed3f77c03407e0fa0b2d024d8c12f8903cb8b8feec59e2ea7c0472c82d14bde4",
+          "bytes": 211
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504/tests/run_script.sh",
+          "sha256": "ac2d73f4af8b61920929e9612d511b13180ba8490a46fa436a8d6ceae7c7228b",
+          "bytes": 1371
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-97434c1789a6444b30aae5ff5aa124a96a88f504/solution/gold_patch.diff",
+          "sha256": "b472e6fef2b4d7c9c50fa342cd0c97e710ad03ad4bacf1a6e92a2e735fd40ab5",
+          "bytes": 13504
+        }
+      ],
+      "selected_tests": [
+        "TestCore"
+      ]
+    },
+    {
+      "instance_id": "instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310",
+      "original_study_task_id": "0095",
+      "status": "not_explicit",
+      "reason": "User-scoped repository is required, but an explicit legacy-property conversion obligation is not established.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310/instruction.md",
+          "sha256": "2fd0a9d868a75bce993aaa3fba3b70c170334a9bb146ba4c97fc2d9c0e081523",
+          "bytes": 3616
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310/tests/test_patch.patch",
+          "sha256": "8cc926a384fc46e6d4df67405dea9829b96048fa4946865e77e20a7435b89477",
+          "bytes": 2998
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310/tests/config.json",
+          "sha256": "74b1f106980f7b08e275cca3c8bce5db29aaf4152271cd403bdf6b2efd63660d",
+          "bytes": 383
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310/tests/run_script.sh",
+          "sha256": "ce9101b0c97417c2a5ed685a83bd465f99a06b8fcd4708c0635869e7dcd6a25d",
+          "bytes": 1136
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_navidrome__navidrome-5001518260732e36d9a42fb8d4c054b28afab310/solution/gold_patch.diff",
+          "sha256": "fe50a4307a2e4063508c93b48fc2115e16afe5f226c483249e792233d94b9f28",
+          "bytes": 10876
+        }
+      ],
+      "selected_tests": [
+        "TestNativeApi",
+        "TestAgents",
+        "TestServer",
+        "TestSubsonicApi",
+        "TestPersistence",
+        "TestTranscoder",
+        "TestGravatar",
+        "TestPool",
+        "TestScanner",
+        "TestCache",
+        "TestLastFM",
+        "TestSpotify",
+        "TestEvents",
+        "TestCore"
+      ]
+    },
+    {
+      "instance_id": "instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4",
+      "original_study_task_id": "0301",
+      "status": "not_explicit",
+      "reason": "v2 scope is Google Books response normalization; former broader import/staging claims do not transfer.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4/instruction.md",
+          "sha256": "ac03b9d8bc032dd9edc9e07de7d139cf63df6dab047277cea8b755d2cf7e0a28",
+          "bytes": 3033
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4/tests/test_patch.patch",
+          "sha256": "894d8a566a5ba65e9481799dc9da05d891d9f46a4d062bf4fcd053c1b6ea91f0",
+          "bytes": 7163
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4/tests/config.json",
+          "sha256": "a2a8c19671c4232607234101a0151a95880aac9d93b961e99661c349bc078a7e",
+          "bytes": 680
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4/tests/run_script.sh",
+          "sha256": "7b1c1159e658aa0f60bc1fb7ff73dcd6d5f261e99e55b93520131b74443a451d",
+          "bytes": 600
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_internetarchive__openlibrary-910b08570210509f3bcfebf35c093a48243fe754-v0f5aece3601a5b4419f7ccec1dbda2071be28ee4/solution/gold_patch.diff",
+          "sha256": "9c49d3fb02d0ed9753b2f8ec7b5be044d46984a10b1ebb3a9fff755794e6864d",
+          "bytes": 21437
+        }
+      ],
+      "selected_tests": [
+        "scripts/tests/test_affiliate_server.py"
+      ]
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41",
+      "original_study_task_id": "0050",
+      "status": "not_explicit",
+      "reason": "Configuration field/DSN compatibility change, not an explicit historical-data conversion task.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41/instruction.md",
+          "sha256": "c809e2eb0bcc94e3942d996ef663419dc8c8b415754c25e799502b5596de5a05",
+          "bytes": 8650
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41/tests/test_patch.patch",
+          "sha256": "311de09c4a659c9e900417964e9580addde6b7e2ad229e424a2680edb1240a7d",
+          "bytes": 11221
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41/tests/config.json",
+          "sha256": "dfb07af9f5a42b87bb6d343cd675740947762e831b818b03e3b77a5e64680940",
+          "bytes": 1253
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41/tests/run_script.sh",
+          "sha256": "a7590925b14d35bc3425abea09e6bd0493cf1516bb79d18d435ad3e13d3adb2a",
+          "bytes": 1230
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-f808b4dd6e36b9dc8b011eb26b196f4e2cc64c41/solution/gold_patch.diff",
+          "sha256": "385b314baf15021790e2b2e2c09dea5f148cfaa05c1cf48338e6bc198c2b2f29",
+          "bytes": 16708
+        }
+      ],
+      "selected_tests": [
+        "TestOpen",
+        "TestLoad",
+        "TestUpdateFlag_NotFound",
+        "TestListRulesPagination",
+        "TestValidate",
+        "TestUpdateRule_NotFound",
+        "TestCreateRule_SegmentNotFound",
+        "TestFlagsPagination",
+        "TestCreateVariant_FlagNotFound",
+        "TestCreateVariant_DuplicateName_DifferentFlag",
+        "TestDeleteSegment_NotFound",
+        "TestCreateSegment_DuplicateKey",
+        "TestUpdateRuleAndDistribution",
+        "TestCreateVariant_DuplicateName",
+        "TestDeleteRule_NotFound",
+        "TestDeleteConstraint_NotFound",
+        "TestUpdateSegment_NotFound",
+        "TestUpdateVariant_DuplicateName",
+        "TestParse",
+        "TestGetRule_NotFound",
+        "TestListSegmentsPagination",
+        "TestCreateFlag_DuplicateKey",
+        "TestScheme",
+        "TestCreateDistribution_NoRule",
+        "TestDeleteVariant_NotFound",
+        "TestUpdateVariant_NotFound",
+        "TestCreateRule_FlagNotFound",
+        "TestCreateConstraint_SegmentNotFound",
+        "TestUpdateConstraint_NotFound",
+        "TestDeleteFlag_NotFound",
+        "TestMigratorRun_NoChange",
+        "TestCreateRuleAndDistribution",
+        "TestMigratorRun",
+        "TestServeHTTP",
+        "TestGetEvaluationDistributions_MaintainOrder"
+      ]
+    },
+    {
+      "instance_id": "instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55",
+      "original_study_task_id": "0537",
+      "status": "unresolved",
+      "reason": "Migration tests exist; image environment and extra test surfaces have not been fully established.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55/instruction.md",
+          "sha256": "ada119d8f9af8c992266db6273cbb0efbb6d7d72c1ba27ec3f2152b19f736fca",
+          "bytes": 4092
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55/tests/test_patch.patch",
+          "sha256": "a7ca6e3ab91c1fa5ba17b16fa342283a452b38a28a9f1eb145cc6d65967769c2",
+          "bytes": 9709
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55/tests/config.json",
+          "sha256": "cbb727c499d96330597a41de6f07032b29086e268c3bf03e22620663f2d7b5ea",
+          "bytes": 244
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55/tests/run_script.sh",
+          "sha256": "ea96bc2f438752341d460b41caee332754f6f9e2ef633686a6382ed7b3f693a5",
+          "bytes": 1232
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_flipt-io__flipt-9f8127f225a86245fa35dca4885c2daef824ee55/solution/gold_patch.diff",
+          "sha256": "bdc100ef779d26e332935cf600476948fd414938046c1d9764c58c889c08c70e",
+          "bytes": 19135
+        }
+      ],
+      "selected_tests": [
+        "TestMigratorExpectedVersions",
+        "TestOpen",
+        "TestDBTestSuite",
+        "TestParse"
+      ]
+    },
+    {
+      "instance_id": "instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2",
+      "original_study_task_id": "0013",
+      "status": "unresolved",
+      "reason": "Conflicting aggregate-configuration requirements prevent a clean specification-versus-oracle verdict.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2/instruction.md",
+          "sha256": "33878d764ff2166aba04bb10c1bc04bee86a640a52c085883a8476296a28652b",
+          "bytes": 5606
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2/tests/test_patch.patch",
+          "sha256": "6de8706e808f095e803bf9d4f23a392f29f7b115449353028eaab298055dc10b",
+          "bytes": 8718
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2/tests/config.json",
+          "sha256": "ec766ac4de78f5441f80187ca1be3680e4a3564b14b9dacbf73d6193f047f201",
+          "bytes": 112
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2/tests/run_script.sh",
+          "sha256": "28d4eaaeeb74226bdd1b273cbad3b9feba80a4c5c9c1fd832dff474f511bf7c5",
+          "bytes": 1797
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-c782838c3a174fdff80cafd8cd3b1aa4dae8beb2/solution/gold_patch.diff",
+          "sha256": "61bbbebbc10825b6268fff7f040e3a28f62a232216117c0de415f27dab8fdaf8",
+          "bytes": 16040
+        }
+      ],
+      "selected_tests": [
+        "TestState"
+      ]
+    },
+    {
+      "instance_id": "instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan",
+      "original_study_task_id": "0426",
+      "status": "unresolved",
+      "reason": "Upgrade API/progress/dialog path is tested. No leaf-only bypass established; unchanged baseline test context not fully reconstructed.",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan/instruction.md",
+          "sha256": "4792626e5cc28257802e80f8ce5621266a991e4751f14a5d6fd7f214d68b2a3c",
+          "bytes": 5168
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan/tests/test_patch.patch",
+          "sha256": "7683ca426742f797bff8ac092bd589f923bf09e9a9fa8fde2914247c15874682",
+          "bytes": 10428
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan/tests/config.json",
+          "sha256": "6eb4e6091bca4b63ab4910ea81ca6afda6aff30263053e854a460ad22cf9a6ef",
+          "bytes": 20562
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan/tests/run_script.sh",
+          "sha256": "8fa955298afd7223f9d1f7196c614de668ce66e77799fe2ec6d6f43d41082246",
+          "bytes": 1179
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_element-hq__element-web-9a31cd0fa849da810b4fac6c6c015145e850b282-vnan/solution/gold_patch.diff",
+          "sha256": "f6e553f0a79a08be96533361c1050157bc9abdb2502f08086555027f0f7b2157",
+          "bytes": 18484
+        }
+      ],
+      "selected_tests": [
+        "test/components/views/messages/MessageActionBar-test.ts",
+        "test/components/views/settings/EventIndexPanel-test.ts",
+        "test/voice-broadcast/stores/VoiceBroadcastPreRecordingStore-test.ts",
+        "test/components/views/elements/LabelledCheckbox-test.ts",
+        "test/components/views/settings/tabs/user/SessionManagerTab-test.ts",
+        "test/components/structures/AutocompleteInput-test.ts",
+        "test/components/views/settings/JoinRuleSettings-test.tsx",
+        "test/components/views/settings/JoinRuleSettings-test.ts",
+        "test/stores/SetupEncryptionStore-test.ts",
+        "test/components/views/context_menus/SpaceContextMenu-test.ts"
+      ]
+    }
+  ]
+}

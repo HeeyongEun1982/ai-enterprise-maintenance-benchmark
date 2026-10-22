@@ -1,0 +1,137 @@
+{
+  "checked_date": "2026-10-21",
+  "upstream_revision": "66f92766bba642462d4bbe5479e83f91f9211862",
+  "retrieval_scope": {
+    "instructions": 642,
+    "keyword_candidate_tasks": 83,
+    "candidate_artifact_tasks": 12,
+    "candidate_artifact_files": 72,
+    "absent_candidate_fragments": [
+      "4d0117b50"
+    ]
+  },
+  "scope": "Two manually reviewed static assertion-scope examples, not a census of defects or a v2 reclassification.",
+  "checks": {
+    "all_642_instructions_downloaded": true,
+    "all_candidate_files_downloaded": true,
+    "teleport_only_remote_migration_selected": true,
+    "teleport_new_test_calls_migration_once": true,
+    "teleport_spec_has_preservation_and_partial_migration": true,
+    "proton_spec_has_order_and_single_submission": true,
+    "proton_patch_has_no_order_or_call_count_matcher": true,
+    "proton_crypto_is_mocked": true
+  },
+  "cases": [
+    {
+      "instance_id": "instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4",
+      "original_study_task_id": "0521",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/instruction.md",
+          "sha256": "1c2078bb8e5f5e40a26a56cba6f5f4671aab69b66658e378e9d4a00e0a4e3097",
+          "bytes": 2958
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/test_patch.patch",
+          "sha256": "e892bf0152cc0a907ea6d80af3084375021c489104a56092f82173fa2d917e39",
+          "bytes": 2393
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/config.json",
+          "sha256": "5031f9c943f185ba85a62653f176be9c2fbdcc5b02bb4c5ca8c35a7fbaf7abed",
+          "bytes": 140
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/run_script.sh",
+          "sha256": "662195304de77f4695213c107ea341ac6dc6611c357d30c4c9ce78b73a73bfa7",
+          "bytes": 773
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_gravitational__teleport-53814a2d600ccd74c1e9810a567563432b98386e-vce94f93ad1030e3136852817f2423c1b3ac37bc4/solution/gold_patch.diff",
+          "sha256": "81fe08231249a7063af2b1830abbd7d044f66a5c4142ae90dc83fa2d5e149d11",
+          "bytes": 4726
+        }
+      ],
+      "fail_to_pass": [
+        "TestRemoteDBCAMigration"
+      ],
+      "pass_to_pass": [],
+      "selected": [
+        "TestRemoteDBCAMigration"
+      ],
+      "review_type": "manual_static_requirement_vs_selected_assertions",
+      "runtime_mutant_result": "not_executed"
+    },
+    {
+      "instance_id": "instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921",
+      "original_study_task_id": "0599",
+      "sources": [
+        {
+          "file": "instruction.md",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/instruction.md",
+          "sha256": "ec6592a251549839be781eb669939e1c633909d9ada61405a4e1fc6883cd705e",
+          "bytes": 6304
+        },
+        {
+          "file": "tests/test_patch.patch",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/test_patch.patch",
+          "sha256": "d0792179940e5be1c522116f1c78cc443f014a9908c49c4f0269a1dbe11481ef",
+          "bytes": 8802
+        },
+        {
+          "file": "tests/config.json",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/config.json",
+          "sha256": "c2dd274ea11a1dfb8b20ef74c5b8df1b0edf2f94f04d5adb5177f2dc853bf737",
+          "bytes": 1102
+        },
+        {
+          "file": "tests/run_script.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/run_script.sh",
+          "sha256": "9310a87b6e012c3fa937de4cb10fd4d72a69df9555f37bf2a338cc494ec238c6",
+          "bytes": 5020
+        },
+        {
+          "file": "tests/test.sh",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/test.sh",
+          "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+          "bytes": 7864
+        },
+        {
+          "file": "solution/gold_patch.diff",
+          "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/solution/gold_patch.diff",
+          "sha256": "288136e44c2c8baaebd04dc4159baf763b0ce83dd3f17279d8eca63184a27354",
+          "bytes": 12837
+        }
+      ],
+      "fail_to_pass": [
+        "src/app/store/_shares/useShareActions.test.ts | query function request shapes queryMigrateLegacyShares returns POST to migration endpoint with data and NOT_FOUND silence",
+        "src/app/store/_shares/useShareActions.test.ts | query function request shapes queryUnmigratedShares returns GET to unmigrated endpoint with NOT_FOUND silence",
+        "src/app/store/_shares/useShareActions.test.ts | useShareActions migrateShares",
+        "src/app/store/_shares/useShareActions.test.ts | useShareActions migrateShares with 120 shares",
+        "src/app/store/_shares/useShareActions.test.ts | useShareActions should send non-decryptable shares to api",
+        "src/app/store/_shares/useShareActions.test.ts | useShareActions stop migration when server respond 404 for migrate post endpoint",
+        "src/app/store/_shares/useShareActions.test.ts | useShareActions stop migration when server respond 404 for unmigrated endpoint"
+      ],
+      "pass_to_pass": [],
+      "selected": [
+        "applications/drive/src/app/store/_shares/useShareActions.test.ts",
+        "src/app/store/_shares/useShareActions.test.ts"
+      ],
+      "review_type": "manual_static_requirement_vs_selected_assertions",
+      "runtime_mutant_result": "not_executed"
+    }
+  ],
+  "interpretation_status": "withdrawn_as_evidence_of_NodeBB_structural_equivalence",
+  "superseded_by": "data/v2_structural_review.json"
+}

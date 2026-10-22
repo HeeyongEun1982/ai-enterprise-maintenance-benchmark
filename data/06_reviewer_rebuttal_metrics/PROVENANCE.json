@@ -1,0 +1,10 @@
+{
+  "imported_date": "2026-10-21",
+  "copied_from": "comparison/raw2-review-20261014/Task_1.2_Fineract_Mapping/fineract_10_concerns_mapped.json",
+  "file": "fineract_issues.json",
+  "sha256": "8d3b2c3ad9a3576150bd72bf1876dd4492daab82cab3d1ea886a0026fb624bbf",
+  "bytes": 6388343,
+  "issues": 2925,
+  "all_annotated_issue_ids_found": true,
+  "use": "Script 06 uses key, summary and description for its financial-keyword screening; prior mapping metadata is not used."
+}

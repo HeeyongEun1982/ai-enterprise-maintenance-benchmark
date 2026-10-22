@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-21",
+  "instance_id": "instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921",
+  "original_study_task_id": "0599",
+  "upstream_revision": "66f92766bba642462d4bbe5479e83f91f9211862",
+  "finding": "Required root-link key lookup omitted while published test-body assertions remain satisfied in a controlled replay.",
+  "status": "confirmed_in_adapter_based_assertion_replay_only",
+  "official_jest_run": false,
+  "official_container_run": false,
+  "project_typecheck": false,
+  "source_artifacts": [
+    {
+      "file": "instruction.md",
+      "sha256": "ec6592a251549839be781eb669939e1c633909d9ada61405a4e1fc6883cd705e",
+      "bytes": 6304,
+      "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/instruction.md"
+    },
+    {
+      "file": "solution/gold_patch.diff",
+      "sha256": "288136e44c2c8baaebd04dc4159baf763b0ce83dd3f17279d8eca63184a27354",
+      "bytes": 12837,
+      "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/solution/gold_patch.diff"
+    },
+    {
+      "file": "tests/test_patch.patch",
+      "sha256": "d0792179940e5be1c522116f1c78cc443f014a9908c49c4f0269a1dbe11481ef",
+      "bytes": 8802,
+      "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/test_patch.patch"
+    },
+    {
+      "file": "tests/config.json",
+      "sha256": "c2dd274ea11a1dfb8b20ef74c5b8df1b0edf2f94f04d5adb5177f2dc853bf737",
+      "bytes": 1102,
+      "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/config.json"
+    },
+    {
+      "file": "tests/run_script.sh",
+      "sha256": "9310a87b6e012c3fa937de4cb10fd4d72a69df9555f37bf2a338cc494ec238c6",
+      "bytes": 5020,
+      "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/run_script.sh"
+    },
+    {
+      "file": "tests/test.sh",
+      "sha256": "b6f26eecd87c1696a3702ee115d31f9d42f4704cf2116419cd879f66b60976d0",
+      "bytes": 7864,
+      "url": "https://raw.githubusercontent.com/scaleapi/SWE-bench_Pro-os/66f92766bba642462d4bbe5479e83f91f9211862/v2/tasks/instance_protonmail__webclients-2f2f6c311c6128fe86976950d3c0c2db07b03921/tests/test.sh"
+    }
+  ],
+  "fail_to_pass": [
+    "src/app/store/_shares/useShareActions.test.ts | query function request shapes queryMigrateLegacyShares returns POST to migration endpoint with data and NOT_FOUND silence",
+    "src/app/store/_shares/useShareActions.test.ts | query function request shapes queryUnmigratedShares returns GET to unmigrated endpoint with NOT_FOUND silence",
+    "src/app/store/_shares/useShareActions.test.ts | useShareActions migrateShares",
+    "src/app/store/_shares/useShareActions.test.ts | useShareActions migrateShares with 120 shares",
+    "src/app/store/_shares/useShareActions.test.ts | useShareActions should send non-decryptable shares to api",
+    "src/app/store/_shares/useShareActions.test.ts | useShareActions stop migration when server respond 404 for migrate post endpoint",
+    "src/app/store/_shares/useShareActions.test.ts | useShareActions stop migration when server respond 404 for unmigrated endpoint"
+  ],
+  "pass_to_pass": [],
+  "test_body_sha256": "c15fa252f8a2f383d4861749b47b9793db1869406537cc8b0a8fb5944674be1c",
+  "replay_script_sha256": "32bd9072da2345d2fa82f25bfa428e3f3436294543b60962790af7d93b848879",
+  "results": [
+    {
+      "variant": "published_gold_migration_extracted",
+      "satisfied": 7,
+      "total": 7
+    },
+    {
+      "variant": "root_link_private_key_lookup_omitted",
+      "satisfied": 7,
+      "total": 7
+    },
+    {
+      "variant": "negative_control_submission_builder_omitted",
+      "satisfied": 3,
+      "total": 7
+    },
+    {
+      "variant": "reference_with_added_key_binding_assertion",
+      "satisfied": 7,
+      "total": 7
+    },
+    {
+      "variant": "mutant_with_added_key_binding_assertion",
+      "satisfied": 6,
+      "total": 7
+    }
+  ],
+  "first_normal_mutant_trace": {
+    "name": "migrateShares",
+    "status": "PASSED",
+    "assertions": 1,
+    "root_key_lookups": 0,
+    "encryption_calls": 1,
+    "encryption_keys": [
+      "undefined"
+    ]
+  },
+  "adapter_limits": [
+    "renderHook is a one-shot hook call; React lifecycle is not reproduced",
+    "Only the mock/assertion APIs used by this test file are implemented",
+    "chunk and base64 helpers are explicit local adapters",
+    "TypeScript is stripped; no project typecheck, workspace/module resolution or official verifier/parser run"
+  ],
+  "result_path": "ablation_study/proton_0599/proton_key_oracle_replay.json",
+  "interpretation": "An intermediate operation/input-binding gap, not merely a missing batch-order assertion. Do not report as an official benchmark pass."
+}

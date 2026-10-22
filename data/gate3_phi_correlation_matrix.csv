@@ -1,12 +1,12 @@
 pair,c1,c2,semantic_chain,fineract_cooccurrence,fineract_phi,fineract_p_value,ai_cooccurrence,ai_phi,ai_p_value
-B4-B2,B4,B2,소급 변경 -> 수치 연쇄 재계산 (Temporal Retroactive -> Numerical Recalculation),254,0.43,2.76178749715371e-95,5,-0.013,0.8253502507938432
-A1-B4,A1,B4,업무 규칙 -> 시간적 소급 적용 (Business Rule -> Temporal Retroactive),471,0.309,1.710680548498769e-72,42,0.024,0.49632632084005435
-A1-B2,A1,B2,업무 규칙 -> 복합 수치 산출 (Business Rule -> Numerical Recalculation),440,0.343,3.198085633359508e-98,34,0.039,0.24638548375742048
-A1-B3,A1,B3,업무 규칙 -> 데이터 관계 정합성 (Business Rule -> Data Consistency),538,0.329,1.5561075293105813e-80,115,0.094,0.00485998135639385
-B4-B3,B4,B3,시간 소급 -> 상태 정합성 (Temporal Retroactive -> State Consistency),138,0.069,0.0002522912064543984,22,0.022,0.5005622920589685
-B4-B6,B4,B6,시간 소급 -> 상태 보존 (Temporal Retroactive -> State Preservation),84,0.068,0.0004573508916671432,28,-0.042,0.24601682787224974
-B2-B3,B2,B3,수치 재산출 -> 원장 정합성 (Numerical Recalculation -> Data Integrity),189,0.226,5.623604870217619e-30,14,-0.007,1.0
-B2-B6,B2,B6,수치 재산출 -> 상태 보존 (Numerical Recalculation -> State Preservation),64,0.036,0.05451349827042389,19,-0.054,0.11347955772052837
-B3-B6,B3,B6,정합성 유지 -> 상태 불변 보존 (Data Integrity -> State Preservation),89,0.053,0.005030821372796604,63,-0.106,0.0010809051984000998
-B7-B6,B7,B6,트랜잭션 격리 -> 상태 보존 (Transaction Isolation -> State Preservation),8,0.005,0.6957317939113501,14,-0.025,0.518739970092767
-B7-B3,B7,B3,트랜잭션 격리 -> 원장 무결성 (Transaction Isolation -> Data Integrity),20,0.04,0.040683930161438564,7,-0.031,0.45090298283120706
+B4-B2,B4,B2,Temporal Retroactive -> Numerical Recalculation,254,0.43,2.76178749715371e-95,5,-0.013,0.8253502507938432
+A1-B4,A1,B4,Business Rule -> Temporal Retroactive,471,0.309,1.710680548498769e-72,42,0.024,0.49632632084005435
+A1-B2,A1,B2,Business Rule -> Numerical Recalculation,440,0.343,3.198085633359508e-98,34,0.039,0.24638548375742048
+A1-B3,A1,B3,Business Rule -> Data Consistency,538,0.329,1.5561075293105813e-80,115,0.094,0.00485998135639385
+B4-B3,B4,B3,Temporal Retroactive -> State Consistency,138,0.069,0.0002522912064543984,22,0.022,0.5005622920589685
+B4-B6,B4,B6,Temporal Retroactive -> State Preservation,84,0.068,0.0004573508916671432,28,-0.042,0.24601682787224974
+B2-B3,B2,B3,Numerical Recalculation -> Data Integrity,189,0.226,5.623604870217619e-30,14,-0.007,1.0
+B2-B6,B2,B6,Numerical Recalculation -> State Preservation,64,0.036,0.05451349827042389,19,-0.054,0.11347955772052837
+B3-B6,B3,B6,Data Integrity -> State Preservation,89,0.053,0.005030821372796604,63,-0.106,0.0010809051984000998
+B7-B6,B7,B6,Transaction Isolation -> State Preservation,8,0.005,0.6957317939113501,14,-0.025,0.518739970092767
+B7-B3,B7,B3,Transaction Isolation -> Data Integrity,20,0.04,0.040683930161438564,7,-0.031,0.45090298283120706
